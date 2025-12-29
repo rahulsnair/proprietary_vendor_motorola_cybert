@@ -1,0 +1,3218 @@
+//
+// Automatically generated file. DO NOT MODIFY
+//
+
+soong_namespace {
+    imports: [
+        "vendor/motorola/cybert",
+    ],
+}
+
+cc_prebuilt_library_shared {
+    name: "audio.primary.mediatek",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/audio.primary.mediatek.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libalsautils",
+                "libhardware_legacy",
+                "libhardware",
+                "libaudioutils",
+                "libtinyalsa",
+                "libtinyxml2",
+                "libaudiotoolkit_vendor",
+                "libmedia_helper",
+                "libladder",
+                "libxml2",
+                "android.hardware.audio@7.0",
+                "android.hardware.audio@7.1",
+                "android.hardware.audio.common-util",
+                "android.hardware.audio.common@7.0",
+                "android.hardware.audio.common@7.0-util",
+                "android.hardware.audio.common@7.1-util",
+                "vendor.mediatek.hardware.audio@8.1",
+                "libfmq",
+                "libbase",
+                "libbinder_ndk",
+                "libbluetooth_audio_session_aidl_mtk",
+                "libsensorndkbridge",
+                "libaualgo_azp_wrapper",
+                "libbwc",
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "vendor.mediatek.hardware.bluetooth.audio@2.1",
+                "vendor.mediatek.hardware.bluetooth.audio@2.2",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "android.hardware.bluetooth.audio-V3-ndk",
+                "android.hardware.audio.common@5.0",
+                "libtinycompress",
+                "libdrm",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "fingerprint.goodix.default",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/fingerprint.goodix.default.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libc++",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libhardware",
+                "libion",
+                "libgf_hal",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.camera.isphal@1.1-impl",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/mt6897/vendor.mediatek.hardware.camera.isphal@1.1-impl.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libhardware",
+                "libcamera_metadata",
+                "libhidlbase",
+                "libhidltransport",
+                "vendor.mediatek.hardware.camera.isphal@1.0",
+                "vendor.mediatek.hardware.camera.isphal@1.1",
+                "android.hardware.graphics.mapper@2.0",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.graphics.common@1.1",
+                "android.hardware.graphics.common@1.2",
+                "libmtkcam_ulog",
+                "libmtkcam.debugwrapper",
+                "libmtkcam_sysutils",
+                "libmtkcam_stdutils",
+                "libmtkcam_metadata",
+                "libmtkisp_metadata_v2",
+                "libmtkcam_streamutils",
+                "libmtkcam_packutils",
+                "libmtkcam_modulehelper",
+                "libnativewindow",
+                "libmtkcam_grallocutils",
+                "libmtkcam_imgbuf_v2",
+                "libmtkcam_hwutils_android",
+                "libmtkcam_postprocprovider",
+                "libmtkcam_thirdparty.core",
+                "libcamalgo.fdft",
+                "libmtkcam_hwutils",
+                "libmtkcam_perfctrl",
+                "libcam.halsensor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw/mt6897",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.pq_aidl-impl",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/mt6897/vendor.mediatek.hardware.pq_aidl-impl.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libhwbinder",
+                "libhardware",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libpq_sec",
+                "libtinyxml2",
+                "vendor.mediatek.hardware.pq_aidl-V7-ndk",
+                "libcomposer_ext",
+                "libui",
+                "libgralloc_extra",
+                "libbinder_ndk",
+                "libbinder",
+                "libdrm",
+                "libaalservice",
+                "libpqconfig",
+                "libmml",
+                "libpqframework",
+                "libsync",
+                "vendor.mediatek.hardware.mmagent-V1-ndk",
+                "libdmabufheap",
+                "libaiselector",
+                "libpqsharememory",
+                "libpqtuning",
+                "libpqxmlparser",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw/mt6897",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "sensors.mediatek.V2.0",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/sensors.mediatek.V2.0.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libhardware",
+                "libstagefright_foundation",
+                "libksensor",
+                "libhfmanager",
+                "libaudioprimarydevicehalifclient",
+                "libmedia_helper",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libMcClient",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libMcClient.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libMcRegistry",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libMcRegistry.so",
+            ],
+            shared_libs: [
+                "libMcClient",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libRbsFlow",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libRbsFlow.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libhidlbase",
+                "libhidltransport",
+                "com.motorola.hardware.display.panel@1.0",
+                "com.motorola.hardware.display.panel@1.1",
+                "android.hardware.health@1.0",
+                "android.hardware.health@2.0",
+                "android.hardware.health@2.1",
+                "libc",
+                "libm",
+                "libdl",
+                "libc++",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libTEECommon",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libTEECommon.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libapu_mdw",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libapu_mdw.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libdmabufheap",
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libapusys",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libapusys.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudiosmartpamtk",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libaudiosmartpamtk.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libnvram",
+                "libtinyalsa",
+                "libcrypto",
+                "libssl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbessound_hd_mtk_vendor",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbessound_hd_mtk_vendor.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libmtk_drvb",
+                "libutils",
+                "libm",
+                "libc++",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbluetooth_mtk",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbluetooth_mtk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libnvram",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_mtk_vdec",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_mtk_vdec.so",
+            ],
+            shared_libs: [
+                "libformatter",
+                "libdpframework",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "libui",
+                "libgralloc_extra",
+                "libexpat",
+                "libsync",
+                "libhidlbase",
+                "libhwbinder",
+                "libged",
+                "libfmq",
+                "libstagefright_bufferpool@2.0.1",
+                "libcodec2_fsr",
+                "libcodec2_soft_common",
+                "libcutils",
+                "liblog",
+                "libsfplugin_ccodec_utils",
+                "libstagefright_foundation",
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk",
+                "libutils",
+                "libion",
+                "libdmabufheap",
+                "libion_mtk",
+                "libcodec2_mtk_c2store",
+                "libcodec2_vpp_qt_plugin",
+                "libcodec2_vpp_mi_plugin",
+                "libcodec2_vpp_rs_plugin",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_mtk_venc",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_mtk_venc.so",
+            ],
+            shared_libs: [
+                "libformatter",
+                "libdpframework",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "libui",
+                "libgralloc_extra",
+                "libexpat",
+                "libsync",
+                "libhidlbase",
+                "libhwbinder",
+                "libged",
+                "libfmq",
+                "libstagefright_bufferpool@2.0.1",
+                "libcodec2_fsr",
+                "libcodec2_soft_common",
+                "libcutils",
+                "liblog",
+                "libsfplugin_ccodec_utils",
+                "libstagefright_foundation",
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk",
+                "libutils",
+                "libion",
+                "libdmabufheap",
+                "libion_mtk",
+                "libcodec2_mtk_c2store",
+                "libcodec2_vpp_fa_plugin",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdpframework",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libdpframework.so",
+            ],
+            shared_libs: [
+                "libaiselector",
+                "vendor.mediatek.hardware.mmlpq-V3-ndk",
+                "libdmabufheap",
+                "vendor.mediatek.hardware.mmagent-V1-ndk",
+                "libpqsharememory",
+                "libpqtuning",
+                "vendor.mediatek.hardware.pq_aidl-V2-ndk",
+                "libbinder_ndk",
+                "libgralloc_extra",
+                "libpq_sec",
+                "libutils",
+                "libion",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libhardware",
+                "libnativewindow",
+                "libutilscallstack",
+                "libpqhdrmetaparser",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libisetrusty",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libisetrusty.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtk-ril",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtk-ril.so",
+            ],
+            shared_libs: [
+                "libmtkutils",
+                "librilfusion",
+                "libmtknetutils",
+                "libratconfig",
+                "libmtksysutils",
+                "libmtkhardware_legacy",
+                "libmtkrilutils",
+                "libcrypto",
+                "libmtkcutils",
+                "libmtkproperty",
+                "libmtkrillog",
+                "libmtkconfigutils",
+                "libmtktinyxml",
+                "vendor.mediatek.hardware.netdagent@1.0",
+                "libhidlbase",
+                "vendor.mediatek.hardware.netdagent-V1-ndk",
+                "libbinder_ndk",
+                "motrilutils",
+                "libbinder",
+                "libtflite",
+                "libmipc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtkcam_aicolor",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtkcam_aicolor.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libmtkcam_ulog",
+                "libmtkcam_stdutils",
+                "libmtkcam_modulehelper",
+                "libmtkcam_metadata",
+                "libmtkcam_metastore",
+                "libmtkcam_imgbuf_v2",
+                "libmtkcam_sysutils",
+                "libmtkcam_debugutils",
+                "libmtkcam.debugwrapper",
+                "libmtkcam_hwutils",
+                "libmtkcam_tuning_utils",
+                "libcam.halisp.utils",
+                "libcam.hal3a.ctrl",
+                "libfeature.aiseg",
+                "libcam.halisp.v4l2",
+                "libcam.halisp.imp.v4l2",
+                "libcam.feature_utils",
+                "libimgsys_main",
+                "libcam.halisp.TuningDataProviderFactory",
+                "libcam.halisp.TuningDataProvider",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtkcam_aie",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtkcam_aie.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libmtkcam.debugwrapper",
+                "libutils",
+                "liblog",
+                "libmtkcam_ulog",
+                "libmtkcam_stdutils",
+                "libmtkcam_imgbuf_v2",
+                "libmtkcam_perfctrl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtkcam_debugutils",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtkcam_debugutils.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libmtkcam.debugwrapper",
+                "libmtkcam_ulog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtkcam_detectnode",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtkcam_detectnode.so",
+            ],
+            shared_libs: [
+                "libAIOTcore",
+                "libAIODcore",
+                "libAITrackingAFMgr",
+                "libfeature.vsdof.ot_info_provider",
+                "libcutils",
+                "libmtkcam_hal_custom_utils",
+                "libmtkcam_modulehelper",
+                "libmtkcam_stdutils",
+                "libmtkcam_debugutils",
+                "libmtkcam.debugwrapper",
+                "libmtkcam_imgbuf_v2",
+                "libmtkcam_streamutils",
+                "libmtkcam_hwutils",
+                "libmtkcam_metadata",
+                "libmtkcam_metastore",
+                "liblog",
+                "libutils",
+                "libmtkcam_ulog",
+                "lib3a.flash",
+                "libcamalgo.fdft",
+                "libcam.hal3a",
+                "libcam.hal3a.ctrl",
+                "libcam.halisp.v4l2",
+                "libcamalgo.fsc",
+                "libcam.utils.sensorprovider",
+                "libmtkcam_perfctrl",
+                "libfeature.vsdof.fd_info_provider",
+                "libcam.feature_utils",
+                "libfeature.face",
+                "libfeature.aiseg",
+                "libfeature.stereo.provider",
+                "libmtkcam_tuning_utils",
+                "libmtkcam_hwnode",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtkcam_fdsan",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtkcam_fdsan.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtkcam_hwnode.jpegnode",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtkcam_hwnode.jpegnode.so",
+            ],
+            shared_libs: [
+                "libmtkcam.atmseventmgr",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libmtkcam_modulehelper",
+                "libmtkcam_stdutils",
+                "libmtkcam_debugutils",
+                "libmtkcam.debugwrapper",
+                "libmtkcam_ulog",
+                "libmtkcam_grallocutils",
+                "libmtkcam_imgbuf_v2",
+                "libmtkcam_streamutils",
+                "libmtkcam_hwutils",
+                "libmtkcam_metadata",
+                "libmtkcam_metastore",
+                "libmtkcam_packutils",
+                "libmtkcam_prerelease",
+                "libcam.feature_utils",
+                "libcameracustom",
+                "libcam.utils.sensorprovider",
+                "libmtkcam_camcoordinator",
+                "libmtkcam_dma_map",
+                "libmtkcam_perfctrl",
+                "libmtkcam_camctrl",
+                "libmtkcam_camcontroller",
+                "libimgsys_main",
+                "libmtkcam_custom_feature",
+                "libmtkcam_simager",
+                "libmtkcam_exif",
+                "libmtkcam_sysutils",
+                "libmediandk",
+                "libmtkcam_externalisploader",
+                "libmtkcam_hwnode",
+                "libultrahdr_mtk",
+                "libjpeg",
+                "libmtkcam_tuning_utils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtkcam_hwnode.p2",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtkcam_hwnode.p2.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libmtkcam_hwnode",
+                "libmtkcam_modulehelper",
+                "libmtkcam_stdutils",
+                "libmtkcam_debugutils",
+                "libmtkcam.debugwrapper",
+                "libmtkcam_ulog",
+                "libmtkcam_grallocutils",
+                "libmtkcam_imgbuf_v2",
+                "libmtkcam_streamutils",
+                "libmtkcam_hwutils",
+                "libmtkcam_metadata",
+                "libmtkcam_metastore",
+                "libmtkcam_prerelease",
+                "libcam.feature_utils",
+                "libcameracustom",
+                "libcam.utils.sensorprovider",
+                "libmtkcam_perfctrl",
+                "libcamalgo.lmv",
+                "libcamalgo.eis",
+                "libcamalgo.sat",
+                "libimgsys_main",
+                "libfeature_fsc",
+                "libfeature_eis",
+                "libcameracustom.eis",
+                "libmtkcam_simager",
+                "libmfllcore",
+                "lib_bsscore",
+                "libfeature.stereo.provider",
+                "libcamalgo.fsc",
+                "libmtkcam_tuning_utils",
+                "libmtkcam_mapping_mgr",
+                "libmtkcam.featurepipe.streaming",
+                "libmtkcam.featurepipe.capture",
+                "lib3a.stat",
+                "libcam.halisp.v4l2",
+                "libcam.halisp.utils",
+                "libcam.halsensor",
+                "libcam.hal3a.ctrl",
+                "libSQLiteModule_VER_ALL",
+                "libmediandk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtkcam_hwnode",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtkcam_hwnode.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libmtkcam_modulehelper",
+                "libmtkcam_stdutils",
+                "libmtkcam_debugutils",
+                "libmtkcam.debugwrapper",
+                "libmtkcam_ulog",
+                "libmtkcam_grallocutils",
+                "libmtkcam_imgbuf_v2",
+                "libmtkcam_streamutils",
+                "libmtkcam_hwutils",
+                "libmtkcam_metadata",
+                "libmtkcam_metastore",
+                "libmtkcam_packutils",
+                "libmtkcam_prerelease",
+                "libcam.feature_utils",
+                "libcameracustom",
+                "libcam.utils.sensorprovider",
+                "libmtkcam_camcoordinator",
+                "libmtkcam_camsys_sensor_utils",
+                "libmtkcam_dma_map",
+                "libmtkcam_perfctrl",
+                "libmtkcam_camctrl",
+                "libmtkcam_camcontroller",
+                "libimgsys_main",
+                "libfeature_fsc",
+                "libmtkcam_simager",
+                "libmtkcam_exif",
+                "libmtkcam_sysutils",
+                "libcam.vhdr",
+                "libcamalgo.dngop",
+                "libcamalgo.lmv",
+                "libcamalgo.gyro",
+                "libcamalgo.eis",
+                "libcamalgo.sat",
+                "libcamalgo.fdft",
+                "libfeature.stereo.provider",
+                "libfeature.vsdof.fd_info_provider",
+                "libcamalgo.fsc",
+                "libmtkcam_tuning_utils",
+                "libmtkcam_mapping_mgr",
+                "libmtkcam_synchelper",
+                "lib3a.flash",
+                "lib3a.stat",
+                "lib3a.awb.core",
+                "lib3a.af.core",
+                "libmtkcam_thirdparty.core",
+                "libcam.halisp.v4l2",
+                "libcam.halisp.utils",
+                "libcam.halsensor",
+                "libcam.hal3a.v3.dng",
+                "libcam.hal3a.ctrl",
+                "libSQLiteModule_VER_ALL",
+                "libmtkcam.featurepipe.p2g",
+                "libmediandk",
+                "libmtkcam_externalisploader",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtkcam_imgbuf_v2",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtkcam_imgbuf_v2.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libmtkcam.debugwrapper",
+                "libnativewindow",
+                "libion",
+                "libion_mtk",
+                "libmtkcam_stdutils",
+                "libmtkcam_debugutils",
+                "libmtkcam_grallocutils",
+                "libmtkcam_sysutils",
+                "libmtkcam_ulog",
+                "libsync",
+                "libdmabufheap",
+                "libmtkcam_fdsan",
+                "libcamera_metadata",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtkcam_metadata",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtkcam_metadata.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libmtkcam_ulog",
+                "libutils",
+                "libmtkcam.debugwrapper",
+                "libcutils",
+                "libmtkcam_stdutils",
+                "libmtkcam_custom.metadata",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtkcam_perfctrl",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtkcam_perfctrl.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libmtkcam_ulog",
+                "libmtkcam_debugutils",
+                "libmtkcam.debugwrapper",
+                "libbwc",
+                "android.hardware.power@1.0",
+                "vendor.mediatek.hardware.power@2.0",
+                "libmtkcam_stdutils",
+                "libmtkcam_modulehelper",
+                "libcam.halsensor",
+                "libprocessgroup",
+                "libmtkcam_jsondata",
+                "libmtkcam_jsonconvertor",
+                "libmtkcam_metadata",
+                "libmtkcam_c2psperfctrl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtkcam_pipeline",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtkcam_pipeline.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libmtkcam_stdutils",
+                "libmtkcam_debugutils",
+                "libmtkcam_ulog",
+                "libmtkcam_metadata",
+                "libmtkcam_streamutils",
+                "libmtkcam_pipeline_fbm",
+                "libmtkcam_prerelease",
+                "libmtkcam_hwutils",
+                "libmtkcam.debugwrapper",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtkcam_stdutils",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtkcam_stdutils.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libmtkcam_ulog",
+                "libmtkcam.debugwrapper",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtkcam_ulog",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtkcam_ulog.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libmtkcam.debugwrapper",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtkperf_client_vendor",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtkperf_client_vendor.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libhidlbase",
+                "libutils",
+                "libbase",
+                "libbinder",
+                "libbinder_ndk",
+                "libcutils",
+                "libc",
+                "vendor.mediatek.hardware.mtkpower-V1-ndk",
+                "vendor.mediatek.hardware.mtkpower@1.0",
+                "vendor.mediatek.hardware.mtkpower@1.1",
+                "vendor.mediatek.hardware.mtkpower@1.2",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libneuron_runtime",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libneuron_runtime.so",
+            ],
+            shared_libs: [
+                "libm",
+                "libdl",
+                "libz",
+                "liblog",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liboemcrypto",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/liboemcrypto.so",
+            ],
+            shared_libs: [
+                "libTEECommon",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libion_mtk",
+                "libion",
+                "libdmabufheap",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpqframework",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libpqframework.so",
+            ],
+            shared_libs: [
+                "libgralloc_extra",
+                "libhardware",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpqparamparser",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libpqparamparser.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libhardware",
+                "libgralloc_extra",
+                "vendor.mediatek.hardware.mmlpq-V3-ndk",
+                "libmml",
+                "libdmabufheap",
+                "libpqhdrmetaparser",
+                "libpqsharememory",
+                "libbase",
+                "libbinder",
+                "libbinder_ndk",
+                "libpqxmlflagparser",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "motorola.hardware.fdr-V1-ndk",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/motorola.hardware.fdr-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcam.halsensor",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mt6897/libcam.halsensor.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libcameracustom",
+                "libc++",
+                "libmtkcam.debugwrapper",
+                "libmtkcam_modulehelper",
+                "libmtkcam_stdutils",
+                "libmtkcam_metadata",
+                "libmtkcam_ulog",
+                "libcameracustom.imgsensor.core",
+                "libcameracustom.cfg_setting.core",
+                "libcam.halsensor.hwintegration",
+                "libcameracustom.camera.isp",
+                "lib3a.stat",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "mt6897",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcam.sensor_mode_helper",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mt6897/libcam.sensor_mode_helper.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libmtkcam.debugwrapper",
+                "libmtkcam_ulog",
+                "libmtkcam_metadata",
+                "libcam.halsensor",
+                "libmtkcam_camsys_sensor_utils",
+                "libcam.sensor_mode_helper_custom",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "mt6897",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmdla_standalone",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mt6897/libmdla_standalone.so",
+            ],
+            shared_libs: [
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "mt6897",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "mot_cybert_gc32e1_mipi_raw_tuning",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mt6897/mot_cybert_gc32e1_mipi_raw_tuning.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libmtkcam_ulog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "mt6897",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "mot_cybert_imx896_mipi_raw_IdxMgr",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mt6897/mot_cybert_imx896_mipi_raw_IdxMgr.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "mt6897",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "mot_cybert_imx896_mipi_raw_tuning",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mt6897/mot_cybert_imx896_mipi_raw_tuning.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libmtkcam_ulog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "mt6897",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "mot_cybert_s5kjns_mipi_raw_IdxMgr",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mt6897/mot_cybert_s5kjns_mipi_raw_IdxMgr.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "mt6897",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "mot_cybert_s5kjns_mipi_raw_tuning",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mt6897/mot_cybert_s5kjns_mipi_raw_tuning.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libmtkcam_ulog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "mt6897",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "mot_cybert_s5kjns_uw_mipi_raw_tuning",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mt6897/mot_cybert_s5kjns_uw_mipi_raw_tuning.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libmtkcam_ulog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "mt6897",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "nfc_nci.st21nfc.st",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/nfc_nci.st21nfc.st.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "libhardware",
+                "libhardware_legacy",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "panel_als_comp_filter_arcfox",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/panel_als_comp_filter_arcfox.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "sensors.moto",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/sensors.moto.so",
+            ],
+            shared_libs: [
+                "android.hardware.sensors@1.0",
+                "android.hardware.sensors@2.0",
+                "android.hardware.sensors@2.0-ScopedWakelock",
+                "android.hardware.sensors@2.1",
+                "libcutils",
+                "libfmq",
+                "libhardware",
+                "libhidlbase",
+                "libbase",
+                "liblog",
+                "libpower",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudiopreprocessing_mtk",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libaudiopreprocessing_mtk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mtkradioex.se-V1-ndk",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.se-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.radio-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdmengine",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/product/lib64/libdmengine.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libimsma",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libimsma.so",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libcutils",
+                "libgui",
+                "libmedia",
+                "libstagefright",
+                "libstagefright_foundation",
+                "libui",
+                "libutils",
+                "libsink",
+                "libsource",
+                "libvcodec_cap",
+                "libimsma_rtp",
+                "libcomutils",
+                "liblog",
+                "libsignal",
+                "libnetd_client",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmotocare",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmotocare.so",
+            ],
+            shared_libs: [
+                "libandroid_runtime",
+                "libnativehelper",
+                "liblog",
+                "libutils",
+                "libhidlbase",
+                "libhardware",
+                "com.motorola.hardware.biometric.fingerprint@1.0",
+                "libbase",
+                "libbinder_ndk",
+                "com.motorola.hardware.biometric.fingerprint-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtk_vt_service",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmtk_vt_service.so",
+            ],
+            shared_libs: [
+                "libandroid_runtime",
+                "libbinder",
+                "libutils",
+                "libcutils",
+                "libnativehelper",
+                "libui",
+                "libgui",
+                "libmedia",
+                "libbase",
+                "libfmq",
+                "libbinder_ndk",
+                "vendor.mediatek.hardware.videotelephony@1.0",
+                "vendor.mediatek.hardware.videotelephony-V1-ndk",
+                "libhidlbase",
+                "libhidltransport",
+                "libimsma",
+                "libsource",
+                "libimsma_rtp",
+                "libvt_avsync",
+                "libstagefright_foundation",
+                "libvcodec_cap",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "motorola.hardware.camera.desktop@2.0",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/motorola.hardware.camera.desktop@2.0.so",
+            ],
+            shared_libs: [
+                "motorola.hardware.camera.desktop@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.media@1.0",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.graphics.common@1.1",
+                "android.hardware.graphics.common@1.2",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "AiCore",
+    owner: "motorola",
+    apk: "proprietary/product/priv-app/AiCore/AiCore.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "HotwordEnrollmentOKGoogleRISCV",
+    owner: "motorola",
+    apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentOKGoogleRISCV.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "HotwordEnrollmentXGoogleRISCV",
+    owner: "motorola",
+    apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleRISCV/HotwordEnrollmentXGoogleRISCV.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "MotCamera5",
+    owner: "motorola",
+    apk: "proprietary/product/priv-app/MotCamera5/MotCamera5.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "MotoActions",
+    owner: "motorola",
+    apk: "proprietary/product/priv-app/MotoActions/MotoActions.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "ActionCore",
+    owner: "motorola",
+    apk: "proprietary/system_ext/priv-app/ActionCore/ActionCore.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "ImsService",
+    owner: "motorola",
+    apk: "proprietary/system_ext/priv-app/ImsService/ImsService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "MotCameraDesktop",
+    owner: "motorola",
+    apk: "proprietary/system_ext/priv-app/MotCameraDesktop/MotCameraDesktop.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "MotoCare",
+    owner: "motorola",
+    apk: "proprietary/system_ext/priv-app/MotoCare/MotoCare.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "MotoDesktopCore",
+    owner: "motorola",
+    apk: "proprietary/system_ext/priv-app/MotoDesktopCore/MotoDesktopCore.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "MotoSecureVault",
+    owner: "motorola",
+    apk: "proprietary/system_ext/priv-app/MotoSecureVault/MotoSecureVault.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "Personalize",
+    owner: "motorola",
+    apk: "proprietary/system_ext/priv-app/Personalize/Personalize.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "mediatek-ims-base",
+    owner: "motorola",
+    jars: [
+        "proprietary/system_ext/framework/mediatek-ims-base.jar",
+    ],
+    system_ext_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.bluetooth-service-mediatek.xml",
+    owner: "motorola",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.bluetooth-service-mediatek.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.boot-service.mtk.xml",
+    owner: "motorola",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.boot-service.mtk.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.health-service.example.xml",
+    owner: "motorola",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.health-service.example.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.security.keymint-service.trustonic.xml",
+    owner: "motorola",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.keymint-service.trustonic.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "com.motorola.hardware.display.panel-service.xml",
+    owner: "motorola",
+    src: "proprietary/vendor/etc/vintf/manifest/com.motorola.hardware.display.panel-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "com.motorola.hardware.display.touch.xml",
+    owner: "motorola",
+    src: "proprietary/vendor/etc/vintf/manifest/com.motorola.hardware.display.touch.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "face-default_3.xml",
+    owner: "motorola",
+    src: "proprietary/vendor/etc/vintf/manifest/face-default_3.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "gnss-mtk.xml",
+    owner: "motorola",
+    src: "proprietary/vendor/etc/vintf/manifest/gnss-mtk.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "manifest_IMoto_AIDL_Fingerprint.xml",
+    owner: "motorola",
+    src: "proprietary/vendor/etc/vintf/manifest/manifest_IMoto_AIDL_Fingerprint.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "manifest_cameraprovider.xml",
+    owner: "motorola",
+    src: "proprietary/vendor/etc/vintf/manifest/manifest_cameraprovider.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "manifest_hwcomposer.xml",
+    owner: "motorola",
+    src: "proprietary/vendor/etc/vintf/manifest/manifest_hwcomposer.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "motorola.hardware.sensors.xml",
+    owner: "motorola",
+    src: "proprietary/vendor/etc/vintf/manifest/motorola.hardware.sensors.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "power-mediatek.xml",
+    owner: "motorola",
+    src: "proprietary/vendor/etc/vintf/manifest/power-mediatek.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vibrator-mtk-default.xml",
+    owner: "motorola",
+    src: "proprietary/vendor/etc/vintf/manifest/vibrator-mtk-default.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "batt_health",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/batt_health",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "ccci_mdinit",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/ccci_mdinit",
+            ],
+            shared_libs: [
+                "libsysenv",
+                "liblog",
+                "libnvram",
+                "libcutils",
+                "libstorage_otp",
+                "libccci_util",
+                "libhardware_legacy",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "fpsgo",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/fpsgo",
+            ],
+            shared_libs: [
+                "libc",
+                "libcutils",
+                "libui",
+                "libutils",
+                "libexpat",
+                "vendor.mediatek.hardware.power@2.0",
+                "liblog",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.audio.service.mediatek",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.audio.service.mediatek",
+            ],
+            shared_libs: [
+                "libaudiofoundation",
+                "libcutils",
+                "libbinder",
+                "libbinder_ndk",
+                "libhidlbase",
+                "libhidltransport",
+                "liblog",
+                "libutils",
+                "libhardware",
+                "libhwbinder",
+                "android.hardware.audio@6.0",
+                "android.hardware.audio@7.0",
+                "android.hardware.audio@7.1",
+                "android.hardware.audio.common@6.0",
+                "android.hardware.audio.common@7.0",
+                "android.hardware.audio.effect@6.0",
+                "android.hardware.audio.effect@7.0",
+                "vendor.mediatek.hardware.bluetooth.audio@2.1",
+                "android.hardware.soundtrigger3-V1-ndk",
+                "android.hardware.soundtrigger3-impl",
+                "vendor.mediatek.hardware.audio@6.1",
+                "vendor.mediatek.hardware.audio@7.1",
+                "vendor.mediatek.hardware.audio@8.1",
+                "vendor.mediatek.hardware.audio-V1-ndk",
+                "vendor.mediatek.hardware.audio-impl",
+                "vendor.mediatek.hardware.bluetooth.audio@2.2",
+                "android.hardware.bluetooth.audio-impl-mediatek",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.biometrics.fingerprint-service-rbs",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint-service-rbs",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libbase",
+                "libbinder_ndk",
+                "libhardware",
+                "android.hardware.biometrics.fingerprint-V3-ndk",
+                "android.hardware.biometrics.common-V3-ndk",
+                "android.hardware.biometrics.common.thread",
+                "android.hardware.biometrics.common.util",
+                "com.motorola.hardware.biometric.fingerprint-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.biometrics.fingerprint-service.goodix",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint-service.goodix",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libbase",
+                "libbinder_ndk",
+                "libhardware",
+                "android.hardware.biometrics.fingerprint-V3-ndk",
+                "android.hardware.biometrics.common-V3-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.drm-service.clearkey",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.drm-service.clearkey",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder_ndk",
+                "libcrypto",
+                "liblog",
+                "libprotobuf-cpp-lite-21.7",
+                "libutils",
+                "android.hardware.drm-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.gatekeeper-service.trustonic",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.gatekeeper-service.trustonic",
+            ],
+            shared_libs: [
+                "android.hardware.gatekeeper-V1-ndk",
+                "libbase",
+                "libbinder_ndk",
+                "liblog",
+                "libMcClient",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.neuralnetworks-shim-service-mtk",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder_ndk",
+                "libhidlbase",
+                "libhidlmemory",
+                "liblog",
+                "libnativewindow",
+                "libutils",
+                "libneuralnetworks_sl_driver_mtk_prebuilt",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.nfc-service-st",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.nfc-service-st",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libutils",
+                "libbinder_ndk",
+                "android.hardware.nfc-V1-ndk",
+                "nfc_nci.st21nfc.st",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.security.keymint@3.0-service.trustonic",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.security.keymint@3.0-service.trustonic",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "android.hardware.security.keymint-V3-ndk",
+                "android.hardware.security.rkp-V3-ndk",
+                "android.hardware.security.sharedsecret-V1-ndk",
+                "android.hardware.security.secureclock-V1-ndk",
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libMcClient",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "motorola.hardware.fdr-service",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/motorola.hardware.fdr-service",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libbase",
+                "motorola.hardware.fdr-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "motorola.hardware.haptic-service",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/motorola.hardware.haptic-service",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libbase",
+                "libhardware",
+                "motorola.hardware.haptic-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "motorola.hardware.health.storage-service",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/motorola.hardware.health.storage-service",
+            ],
+            shared_libs: [
+                "libbase",
+                "libutils",
+                "libbinder",
+                "liblog",
+                "libbinder_ndk",
+                "libcutils",
+                "motorola.hardware.health.storage.aidl-V1-ndk",
+                "libmotohid",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "motorola.hardware.sensorext-service",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/motorola.hardware.sensorext-service",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbase",
+                "libbinder_ndk",
+                "motorola.hardware.sensors-V2-ndk",
+                "libutils",
+                "libcutils",
+                "libhardware",
+                "libc",
+                "libhidltransport",
+                "libhidlbase",
+                "android.hardware.graphics.allocator@4.0",
+                "android.hardware.graphics.common@1.2",
+                "android.hardware.graphics.mapper@4.0",
+                "libtflite",
+                "libtinyxml2",
+                "libbinder",
+                "libui",
+                "libgui_vendor",
+                "libcomposer_ext",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "motorola.hardware.sensorscalibrate-service",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/motorola.hardware.sensorscalibrate-service",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbase",
+                "libbinder_ndk",
+                "motorola.hardware.sensors-V2-ndk",
+                "libutils",
+                "libcutils",
+                "libhardware",
+                "libc",
+                "libhidltransport",
+                "libhidlbase",
+                "libbinder",
+                "libui",
+                "libhfmanager",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "camerahalserver",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/mt6897/camerahalserver",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbinder",
+                "libhwbinder",
+                "libhidlbase",
+                "libhidltransport",
+                "libmtkcam_stdutils",
+                "libmtkcam_ulog",
+                "libmtkcam_tuning_utils",
+                "libcam.halisp.SwTopCtrlMgr",
+                "libcam.hal3a.v3.nvram.v4l2",
+                "libcameracustom",
+                "libcameracustom.camera.isp",
+                "libmtkcam_mapping_mgr",
+                "libcam.halisp.TopCtrlMgr",
+                "android.hardware.camera.provider@2.4",
+                "android.hardware.camera.provider@2.5",
+                "android.hardware.camera.provider@2.6",
+                "vendor.mediatek.hardware.camera.ccap@1.0",
+                "vendor.mediatek.hardware.camera.frhandler@1.0",
+                "vendor.mediatek.hardware.camera.postproc@1.0",
+                "vendor.mediatek.hardware.camera.bgservice_aidl@1.0-impl",
+                "vendor.mediatek.hardware.camera.bgservice-V1-ndk",
+                "libhardware",
+                "libmtkcam_grallocutils",
+                "vendor.mediatek.hardware.camera.atms_aidl@1.0-impl",
+                "vendor.mediatek.hardware.camera.atms-V1-ndk",
+                "libmtkcam_ipc_core",
+                "libmtkcam_ca",
+                "libmtkcam_sysutils",
+                "libbinder_ndk",
+                "libmtkcam_hal_aidl_provider",
+                "android.hardware.camera.provider-V2-ndk",
+                "libmtkcam_hal_aov",
+                "vendor.mediatek.hardware.camera.aovservice-V2-ndk",
+                "vendor.mediatek.hardware.camera.isphal_aidl@1.0-impl",
+                "vendor.mediatek.hardware.camera.isphal-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw/mt6897",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.mediatek.hardware.pq_aidl-service",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.mediatek.hardware.pq_aidl-service",
+            ],
+            shared_libs: [
+                "vendor.mediatek.hardware.pq_aidl-impl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "mcDriverDaemon",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/mcDriverDaemon",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcrypto",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "mnld",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/mnld",
+            ],
+            shared_libs: [
+                "libmnl",
+                "libcurl",
+                "libcutils",
+                "libnvram",
+                "libcrypto",
+                "libssl",
+                "libz",
+                "liblog",
+                "libhardware",
+                "libladder",
+                "libmipc",
+                "libmtkrillog",
+                "libtrm",
+                "libhfmanager",
+                "libDR",
+                "libutils",
+                "android.frameworks.sensorservice@1.0",
+                "android.hardware.sensors@1.0",
+                "libhidlbase",
+                "libhidltransport",
+                "libsensorndkbridge",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "mtk_agpsd",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/mtk_agpsd",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libandroid_net",
+                "libcrypto",
+                "libexpat",
+                "libssl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "nvram_daemon",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/nvram_daemon",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libnvram",
+                "libfile_op",
+                "liblog",
+                "libconnfem",
+                "libhwm",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "thermal_core",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/thermal_core",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libifcutils_mtk",
+                "libmipc",
+                "libmtkproperty",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "wmt_launcher",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/wmt_launcher",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "wmt_loader",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/wmt_loader",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}

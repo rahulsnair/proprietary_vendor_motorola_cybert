@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configstore>
+    <config type="default">
+        <configuration>
+            <name>algoType</name>
+            <value>0</value>
+        </configuration>
+        <configuration>
+            <name>productName</name>
+            <value>cybert</value>
+        </configuration>
+        <configuration>
+            <name>panelId</name>
+            <value>1</value>
+        </configuration>
+        <configuration>
+            <name>dbvNodePath</name>
+            <value>/sys/class/leds/lcd-backlight/brightness</value>
+        </configuration>
+        <configuration>
+            <name>dcNodePath</name>
+            <value>/sys/class/drm/card0-DSI-1/panelDC</value>
+        </configuration>
+        <configuration>
+            <name>panelNameNodePath</name>
+            <value>/sys/class/drm/card0-DSI-1/panelName</value>
+        </configuration>
+        <configuration>
+            <name>brightnessRange</name>
+            <value>14060</value>
+        </configuration>
+        <!-- windowLeft Top Width Height -->
+        <configuration>
+            <name>windowRect</name>
+            <value>711,19,64,64</value>
+        </configuration>
+        <configuration>
+            <name>panelWidthCorrect</name>
+            <value>1088</value>
+        </configuration>
+        <configuration>
+            <name>passByLuxThresh</name>
+            <value>10000.0</value>
+        </configuration>
+        <!-- channel raw data under 500lux -->
+        <configuration>
+            <name>single_golden_ch</name>
+            <value>121.62023,68.858734,46.77657,21.966454</value>
+        </configuration>
+        <configuration>
+            <name>lux_filter_so</name>
+            <value>panel_als_comp_filter_arcfox.so</value>
+        </configuration>
+
+        <!-- panel vendor list -->
+        <configuration>
+            <name>panelVendorList</name>
+            <value>csot,tm</value>
+        </configuration>
+        <configuration>
+            <name>lux_coef</name>
+            <value>1.0</value>
+        </configuration>
+        <!-- csot config -->
+        <configuration>
+            <!-- csot config -->
+            <name>als_lux_ch_coefs_csot</name>
+            <value>0.844385,4.051526152,-3.017973562,-0.992210486,-3.017973562</value>
+        </configuration>
+        <configuration>
+            <!-- channel raw data under multi panel dbv & fps -->
+            <!-- Dec13 to be configured -->
+            <name>multi_dbv_golden_ch_csot</name>
+            <value>5,0,0,60,2000,7129,3459,2693,1567,0,0,60,4500,32562,16250,12298,7960,0,0,60,6716,75039,37891,28231,18255,0,0,60,9000,144668,73075,54147,35017,0,0,60,14000,391751,195084,147834,96003</value>
+        </configuration>
+        <configuration>
+            <!-- 1: dc/no-dc different model -->
+            <!-- 2: same model -->
+            <name>tf_type_csot</name>
+            <value>1</value>
+        </configuration>
+        <configuration>
+            <name>tfModePath_csot</name>
+            <value>/vendor/etc/sensors/als_comp_tf_csot.config</value>
+        </configuration>
+        <configuration>
+            <name>tfModeDcPath_csot</name>
+            <value>/vendor/etc/sensors/als_comp_tf_csot.config</value>
+        </configuration>
+
+        <!-- tianma config -->
+        <configuration>
+            <name>als_lux_ch_coefs_tm</name>
+            <value>0.833941,1.034,-0.703,4.300,-3.018</value>
+        </configuration>
+        <configuration>
+            <name>multi_dbv_golden_ch_tm</name>
+            <value>5,0,0,60,2000,8408,4545,2606,1913,0,0,60,4500,37243,20456,11566,8106,0,0,60,6716,87093,46518,27817,19266,0,0,60,9000,168580,89474,53374,39008,0,0,60,14000,474349,252266,149000,109224</value>
+        </configuration>
+        <configuration>
+            <name>tf_type_tm</name>
+            <value>1</value>
+        </configuration>
+        <configuration>
+            <name>tfModePath_tm</name>
+            <value>/vendor/etc/sensors/als_comp_tf_tianma.config</value>
+        </configuration>
+        <configuration>
+            <name>tfModeDcPath_tm</name>
+            <value>/vendor/etc/sensors/als_comp_tf_tianma.config</value>
+        </configuration>
+    </config>
+</Configstore>

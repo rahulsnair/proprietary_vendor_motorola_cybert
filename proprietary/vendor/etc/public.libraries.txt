@@ -1,0 +1,16 @@
+libmpbase.so
+libarc.ion.so
+libarcsoft_tfs_hdr.so
+libarcsoft_tfs_portrait_hdr.so
+libarcsoft_tfs_sn.so
+libarcsoft_tfs_portrait_sn.so
+libarcsoft_tfs_motioncapture.so
+libarcsoft_stellartrack.so
+libarcsoft_portrait_distortion_correction.so
+libneuron_runtime.7.so
+libneuron_runtime.so
+libportrait_repair_apu.so
+libarcsoft_tfs_sr.so
+libmotoispaidlclient.so
+libOpenCL.so
+libiqi_bridge.so

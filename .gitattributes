@@ -1,0 +1,6 @@
+*.so filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.fw filter=lfs diff=lfs merge=lfs -text
+proprietary/product/priv-app/AiCore/AiCore.apk filter=lfs diff=lfs merge=lfs -text
+proprietary/product/priv-app/MotCamera5/MotCamera5.apk filter=lfs diff=lfs merge=lfs -text
+radio/modem filter=lfs diff=lfs merge=lfs -text
