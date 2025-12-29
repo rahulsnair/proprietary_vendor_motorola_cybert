@@ -3350,64 +3350,545 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/vendor/usr/keylayout/goodix_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/goodix_ts.kl
 
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio-impl-mediatek \
+    com.motorola.hardware.biometric.fingerprint-V2-ndk \
+    com.motorola.hardware.display.panel-V1-ndk \
+    com.motorola.hardware.display.panel@1.0 \
+    com.motorola.hardware.display.panel@1.1 \
+    android.hardware.soundtrigger3-impl \
     audio.primary.mediatek \
     fingerprint.goodix.default \
     vendor.mediatek.hardware.camera.isphal@1.1-impl \
     vendor.mediatek.hardware.pq_aidl-impl \
     sensors.mediatek.V2.0 \
+    vendor.mediatek.hardware.audio-impl \
+    vendor.mediatek.hardware.camera.atms_aidl@1.0-impl \
+    vendor.mediatek.hardware.camera.bgservice_aidl@1.0-impl \
+    vendor.mediatek.hardware.camera.isphal_aidl@1.0-impl \
+    lib3a.ae.pipe \
+    lib3a.ae \
+    lib3a.ae.stat \
+    lib3a.af.assist \
+    lib3a.af.assist.utils \
+    lib3a.af.core \
+    lib3a.af \
+    lib3a.awb.core \
+    lib3a.custom.shading.flow \
+    lib3a.flash \
+    libAIODcore \
+    libAIOTcore \
+    libAITrackingAFMgr \
+    libBSTHDRDETECT \
+    libBSTMultiExpoGainHDR \
+    libBasicModule \
+    libDBAccessor_ISP \
+    libDR \
+    libJpgEncPipe \
     libMcClient \
     libMcRegistry \
+    libOpenCL \
     libRbsFlow \
+    libSQLiteModule_VER_ALL \
     libTEECommon \
+    lib_bsscore \
+    libaaa_aaautil \
+    libaaa_afassist_V2 \
+    libaaa_afassistctrl \
+    libaaa_gma \
+    libaal_sec \
+    libaalservice \
+    libaedv \
+    libaicapturecore \
+    libaiselector \
+    libapiwrapper \
     libapu_mdw \
     libapusys \
+    libarc.ion \
+    libarcsoft_pic_trace \
+    libarcsoft_portrait_distortion_correction \
+    libaualgo_azp_wrapper \
+    libaualgo_foundation \
+    libaudioprimarydevicehalifclient \
     libaudiosmartpamtk \
+    libaudiotoolkit_vendor \
     libbessound_hd_mtk_vendor \
+    libbluetooth_audio_session_aidl_mtk \
     libbluetooth_mtk \
+    libbwc \
+    libcam.3a_isp.utils \
+    libcam.chdr \
+    libcam.feature_utils \
+    libcam.hal3a.ctrl \
+    libcam.hal3a.custom.ae.HDRStateEvaluator \
+    libcam.hal3a.custom.ae.HistoryFrameAeMgr \
+    libcam.hal3a.log \
+    libcam.hal3a.utils \
+    libcam.hal3a.v3.dng \
+    libcam.hal3a.v3.nvram.v4l2 \
+    libcam.halisp.SwTopCtrlMgr \
+    libcam.halisp.TopCtrlMgr \
+    libcam.halisp.imp.v4l2 \
+    libcam.halisp.plugin \
+    libcam.halisp.utils \
+    libcam.halisp.v4l2 \
+    libcam.tuningcachemgr \
+    libcam.utils.sensorprovider \
+    libcam.vhdr \
+    libcam.zoomoverridemgr \
+    libcam_ipc_hal3a_client \
+    libcamalgo.BSSwrapper \
+    libcamalgo.Mfbllwrapper \
+    libcamalgo.WarpMapResizer \
+    libcamalgo.aibc \
+    libcamalgo.aibcwrapper \
+    libcamalgo.ainr \
+    libcamalgo.ais2.bss \
+    libcamalgo.ais2.mfnr \
+    libcamalgo.ais2.mstm \
+    libcamalgo.ais2 \
+    libcamalgo.bss \
+    libcamalgo.dngop \
+    libcamalgo.eis \
+    libcamalgo.fdft \
+    libcamalgo.fsc \
+    libcamalgo.gyro \
+    libcamalgo.hdr10p \
+    libcamalgo.lmv \
+    libcamalgo.mfnr \
+    libcamalgo.n3d \
+    libcamalgo.platform \
+    libcamalgo.platform2 \
+    libcamalgo.rotate \
+    libcamalgo.sat \
+    libcamalgo.tsfs \
+    libcamalgo.utility \
+    libcamalgo.vaidepth \
+    libcamalgo.vsdofUtil \
+    libcamalgo.vsf \
+    libcamalgo.warp \
+    libcameracustom.camera.3a \
+    libcameracustom.eis \
+    libcameracustom.imgsensor.core \
+    libcameracustom.lens \
+    libcameracustom_camera_db_ext \
+    libccci_util \
+    libcodec2_fsr \
+    libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
     libcodec2_mtk_venc \
+    libcodec2_vpp_fa_plugin \
+    libcodec2_vpp_mi_plugin \
+    libcodec2_vpp_qt_plugin \
+    libcodec2_vpp_rs_plugin \
+    libcomposer_ext \
+    libconnfem \
     libdpframework \
+    libeffecthal.base \
+    libfacerelight \
+    libfeature.face \
+    libfeature.fwmvp \
+    libfeature.hdr10 \
+    libfeature.mcnr \
+    libfeature.stereo.platform \
+    libfeature.stereo.provider \
+    libfeature.vsdof.3a_info_provider \
+    libfeature.vsdof.fd_info_provider \
+    libfeature.vsdof.hal \
+    libfeature.vsdof.nvram_provider \
+    libfeature.vsdof.ot_info_provider \
+    libfeature_eis \
+    libfeature_fsc \
+    libfeature_vrp \
+    libfeatureiodrv_mem \
+    libfeaturepolicy \
+    libfeaturepolicy_dbhandler \
+    libfile_op \
+    libformatter \
+    libged \
+    libgf_hal \
+    libgralloc_extra \
+    libheichal \
+    libhfmanager \
+    libhwm \
+    libifcutils_mtk \
+    libimagebuffer_wrapper \
+    libion_mtk \
+    libion_ulit \
     libisetrusty \
+    libjpeg-alpha-oal_vendor \
+    libjpeg-alpha_vendor \
+    libksensor \
+    libladder \
+    liblpnr \
+    libmfllcore \
+    libmipc \
+    libmml \
+    libmnl \
+    libmotohid \
+    libmpbase \
     libmtk-ril \
+    libmtk_drvb \
+    libmtkcam.atmseventmgr \
+    libmtkcam.debugwrapper \
+    libmtkcam.eventcallback \
+    libmtkcam.featurepipe.capture \
+    libmtkcam.featurepipe.depthmap \
+    libmtkcam.featurepipe.p2g \
+    libmtkcam.featurepipe.streaming \
+    libmtkcam.featurepipe.vsdof.wrapper \
+    libmtkcam.ndd.limit \
+    libmtkcam.plugin.3rd_bst_hdr \
+    libmtkcam.plugin.dc \
+    libmtkcam.plugin.pictrace \
+    libmtkcam_3rdparty.arc.sateis.core \
+    libmtkcam_3rdparty.arc.sateis.custom \
+    libmtkcam_3rdparty.arc.sateis \
     libmtkcam_aicolor \
     libmtkcam_aie \
+    libmtkcam_android_zslprocessor \
+    libmtkcam_aov \
+    libmtkcam_aov_cust \
+    libmtkcam_aov_plat \
+    libmtkcam_aov_sys \
+    libmtkcam_buffer_flush \
+    libmtkcam_c2psperfctrl \
+    libmtkcam_ca \
+    libmtkcam_calibration_provider \
+    libmtkcam_camcontroller \
+    libmtkcam_camctrl \
+    libmtkcam_custom.calibration_convertor \
+    libmtkcam_custom.metadata \
+    libmtkcam_custom.policy \
+    libmtkcam_custom.utils \
+    libmtkcam_custom_feature \
+    libmtkcam_custom_sampleselector \
+    libmtkcam_custom_zsdhdrselector \
+    libmtkcam_custzone \
     libmtkcam_debugutils \
     libmtkcam_detectnode \
+    libmtkcam_devicemgr \
+    libmtkcam_dpe_sp \
+    libmtkcam_exif \
+    libmtkcam_faceResultHandler \
+    libmtkcam_fdWarpConvert \
     libmtkcam_fdsan \
+    libmtkcam_fdsan_wrapper \
+    libmtkcam_feature_utils \
+    libmtkcam_grallocutils \
+    libmtkcam_grallocutils_aidlv1helper \
+    libmtkcam_hal_aidl_common \
+    libmtkcam_hal_aidl_device \
+    libmtkcam_hal_aidl_provider \
+    libmtkcam_hal_aidl_utils \
+    libmtkcam_hal_android_app_cbadaptor \
+    libmtkcam_hal_android_common \
+    libmtkcam_hal_android_device \
+    libmtkcam_hal_android_provider \
+    libmtkcam_hal_android_utils \
+    libmtkcam_hal_aov \
+    libmtkcam_hal_core_app \
+    libmtkcam_hal_core_app_cbadaptor \
+    libmtkcam_hal_core_device \
+    libmtkcam_hal_core_devicesessionpolicy \
+    libmtkcam_hal_core_featurepolicy \
+    libmtkcam_hal_core_provider \
+    libmtkcam_hal_core_utils \
+    libmtkcam_hal_custom \
+    libmtkcam_hal_custom_provider \
+    libmtkcam_hal_custom_state \
+    libmtkcam_hal_custom_utils \
+    libmtkcam_halisp_custom \
     libmtkcam_hwnode.jpegnode \
     libmtkcam_hwnode.p2 \
     libmtkcam_hwnode \
+    libmtkcam_hwutils \
+    libmtkcam_hwutils_poweronoffcontroller \
     libmtkcam_imgbuf_v2 \
+    libmtkcam_ipc_core \
+    libmtkcam_ipc_wrapper_common_server \
+    libmtkcam_ipc_wrapper_mtk_server \
+    libmtkcam_jsonconvertor \
+    libmtkcam_jsondata \
+    libmtkcam_mapping_mgr \
+    libmtkcam_metaconv \
     libmtkcam_metadata \
+    libmtkcam_metastore \
+    libmtkcam_p1node \
+    libmtkcam_packutils \
     libmtkcam_perfctrl \
+    libmtkcam_perfctrl_wrapper \
     libmtkcam_pipeline \
+    libmtkcam_pipeline_fbm \
+    libmtkcam_pipelinemodel_capture \
+    libmtkcam_pipelinemodel_session \
+    libmtkcam_pipelinemodel_utils \
+    libmtkcam_pipelinepolicy-security \
+    libmtkcam_pipelinepolicy-smvr \
+    libmtkcam_pipelinepolicy \
+    libmtkcam_pipelinepolicy_factory \
+    libmtkcam_preprocnode \
+    libmtkcam_prerelease \
+    libmtkcam_proc \
+    libmtkcam_request_requlator \
+    libmtkcam_sensorcontrol \
+    libmtkcam_simager \
+    libmtkcam_smvr \
     libmtkcam_stdutils \
+    libmtkcam_streamutils \
+    libmtkcam_sysutils \
+    libmtkcam_taskmgr \
+    libmtkcam_thirdparty.customer \
+    libmtkcam_thirdparty.customzone \
+    libmtkcam_thirdparty.mtk \
+    libmtkcam_thirdparty \
+    libmtkcam_thirdparty.vidhance \
+    libmtkcam_tuning_utils \
     libmtkcam_ulog \
+    libmtkcam_zsl_customselector \
+    libmtkcm_ipc_dummy \
+    libmtkconfig \
+    libmtkconfigutils \
+    libmtkcutils \
+    libmtkhardware_legacy \
+    libmtkisp_metadata_v2 \
+    libmtkisp_metadata_v3 \
+    libmtkltm \
+    libmtknetutils \
     libmtkperf_client_vendor \
+    libmtkproperty \
+    libmtkrillog \
+    libmtkrilutils \
+    libmtksysutils \
+    libmtktinyxml \
+    libmtkutils \
+    libmvpu_wrapper \
+    libneuralnetworks_sl_driver_mtk_prebuilt \
     libneuron_runtime \
+    libneuron_wrapper \
+    libnvram \
+    libnvram_sec \
     liboemcrypto \
+    libpda_usdriver \
+    libpq_sec \
+    libpqconfig \
     libpqframework \
+    libpqhdrmetaparser \
     libpqparamparser \
+    libpqsharememory \
+    libpqtuning \
+    libpqxmlflagparser \
+    libpqxmlparser \
+    libprotobuf-cpp-lite-21.7 \
+    libratconfig \
+    librilfusion \
+    libstorage_otp \
+    libsysenv \
+    libtriplecam_optical_zoom_control \
+    libtriplecam_video_optical_zoom \
+    libtrm \
+    libultrahdr_mtk \
+    libvidhance \
+    mot_cybert_gc13a2_mipi_raw_IdxMgr \
+    mot_cybert_gc32e1_mipi_raw_IdxMgr \
+    mot_cybert_s5k3k1_mipi_raw_IdxMgr \
+    mot_cybert_s5kjns_uw_mipi_raw_IdxMgr \
     motorola.hardware.fdr-V1-ndk \
+    motorola.hardware.haptic-V2-ndk \
+    motorola.hardware.health.storage.aidl-V1-ndk \
+    motorola.hardware.health.storage@1.0 \
+    motorola.hardware.sensors-V2-ndk \
+    motrilutils \
+    lib3a.aishutter \
+    lib3a.alsflicker \
+    lib3a.awbsync \
+    lib3a.cculog \
+    lib3a.custom.ae.flow \
+    lib3a.custom.ae \
+    lib3a.custom.af.flow \
+    lib3a.custom.awb.flow \
+    lib3a.custom.stt.flow \
+    lib3a.flicker \
+    lib3a.log \
+    lib3a.sensors.color \
+    lib3a.sensors.flicker \
+    lib3a.stat \
+    libMtkMediaController \
+    libSonyIMX519PdafWrapper \
+    libaaa_feature \
+    libaaa_ltm \
+    libaaa_ltmx \
+    libaaa_tnc \
+    libaaa_toneutil \
+    libaiawb_fs \
+    libaiawb_moon \
+    libaiawb_p1ggm \
+    libaiawb_sun \
+    libaiseg_cache \
+    libaiseg_p1ggm \
+    libaiseg_sun \
+    libalgo.aosp.log \
+    libapudcutils \
+    libcam.afmgr \
+    libcam.fw_me_tcy \
+    libcam.hal3a.3aProvider \
+    libcam.hal3a.afassitmgr \
+    libcam.hal3a.custom \
+    libcam.hal3a.guard \
+    libcam.hal3a.ircutdrv \
+    libcam.hal3a.lensdrv \
+    libcam.hal3a.lscMgrApi \
+    libcam.hal3a.oisdrv \
+    libcam.hal3a.ozoomdrv \
+    libcam.hal3a.pdstatmgr \
+    libcam.hal3a.policy \
+    libcam.hal3a \
+    libcam.hal3a.tofdrv \
+    libcam.hal3a.v3.ae.v4l2 \
+    libcam.hal3a.v3.ai3a_v4l2 \
+    libcam.hal3a.v3.awb_v4l2 \
+    libcam.hal3a.v3.flash.v4l2 \
+    libcam.hal3a.v3.flicker.v4l2 \
+    libcam.hal3a.v3.ir.v4l2 \
+    libcam.hal3a.v3.lsctbl.v4l2 \
+    libcam.hal3a.v3.sensor.v4l2 \
+    libcam.hal3a.v3.strobe \
+    libcam.hal3a.v3.stt_v4l2 \
+    libcam.hal3a.v3.tone.mgr.v4l2 \
+    libcam.halisp.TuningDataProvider \
+    libcam.halisp.TuningDataProviderFactory \
+    libcam.halsensor.hwintegration \
     libcam.halsensor \
+    libcam.isptuning.v4l2 \
+    libcam.peripheralcontroller \
     libcam.sensor_mode_helper \
+    libcam.sensor_mode_helper_custom \
+    libcam_ipc_nvbuf_client \
+    libcamalgo.InlineCompGyro \
+    libcamalgo.aics \
+    libcamalgo.c3d \
+    libcamalgo.cac \
+    libcamalgo.fus \
+    libcamalgo.lsc \
+    libcamalgo.mcnr \
+    libcamalgo.vaics \
+    libcamera.custom.af_assist_buf_mgr \
+    libcamera.custom.af_assist_buf_mgr_open \
+    libcamera.custom.af_assist_mgr \
+    libcamera.custom.af_assist_pdp \
+    libcamera.customae \
+    libcamera.customflk \
+    libcameracustom.camera.isp \
+    libcameracustom.camera.sensors \
+    libcameracustom.camera_calibration.core \
+    libcameracustom.cfg_setting.core \
+    libcameracustom.flashlight \
+    libcameracustom \
+    libfeature.aiseg \
+    libimgstream-custom \
+    libimgstream-drv \
+    libimgstream-guard \
+    libimgsys_cmt \
+    libimgsys_main \
+    libimgsys_sensor \
+    libimgsys_v4l2 \
+    libispfeature_mtkcam.v4l2 \
+    libispinterpreter_mtkcam \
     libmdla_standalone \
+    libmgr3a.adapt \
+    libmtkcam.logicalcaminfoprovider \
+    libmtkcam_camcoordinator \
+    libmtkcam_camdeliver \
+    libmtkcam_camsys_sensor_utils \
+    libmtkcam_coredev \
+    libmtkcam_diputils \
+    libmtkcam_dma_map \
+    libmtkcam_externalisploader \
+    libmtkcam_hal3a_provider \
+    libmtkcam_hwutils_android \
+    libmtkcam_ipc_wrapper_common_client \
+    libmtkcam_ipc_wrapper_mtk_client \
+    libmtkcam_modulehelper \
+    libmtkcam_pip \
+    libmtkcam_pipemgr \
+    libmtkcam_postprocprovider \
+    libmtkcam_resourcedecision \
+    libmtkcam_resourcedecision_custom \
+    libmtkcam_synchelper \
+    libmtkcam_thirdparty.core \
     mot_cybert_gc32e1_mipi_raw_tuning \
     mot_cybert_imx896_mipi_raw_IdxMgr \
     mot_cybert_imx896_mipi_raw_tuning \
     mot_cybert_s5kjns_mipi_raw_IdxMgr \
     mot_cybert_s5kjns_mipi_raw_tuning \
     mot_cybert_s5kjns_uw_mipi_raw_tuning \
+    mtk000_mipi_raw_IdxMgr \
     nfc_nci.st21nfc.st \
     panel_als_comp_filter_arcfox \
     sensors.moto \
     libaudiopreprocessing_mtk \
+    vendor.mediatek.hardware.audio-V1-ndk \
+    vendor.mediatek.hardware.audio@6.1 \
+    vendor.mediatek.hardware.audio@7.1 \
+    vendor.mediatek.hardware.audio@8.1 \
+    vendor.mediatek.hardware.bluetooth.audio-V1-ndk \
+    vendor.mediatek.hardware.bluetooth.audio@2.1 \
+    vendor.mediatek.hardware.bluetooth.audio@2.2 \
+    vendor.mediatek.hardware.camera.aovservice-V2-ndk \
+    vendor.mediatek.hardware.camera.atms-V1-ndk \
+    vendor.mediatek.hardware.camera.bgservice-V1-ndk \
+    vendor.mediatek.hardware.camera.ccap@1.0 \
+    vendor.mediatek.hardware.camera.frhandler@1.0 \
+    vendor.mediatek.hardware.camera.isphal-V1-ndk \
+    vendor.mediatek.hardware.camera.isphal@1.0 \
+    vendor.mediatek.hardware.camera.isphal@1.1 \
+    vendor.mediatek.hardware.camera.postproc@1.0 \
+    vendor.mediatek.hardware.camera.security@1.0 \
+    vendor.mediatek.hardware.composer_ext-V1-ndk \
+    vendor.mediatek.hardware.composer_ext@1.0 \
+    vendor.mediatek.hardware.mmagent-V1-ndk \
+    vendor.mediatek.hardware.mmlpq-V3-ndk \
+    vendor.mediatek.hardware.mtkpower-V1-ndk \
+    vendor.mediatek.hardware.mtkpower@1.0 \
+    vendor.mediatek.hardware.mtkpower@1.1 \
+    vendor.mediatek.hardware.mtkpower@1.2 \
+    vendor.mediatek.hardware.mtkradioex.assist-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.atci-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.cap-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.data-V2-ndk \
+    vendor.mediatek.hardware.mtkradioex.dch-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.em-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.ims-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.messaging-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.modem-V2-ndk \
+    vendor.mediatek.hardware.mtkradioex.mwi-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.network-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.rcs-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.se-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.sim-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.smartratswitch-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.voice-V1-ndk \
+    vendor.mediatek.hardware.netdagent-V1-ndk \
+    vendor.mediatek.hardware.netdagent@1.0 \
+    vendor.mediatek.hardware.power@1.1 \
+    vendor.mediatek.hardware.power@2.0 \
+    vendor.mediatek.hardware.pq_aidl-V2-ndk \
+    vendor.mediatek.hardware.pq_aidl-V7-ndk \
     libdmengine \
+    libcomutils \
     libimsma \
-    libmotocare \
+    libimsma_adapt \
+    libimsma_rtp \
+    libimsma_socketwrapper \
     libmtk_vt_service \
-    motorola.hardware.camera.desktop@2.0 \
+    libsignal \
+    libsink-mtk \
+    libsource \
+    libvcodec_cap \
+    libvcodec_capenc \
+    libvt_avsync \
+    vendor.mediatek.hardware.videotelephony-V1-ndk \
+    vendor.mediatek.hardware.videotelephony@1.0 \
     AiCore \
     HotwordEnrollmentOKGoogleRISCV \
     HotwordEnrollmentXGoogleRISCV \
@@ -3415,9 +3896,7 @@ PRODUCT_PACKAGES += \
     MotoActions \
     ActionCore \
     ImsService \
-    MotCameraDesktop \
     MotoCare \
-    MotoDesktopCore \
     MotoSecureVault \
     Personalize \
     mediatek-ims-base \
