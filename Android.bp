@@ -4,8 +4,9 @@
 
 soong_namespace {
     imports: [
+        "device/motorola/cybert",
+        "hardware/mediatek",
         "hardware/motorola",
-        "vendor/motorola/cybert",
     ],
 }
 
