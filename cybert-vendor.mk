@@ -3288,450 +3288,1917 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/product/etc/CarrierSettings/s99999.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s99999.pb
 
 PRODUCT_COPY_FILES += \
-    vendor/motorola/cybert/proprietary/product/lib64/libdmengine.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdmengine.so \
+    vendor/motorola/cybert/proprietary/product/etc/MotoDesktopAppConfig/com.motorola.camera5.desktop-config.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/MotoDesktopAppConfig/com.motorola.camera5.desktop-config.xml \
+    vendor/motorola/cybert/proprietary/product/etc/permissions/deviceowner-configuration-com.motorola.camera5.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/deviceowner-configuration-com.motorola.camera5.xml \
+    vendor/motorola/cybert/proprietary/product/etc/permissions/privapp-permissions-com.google.android.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.google.android.euicc.xml \
+    vendor/motorola/cybert/proprietary/product/etc/permissions/privapp-permissions-com.motorola.camera5.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.motorola.camera5.xml \
+    vendor/motorola/cybert/proprietary/product/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera5.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera5.xml \
+    vendor/motorola/cybert/proprietary/system/etc/permissions/com.motorola.motosignature.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.motosignature.xml \
+    vendor/motorola/cybert/proprietary/system/etc/permissions/moto-core_services.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-core_services.xml \
+    vendor/motorola/cybert/proprietary/system/etc/permissions/moto-settings.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-settings.xml \
+    vendor/motorola/cybert/proprietary/system_ext/bin/motsettings:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/motsettings \
+    vendor/motorola/cybert/proprietary/system_ext/etc/permissions/com.motorola.camera.desktop.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.motorola.camera.desktop.xml \
     vendor/motorola/cybert/proprietary/system_ext/etc/public.libraries-moto.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-moto.txt \
-    vendor/motorola/cybert/proprietary/system_ext/lib64/libcomutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcomutils.so \
-    vendor/motorola/cybert/proprietary/system_ext/lib64/libimsma.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma.so \
-    vendor/motorola/cybert/proprietary/system_ext/lib64/libimsma_adapt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma_adapt.so \
-    vendor/motorola/cybert/proprietary/system_ext/lib64/libimsma_rtp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma_rtp.so \
-    vendor/motorola/cybert/proprietary/system_ext/lib64/libimsma_socketwrapper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma_socketwrapper.so \
-    vendor/motorola/cybert/proprietary/system_ext/lib64/libmtk_vt_service.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmtk_vt_service.so \
-    vendor/motorola/cybert/proprietary/system_ext/lib64/libsignal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsignal.so \
-    vendor/motorola/cybert/proprietary/system_ext/lib64/libsink-mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsink-mtk.so \
-    vendor/motorola/cybert/proprietary/system_ext/lib64/libsource.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsource.so \
-    vendor/motorola/cybert/proprietary/system_ext/lib64/libvcodec_cap.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libvcodec_cap.so \
-    vendor/motorola/cybert/proprietary/system_ext/lib64/libvcodec_capenc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libvcodec_capenc.so \
-    vendor/motorola/cybert/proprietary/system_ext/lib64/libvt_avsync.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libvt_avsync.so \
-    vendor/motorola/cybert/proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so \
-    vendor/motorola/cybert/proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.videotelephony@1.0.so \
+    vendor/motorola/cybert/proprietary/system_ext/etc/public.libraries-motocameradesktop.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-motocameradesktop.txt \
+    vendor/motorola/cybert/proprietary/system_ext/lib64/libenginepostproc.moto.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libenginepostproc.moto.so \
+    vendor/motorola/cybert/proprietary/system_ext/lib64/libjni_helper.motocameradesktop.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libjni_helper.motocameradesktop.so \
+    vendor/motorola/cybert/proprietary/system_ext/lib64/motorola.hardware.camera.desktop@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/motorola.hardware.camera.desktop@1.0.so \
+    vendor/motorola/cybert/proprietary/system_ext/lib64/motorola.hardware.camera.desktop@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/motorola.hardware.camera.desktop@2.0.so \
     vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.drbin \
     vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.tlbin \
-    vendor/motorola/cybert/proprietary/vendor/bin/batt_health:$(TARGET_COPY_OUT_VENDOR)/bin/batt_health \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/031c0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/031c0000000000000000000000000000.drbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/031c0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/031c0000000000000000000000000000.tlbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/05060000000000000000000000000000.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/05060000000000000000000000000000.tabin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/05070000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/05070000000000000000000000000000.drbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/05070000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/05070000000000000000000000000000.tlbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/05120000000000000000000000000001.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/05120000000000000000000000000001.drbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/05120000000000000000000000000001.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/05120000000000000000000000000001.tlbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/06090000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/06090000000000000000000000000000.drbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/06090000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/06090000000000000000000000000000.tlbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/07010000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/07010000000000000000000000000000.tlbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/0706000000000000000000000000004d.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/0706000000000000000000000000004d.tlbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/07061000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/07061000000000000000000000000000.tlbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/07150000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/07150000000000000000000000000000.drbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/07150000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/07150000000000000000000000000000.tlbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/07170000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/07170000000000000000000000000000.drbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/07170000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/07170000000000000000000000000000.tlbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/07210000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/07210000000000000000000000000000.drbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/07210000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/07210000000000000000000000000000.tlbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/08040000000000000000000000003419.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/08040000000000000000000000003419.tabin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/08050000000000000000000000003419.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/08050000000000000000000000003419.drbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/08050000000000000000000000003419.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/08050000000000000000000000003419.tlbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/08080000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/08080000000000000000000000000000.tlbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/08110000000000000000000000000000.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/08110000000000000000000000000000.tabin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/40188311faf343488db888ad39496f9a.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/40188311faf343488db888ad39496f9a.drbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/40188311faf343488db888ad39496f9a.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/40188311faf343488db888ad39496f9a.tlbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/5020170115e016302017012521300000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/5020170115e016302017012521300000.drbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/5020170115e016302017012521300000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/5020170115e016302017012521300000.tlbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/6b3f5fa0f8cf55a7be2582587d62d63a.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/6b3f5fa0f8cf55a7be2582587d62d63a.drbin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/abcd270ea5c44c58bcd3384a2fa2539e.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/abcd270ea5c44c58bcd3384a2fa2539e.tabin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/e97c270ea5c44c58bcd3384a2fa2539e.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/e97c270ea5c44c58bcd3384a2fa2539e.tabin \
+    vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/ffffffff000000000000000000000003.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff000000000000000000000003.tabin \
+    vendor/motorola/cybert/proprietary/vendor/bin/audiocmdservice_atci:$(TARGET_COPY_OUT_VENDOR)/bin/audiocmdservice_atci \
+    vendor/motorola/cybert/proprietary/vendor/bin/autobt:$(TARGET_COPY_OUT_VENDOR)/bin/autobt \
+    vendor/motorola/cybert/proprietary/vendor/bin/bip_ap:$(TARGET_COPY_OUT_VENDOR)/bin/bip_ap \
+    vendor/motorola/cybert/proprietary/vendor/bin/bt_dump:$(TARGET_COPY_OUT_VENDOR)/bin/bt_dump \
     vendor/motorola/cybert/proprietary/vendor/bin/ccci_mdinit:$(TARGET_COPY_OUT_VENDOR)/bin/ccci_mdinit \
-    vendor/motorola/cybert/proprietary/vendor/bin/fpsgo:$(TARGET_COPY_OUT_VENDOR)/bin/fpsgo \
-    vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.audio.service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio.service.mediatek \
+    vendor/motorola/cybert/proprietary/vendor/bin/ccci_rpcd:$(TARGET_COPY_OUT_VENDOR)/bin/ccci_rpcd \
+    vendor/motorola/cybert/proprietary/vendor/bin/conninfra_loader:$(TARGET_COPY_OUT_VENDOR)/bin/conninfra_loader \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/ae/mt6897/ParameterDB_ae.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/ae/mt6897/ParameterDB_ae.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/af/mt6897/ParameterDB_af.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/af/mt6897/ParameterDB_af.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/awb/mt6897/ParameterDB_awb.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/awb/mt6897/ParameterDB_awb.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/awbsync/mt6897/ParameterDB_awbsync.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/awbsync/mt6897/ParameterDB_awbsync.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/feature/mt6897/ParameterDB_feature.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/feature/mt6897/ParameterDB_feature.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/flash/mt6897/ParameterDB_flash.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/flash/mt6897/ParameterDB_flash.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/flashcali/mt6897/ParameterDB_flashcali.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/flashcali/mt6897/ParameterDB_flashcali.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/mt6897/ParameterDB.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/mt6897/ParameterDB.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/mt6897/sw_top_control_data.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/mt6897/sw_top_control_data.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/mt6897/top_control_data.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/mt6897/top_control_data.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/pd/mt6897/ParameterDB_pd.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/pd/mt6897/ParameterDB_pd.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/pipeline/mt6897/ParameterDB_pipeline.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/pipeline/mt6897/ParameterDB_pipeline.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tone/mt6897/ParameterDB_tone.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tone/mt6897/ParameterDB_tone.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx214_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx214_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx214_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx214_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334sub_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334sub_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334sub_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334sub_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx481_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx481_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx481_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx481_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx499_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx499_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx499_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx499_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx586_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx586_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx586_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx586_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx709_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx709_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx709_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx709_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx709o_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx709o_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx709o_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx709o_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766dual_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766dual_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766dual_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766dual_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766dualo_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766dualo_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766dualo_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766dualo_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766o_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766o_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766o_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766o_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx866_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx866_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx866_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx866_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx989_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx989_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx989_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx989_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_gc13a2_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_gc13a2_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_gc13a2_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_gc13a2_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_gc32e1_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_gc32e1_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_gc32e1_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_gc32e1_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_imx896_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_imx896_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_imx896_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_imx896_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_s5k3k1_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_s5k3k1_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_s5k3k1_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_s5k3k1_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_s5kjns_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_s5kjns_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_s5kjns_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_s5kjns_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_s5kjns_uw_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_s5kjns_uw_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_s5kjns_uw_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_cybert_s5kjns_uw_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_fuji_imx896_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_fuji_imx896_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_fuji_imx896_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_fuji_imx896_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_fuji_s5kjns_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_fuji_s5kjns_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_fuji_s5kjns_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_fuji_s5kjns_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_fuji_s5kjns_uw_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_fuji_s5kjns_uw_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_fuji_s5kjns_uw_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_fuji_s5kjns_uw_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mt6897/ISP_info.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mt6897/ISP_info.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov48b_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov48b_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov48b_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov48b_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3m5sx_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3m5sx_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3m5sx_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3m5sx_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3m5sxo_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3m5sxo_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3m5sxo_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3m5sxo_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3p9sp_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3p9sp_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3p9sp_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3p9sp_mipi_raw/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6897/ISP_mapping.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6897/ISP_param.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6897/ISP_info.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6897/ISP_info.db \
+    vendor/motorola/cybert/proprietary/vendor/bin/hardware_revisions.sh:$(TARGET_COPY_OUT_VENDOR)/bin/hardware_revisions.sh \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint-service-rbs:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint-service-rbs \
     vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint-service.goodix:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint-service.goodix \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.1-service-mediatek \
     vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.gatekeeper-service.trustonic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper-service.trustonic \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.gnss-service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss-service.mediatek \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.graphics.composer@3.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer@3.2-service \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.c2@1.2-mediatek-64b \
     vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks-shim-service-mtk \
-    vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.nfc-service-st:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc-service-st \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element@1.2-service-mediatek \
     vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.security.keymint@3.0-service.trustonic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint@3.0-service.trustonic \
-    vendor/motorola/cybert/proprietary/vendor/bin/hw/motorola.hardware.fdr-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.fdr-service \
-    vendor/motorola/cybert/proprietary/vendor/bin/hw/motorola.hardware.haptic-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.haptic-service \
-    vendor/motorola/cybert/proprietary/vendor/bin/hw/motorola.hardware.health.storage-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.health.storage-service \
-    vendor/motorola/cybert/proprietary/vendor/bin/hw/motorola.hardware.sensorext-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.sensorext-service \
-    vendor/motorola/cybert/proprietary/vendor/bin/hw/motorola.hardware.sensorscalibrate-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.sensorscalibrate-service \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.thermal-service.mediatek.fuji:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal-service.mediatek.fuji \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.usb-aidl-service.mediatekv1.0:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb-aidl-service.mediatekv1.0 \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.usb.gadget-aidl-service.mediatekv1.0:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb.gadget-aidl-service.mediatekv1.0 \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.vibrator-service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.vibrator-service.mediatek \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/mt6897/android.hardware.graphics.allocator-V2-service-mediatek.mt6897:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mt6897/android.hardware.graphics.allocator-V2-service-mediatek.mt6897 \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/mt6897/arm.mali.platform-service.mediatek.mt6897:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mt6897/arm.mali.platform-service.mediatek.mt6897 \
     vendor/motorola/cybert/proprietary/vendor/bin/hw/mt6897/camerahalserver:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mt6897/camerahalserver \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/mtkfusionrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mtkfusionrild \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/tetheroffloadservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/tetheroffloadservice \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/vendor.mediatek.hardware.gnss-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.gnss-service \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/vendor.mediatek.hardware.mmagent-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.mmagent-service \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/vendor.mediatek.hardware.mmlpq@V1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.mmlpq@V1-service \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/vendor.mediatek.hardware.nvram-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.nvram-service \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/vendor.mediatek.hardware.nwk_opt@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.nwk_opt@1.0-service \
     vendor/motorola/cybert/proprietary/vendor/bin/hw/vendor.mediatek.hardware.pq_aidl-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.pq_aidl-service \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/vendor.trustonic.tee@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.trustonic.tee@1.1-service \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/vtservice_aidl:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vtservice_aidl \
+    vendor/motorola/cybert/proprietary/vendor/bin/init.mmi.backup.trustlet.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.backup.trustlet.sh \
+    vendor/motorola/cybert/proprietary/vendor/bin/init.mmi.block_perm.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.block_perm.sh \
+    vendor/motorola/cybert/proprietary/vendor/bin/init.mmi.boot.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.boot.sh \
+    vendor/motorola/cybert/proprietary/vendor/bin/init.mmi.shutdown.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.shutdown.sh \
+    vendor/motorola/cybert/proprietary/vendor/bin/init.mmi.touch.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.touch.sh \
+    vendor/motorola/cybert/proprietary/vendor/bin/init.oem.fingerprint2.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.oem.fingerprint2.sh \
+    vendor/motorola/cybert/proprietary/vendor/bin/ipsec_mon:$(TARGET_COPY_OUT_VENDOR)/bin/ipsec_mon \
+    vendor/motorola/cybert/proprietary/vendor/bin/kpgather:$(TARGET_COPY_OUT_VENDOR)/bin/kpgather \
+    vendor/motorola/cybert/proprietary/vendor/bin/kpreadwrite:$(TARGET_COPY_OUT_VENDOR)/bin/kpreadwrite \
     vendor/motorola/cybert/proprietary/vendor/bin/mcDriverDaemon:$(TARGET_COPY_OUT_VENDOR)/bin/mcDriverDaemon \
     vendor/motorola/cybert/proprietary/vendor/bin/mnld:$(TARGET_COPY_OUT_VENDOR)/bin/mnld \
+    vendor/motorola/cybert/proprietary/vendor/bin/motobox:$(TARGET_COPY_OUT_VENDOR)/bin/motobox \
+    vendor/motorola/cybert/proprietary/vendor/bin/mt6660_calibration:$(TARGET_COPY_OUT_VENDOR)/bin/mt6660_calibration \
+    vendor/motorola/cybert/proprietary/vendor/bin/mt6897/jpegtool:$(TARGET_COPY_OUT_VENDOR)/bin/mt6897/jpegtool \
     vendor/motorola/cybert/proprietary/vendor/bin/mtk_agpsd:$(TARGET_COPY_OUT_VENDOR)/bin/mtk_agpsd \
+    vendor/motorola/cybert/proprietary/vendor/bin/mtk_lbs_service:$(TARGET_COPY_OUT_VENDOR)/bin/mtk_lbs_service \
+    vendor/motorola/cybert/proprietary/vendor/bin/muxreport:$(TARGET_COPY_OUT_VENDOR)/bin/muxreport \
     vendor/motorola/cybert/proprietary/vendor/bin/nvram_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/nvram_daemon \
+    vendor/motorola/cybert/proprietary/vendor/bin/pstore_annotate.sh:$(TARGET_COPY_OUT_VENDOR)/bin/pstore_annotate.sh \
+    vendor/motorola/cybert/proprietary/vendor/bin/rcs_volte_stack:$(TARGET_COPY_OUT_VENDOR)/bin/rcs_volte_stack \
+    vendor/motorola/cybert/proprietary/vendor/bin/rt5512_calibration:$(TARGET_COPY_OUT_VENDOR)/bin/rt5512_calibration \
+    vendor/motorola/cybert/proprietary/vendor/bin/smartpa_nvtest:$(TARGET_COPY_OUT_VENDOR)/bin/smartpa_nvtest \
+    vendor/motorola/cybert/proprietary/vendor/bin/sns_mot_client:$(TARGET_COPY_OUT_VENDOR)/bin/sns_mot_client \
+    vendor/motorola/cybert/proprietary/vendor/bin/stp_dump3:$(TARGET_COPY_OUT_VENDOR)/bin/stp_dump3 \
     vendor/motorola/cybert/proprietary/vendor/bin/thermal_core:$(TARGET_COPY_OUT_VENDOR)/bin/thermal_core \
-    vendor/motorola/cybert/proprietary/vendor/bin/touch_boost:$(TARGET_COPY_OUT_VENDOR)/bin/touch_boost \
+    vendor/motorola/cybert/proprietary/vendor/bin/thermal_intf:$(TARGET_COPY_OUT_VENDOR)/bin/thermal_intf \
+    vendor/motorola/cybert/proprietary/vendor/bin/volte_clientapi_ua:$(TARGET_COPY_OUT_VENDOR)/bin/volte_clientapi_ua \
+    vendor/motorola/cybert/proprietary/vendor/bin/volte_rcs_ua:$(TARGET_COPY_OUT_VENDOR)/bin/volte_rcs_ua \
+    vendor/motorola/cybert/proprietary/vendor/bin/wifi_dump:$(TARGET_COPY_OUT_VENDOR)/bin/wifi_dump \
+    vendor/motorola/cybert/proprietary/vendor/bin/wifitest:$(TARGET_COPY_OUT_VENDOR)/bin/wifitest \
+    vendor/motorola/cybert/proprietary/vendor/bin/wlan_assistant:$(TARGET_COPY_OUT_VENDOR)/bin/wlan_assistant \
     vendor/motorola/cybert/proprietary/vendor/bin/wmt_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/wmt_launcher \
     vendor/motorola/cybert/proprietary/vendor/bin/wmt_loader:$(TARGET_COPY_OUT_VENDOR)/bin/wmt_loader \
+    vendor/motorola/cybert/proprietary/vendor/etc/AbnormalDisplayLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AbnormalDisplayLog_dynamic.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/ArcCustomParams.json:$(TARGET_COPY_OUT_VENDOR)/etc/ArcCustomParams.json \
+    vendor/motorola/cybert/proprietary/vendor/etc/ArmHDCP_MediatekGP.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/ArmHDCP_MediatekGP.cfg \
+    vendor/motorola/cybert/proprietary/vendor/etc/AudioLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AudioLog_dynamic.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/VideoLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/apdb/APDB_MT6897___W2506:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6897___W2506 \
+    vendor/motorola/cybert/proprietary/vendor/etc/apdb/APDB_MT6897___W2506_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6897___W2506_ENUM \
+    vendor/motorola/cybert/proprietary/vendor/etc/arc_uw_dc_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/etc/arc_uw_dc_calibration.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/arcsoft_calibration_u_dc.bin:$(TARGET_COPY_OUT_VENDOR)/etc/arcsoft_calibration_u_dc.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/aualgo/ainr_tfv2.dat:$(TARGET_COPY_OUT_VENDOR)/etc/aualgo/ainr_tfv2.dat \
+    vendor/motorola/cybert/proprietary/vendor/etc/aualgo/aualgo_comp_azs.conf:$(TARGET_COPY_OUT_VENDOR)/etc/aualgo/aualgo_comp_azs.conf \
     vendor/motorola/cybert/proprietary/vendor/etc/audio_param/AudioParamOptions_mgvi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_mgvi.xml \
     vendor/motorola/cybert/proprietary/vendor/etc/audio_param/AudioParamOptions_vext.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_vext.xml \
     vendor/motorola/cybert/proprietary/vendor/etc/audio_param/BtInfo_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/BtInfo_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/BtInfo_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/BtInfo_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/CRSVolUI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/CRSVolUI_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/CRSVolUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/CRSVolUI_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/CRSVol_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/CRSVol_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/CRSVol_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/CRSVol_ParamUnitDesc.xml \
     vendor/motorola/cybert/proprietary/vendor/etc/audio_param/Codec_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Codec_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/Codec_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Codec_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/HpImpedance_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/HpImpedance_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/HpImpedance_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/HpImpedance_ParamUnitDesc.xml \
     vendor/motorola/cybert/proprietary/vendor/etc/audio_param/MicInfo_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/MicInfo_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/MicInfo_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/MicInfo_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/PlaybackACF_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackACF_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/PlaybackACF_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackACF_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/PlaybackDRC_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackDRC_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/PlaybackDRC_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackDRC_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/PlaybackHCF_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackHCF_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/PlaybackHCF_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackHCF_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/PlaybackVolAna_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackVolAna_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/PlaybackVolAna_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackVolAna_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/PlaybackVolDigi_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackVolDigi_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/PlaybackVolDigi_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackVolDigi_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/PlaybackVolUI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackVolUI_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/PlaybackVolUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackVolUI_ParamUnitDesc.xml \
     vendor/motorola/cybert/proprietary/vendor/etc/audio_param/Playback_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Playback_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/Playback_ParamTreeView.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Playback_ParamTreeView.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/Playback_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Playback_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/Power_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Power_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/Power_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Power_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/RecordDMNR_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RecordDMNR_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/RecordDMNR_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RecordDMNR_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/RecordFIR_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RecordFIR_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/RecordFIR_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RecordFIR_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/RecordUI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RecordUI_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/RecordUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RecordUI_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/RecordVolUI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RecordVolUI_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/RecordVolUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RecordVolUI_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/RecordVol_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RecordVol_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/RecordVol_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RecordVol_ParamUnitDesc.xml \
     vendor/motorola/cybert/proprietary/vendor/etc/audio_param/Record_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Record_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/Record_ParamTreeView.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Record_ParamTreeView.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/Record_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Record_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/RingbackVolUI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RingbackVolUI_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/RingbackVolUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RingbackVolUI_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/RingbackVol_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RingbackVol_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/RingbackVol_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RingbackVol_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/SmartPa_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SmartPa_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/SmartPa_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SmartPa_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/SoundEnhancement_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SoundEnhancement_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/SoundEnhancement_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SoundEnhancement_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/SpeechAcousticShock_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechAcousticShock_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/SpeechAcousticShock_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechAcousticShock_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/SpeechDMNR_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechDMNR_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/SpeechDMNR_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechDMNR_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/SpeechEchoRef_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechEchoRef_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/SpeechEchoRef_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechEchoRef_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/SpeechGeneral_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechGeneral_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/SpeechGeneral_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechGeneral_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/SpeechMagiClarity_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechMagiClarity_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/SpeechMagiClarity_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechMagiClarity_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/SpeechNetwork_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechNetwork_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/SpeechNetwork_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechNetwork_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/SpeechUI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechUI_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/SpeechUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechUI_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/SpeechVolUI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechVolUI_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/SpeechVolUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechVolUI_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/SpeechVol_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechVol_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/SpeechVol_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechVol_ParamUnitDesc.xml \
     vendor/motorola/cybert/proprietary/vendor/etc/audio_param/Speech_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Speech_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/Speech_ParamTreeView.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Speech_ParamTreeView.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/Speech_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Speech_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/USBCall_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/USBCall_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/USBCall_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/USBCall_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/USBDevice_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/USBDevice_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/USBDevice_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/USBDevice_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/Ultrasound_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Ultrasound_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/Ultrasound_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Ultrasound_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/UplinkConfiguration_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/UplinkConfiguration_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/UplinkConfiguration_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/UplinkConfiguration_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoIPDMNR_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPDMNR_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoIPDMNR_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPDMNR_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoIPGeneral_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPGeneral_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoIPGeneral_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPGeneral_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoIPUI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPUI_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoIPUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPUI_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoIPVolUI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPVolUI_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoIPVolUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPVolUI_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoIPVol_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPVol_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoIPVol_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPVol_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoIP_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIP_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoIP_ParamTreeView.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIP_ParamTreeView.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoIP_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIP_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoIPv2DMNR_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPv2DMNR_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoIPv2DMNR_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPv2DMNR_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoIPv2General_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPv2General_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoIPv2General_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPv2General_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoIPv2UI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPv2UI_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoIPv2UI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPv2UI_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoIPv2_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPv2_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoIPv2_ParamTreeView.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPv2_ParamTreeView.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoIPv2_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPv2_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoWCommonSetting_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWCommonSetting_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoWCommonSetting_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWCommonSetting_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoWCompatibilityCode_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWCompatibilityCode_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoWCompatibilityCode_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWCompatibilityCode_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoWDspAec_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWDspAec_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoWDspAec_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWDspAec_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoWEngineFeature_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWEngineFeature_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoWEngineFeature_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWEngineFeature_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoWHwVad_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWHwVad_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoWHwVad_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWHwVad_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoWMicSetting_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWMicSetting_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoWMicSetting_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWMicSetting_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoWVoiceCommand_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWVoiceCommand_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VoWVoiceCommand_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWVoiceCommand_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VolumeGainMapUL_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VolumeGainMapUL_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VolumeGainMapUL_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VolumeGainMapUL_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VolumeGainMap_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VolumeGainMap_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml \
     vendor/motorola/cybert/proprietary/vendor/etc/audio_param/Volume_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_AudioParam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_param/Volume_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_ParamUnitDesc.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf \
     vendor/motorola/cybert/proprietary/vendor/etc/aurisys_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config.xml \
-    vendor/motorola/cybert/proprietary/vendor/etc/aurisys_config_hifi3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config_hifi3.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/aurisys_config_rv.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config_rv.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/bstai_hdr:$(TARGET_COPY_OUT_VENDOR)/etc/bstai_hdr \
+    vendor/motorola/cybert/proprietary/vendor/etc/bt_stack_debug.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bt_stack_debug.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/bt_stack_level6.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bt_stack_level6.conf \
     vendor/motorola/cybert/proprietary/vendor/etc/camera/vidhance.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance.lic \
     vendor/motorola/cybert/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
+    vendor/motorola/cybert/proprietary/vendor/etc/csot_nt37706_667_vdo_1220_2712_C3D_default.txt:$(TARGET_COPY_OUT_VENDOR)/etc/csot_nt37706_667_vdo_1220_2712_C3D_default.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/csot_nt37706_667_vdo_1220_2712_C3D_p3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/csot_nt37706_667_vdo_1220_2712_C3D_p3.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/csot_nt37706_667_vdo_1220_2712_C3D_srgb.txt:$(TARGET_COPY_OUT_VENDOR)/etc/csot_nt37706_667_vdo_1220_2712_C3D_srgb.txt \
     vendor/motorola/cybert/proprietary/vendor/etc/csot_nt37706_667_vdo_1220_2712_pq.xml:$(TARGET_COPY_OUT_VENDOR)/etc/csot_nt37706_667_vdo_1220_2712_pq.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/cust_color.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color.xml \
     vendor/motorola/cybert/proprietary/vendor/etc/cust_pq.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_pq.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/default_pd_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/etc/default_pd_calibration.bin \
     vendor/motorola/cybert/proprietary/vendor/etc/dual_golden_tele.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dual_golden_tele.bin \
     vendor/motorola/cybert/proprietary/vendor/etc/dual_golden_wide.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dual_golden_wide.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/ecc_list_OP02.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP02.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/ecc_list_OP09.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP09.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/ecc_list_OP12.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP12.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/ecc_list_OP17.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP17.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/ecc_list_OP18.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP18.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/ecc_list_OP20.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP20.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/ecc_list_OP236.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP236.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
     vendor/motorola/cybert/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
-    vendor/motorola/cybert/proprietary/vendor/etc/init/motorola.hardware.health.storage.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.health.storage.service.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Bell_Mobility.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Bell_Mobility.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Blue_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Blue_Wireless.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Boost_Mobile.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Boost_Mobile.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_C_Spire_NL.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_C_Spire_NL.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_C_Spire_US.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_C_Spire_US.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Carolina_West_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Carolina_West_Wireless.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Claro_Peru.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Claro_Peru.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Dish.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Dish.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_DoCoMo.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_DoCoMo.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Entel_Peru.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Entel_Peru.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_FirstNet.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_FirstNet.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Inland_Cellular.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Inland_Cellular.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_KDDI.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_KDDI.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_MobileNation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_MobileNation.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Movistar_Argentina.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Movistar_Argentina.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Movistar_Peru.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Movistar_Peru.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_NexTech_Ota.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_NexTech_Ota.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Nextel_Communications.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Nextel_Communications.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_No_Carrier_ID_LPP_Profile_11.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_No_Carrier_ID_LPP_Profile_11.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_No_Carrier_ID_LPP_Profile_7.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_No_Carrier_ID_LPP_Profile_7.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_PTCI.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_PTCI.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Pine_Belt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Pine_Belt.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Rakuten.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Rakuten.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_SK_Telecom.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_SK_Telecom.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_SoftBank.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_SoftBank.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Sprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Sprint.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_T-Mobile_US.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_T-Mobile_US.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_TELUS_Mobility.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_TELUS_Mobility.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_USC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_USC.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Virgin_Mobile.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Virgin_Mobile.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_nTelos.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_nTelos.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/Phone_ble_ble.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/Phone_ble_ble.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/Phone_bt_bt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/Phone_bt_bt.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/Phone_bt_bt_nrec_off.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/Phone_bt_bt_nrec_off.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/Phone_bt_bt_nrec_on.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/Phone_bt_bt_nrec_on.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/Phone_hsmic_hs.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/Phone_hsmic_hs.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/Phone_mic_hp.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/Phone_mic_hp.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/Phone_mic_hs.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/Phone_mic_hs.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/Phone_mic_recv.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/Phone_mic_recv.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/Phone_mic_recv_VF.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/Phone_mic_recv_VF.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/Phone_mic_recv_hac.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/Phone_mic_recv_hac.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/Phone_mic_recv_hacmax.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/Phone_mic_recv_hacmax.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/Phone_mic_spk.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/Phone_mic_spk.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/Phone_mic_spk_AS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/Phone_mic_spk_AS.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/Phone_mic_spk_VF.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/Phone_mic_spk_VF.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/Phone_mic_spk_ev.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/Phone_mic_spk_ev.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/Phone_mic_usb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/Phone_mic_usb.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/Phone_usb_usb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/Phone_usb_usb.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_ble_ble.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_ble_ble.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_bt_bt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_bt_bt.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_bt_bt_VF.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_bt_bt_VF.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_bt_bt_VF_nrec_off.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_bt_bt_VF_nrec_off.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_bt_bt_VF_nrec_on.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_bt_bt_VF_nrec_on.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_bt_bt_nrec_off.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_bt_bt_nrec_off.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_bt_bt_nrec_on.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_bt_bt_nrec_on.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_hsmic_hs.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_hsmic_hs.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_hsmic_hs_VF.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_hsmic_hs_VF.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_hsmic_hs_game.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_hsmic_hs_game.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_mic_hp.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_mic_hp.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_mic_hp_game.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_mic_hp_game.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_mic_hs.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_mic_hs.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_mic_recv.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_mic_recv.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_mic_recv_VF.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_mic_recv_VF.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_mic_recv_game.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_mic_recv_game.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_mic_recv_hac.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_mic_recv_hac.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_mic_recv_hacmax.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_mic_recv_hacmax.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_mic_spk.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_mic_spk.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_mic_spk_AS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_mic_spk_AS.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_mic_spk_VF.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_mic_spk_VF.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_mic_spk_game.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_mic_spk_game.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_mic_usb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_mic_usb.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_usb_usb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_usb_usb.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/goodix/ve21/VoIP_usb_usb_VF.bin:$(TARGET_COPY_OUT_VENDOR)/etc/goodix/ve21/VoIP_usb_usb_VF.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/gralloc/cam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/cam.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gralloc/dpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gralloc/dpu_aeu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu_aeu.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/gralloc/vpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/vpu.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/hal_uuid_map_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_config.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/hal_uuid_map_dns.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_dns.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/hal_uuid_map_dnsf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_dnsf.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/hal_uuid_map_ns.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_ns.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/hal_uuid_map_nsf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_nsf.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/hdrcfg.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/hdrcfg.cfg \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint-service-goodix2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint-service-goodix2.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint-service-rbs2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint-service-rbs2.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.trustonic.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.2-service.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/android.hardware.security.keymint@3.0-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint@3.0-service.trustonic.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/android.hardware.tetheroffload-V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.tetheroffload-V1-service.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/android.hardware.usb-aidl-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb-aidl-service.mediatek.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/android.hardware.usb.gadget-aidl-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb.gadget-aidl-service.mediatek.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/arm.mali.platform-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/arm.mali.platform-mediatek.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/hw/init.mmi.backup.trustlet.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.backup.trustlet.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/init.bip_ap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip_ap.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/init.connfem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.connfem.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/init.gps_pwr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_pwr.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/init.gps_scp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_scp.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/init.thermal_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_core.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/init.vtservice_aidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_aidl.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/mtk_gnss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_gnss.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/mtk_lbs_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_lbs_service.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/nfc-service-st.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-st.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/rcs_volte_stack.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rcs_volte_stack.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/tee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/thermal-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/thermal-mediatek.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trustonic.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent-service.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmlpq@V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmlpq@V1-service.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram-sevice.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/vendor.mmi.carrier.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mmi.carrier.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/vibrator-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vibrator-mtk-default.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/volte_rcs_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_rcs_ua.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
+    vendor/motorola/cybert/proprietary/vendor/etc/libnfc-hal-st-felica-uicc.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st-felica-uicc.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/libnfc-hal-st-felica.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st-felica.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/libnfc-hal-st-prc.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st-prc.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/libnfc-hal-st-uicc.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st-uicc.conf \
     vendor/motorola/cybert/proprietary/vendor/etc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/libnfc-hal-st21.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st21.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/libnfc-nci-st-felica.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci-st-felica.conf \
     vendor/motorola/cybert/proprietary/vendor/etc/libnfc-nci-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci-st.conf \
-    vendor/motorola/cybert/proprietary/vendor/etc/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/libse-gto-hal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libse-gto-hal.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/202_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/202_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/202_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/202_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/202_05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/202_05.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/202_09.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/202_09.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/202_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/202_10.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/204_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/204_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/204_04.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/204_04.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/204_08.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/204_08.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/204_16.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/204_16.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/204_20.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/204_20.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/204_69.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/204_69.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/206_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/206_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/206_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/206_10.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/206_20.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/206_20.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/208_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/208_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/208_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/208_10.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/208_20.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/208_20.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/208_88.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/208_88.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/214_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/214_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/214_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/214_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/214_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/214_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/214_04.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/214_04.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/214_07.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/214_07.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/216_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/216_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/216_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/216_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/216_30.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/216_30.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/216_70.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/216_70.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/219_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/219_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/219_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/219_10.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/220_05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/220_05.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/222_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/222_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/222_06.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/222_06.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/222_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/222_10.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/222_88.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/222_88.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/226_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/226_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/226_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/226_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/226_05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/226_05.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/226_06.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/226_06.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/226_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/226_10.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/228_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/228_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/228_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/228_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/230_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/230_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/230_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/230_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/230_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/230_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/231_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/231_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/231_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/231_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/231_04.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/231_04.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/231_06.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/231_06.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/232_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/232_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/232_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/232_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/232_05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/232_05.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/232_07.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/232_07.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/232_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/232_10.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/234_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/234_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/234_08.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/234_08.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/234_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/234_10.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/234_11.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/234_11.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/234_15.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/234_15.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/234_20.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/234_20.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/234_30.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/234_30.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/234_31.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/234_31.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/234_32.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/234_32.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/234_33.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/234_33.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/234_34.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/234_34.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/234_86.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/234_86.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/235_91.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/235_91.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/235_94.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/235_94.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/238_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/238_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/238_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/238_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/238_06.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/238_06.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/238_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/238_10.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/238_20.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/238_20.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/238_30.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/238_30.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/238_77.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/238_77.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/240_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/240_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/240_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/240_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/240_05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/240_05.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/240_07.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/240_07.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/240_08.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/240_08.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/240_99.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/240_99.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/242_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/242_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/242_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/242_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/242_05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/242_05.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/242_14.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/242_14.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/244_05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/244_05.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/244_12.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/244_12.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/244_13.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/244_13.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/244_21.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/244_21.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/244_91.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/244_91.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/246_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/246_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/248_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/248_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/250_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/250_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/250_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/250_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/250_11.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/250_11.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/250_20.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/250_20.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/250_99.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/250_99.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/259_15.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/259_15.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/260_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/260_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/260_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/260_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/260_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/260_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/260_06.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/260_06.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/260_34.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/260_34.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/260_98.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/260_98.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/262_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/262_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/262_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/262_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/262_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/262_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/262_06.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/262_06.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/262_07.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/262_07.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/262_09.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/262_09.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/262_77.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/262_77.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/262_80.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/262_80.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/268_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/268_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/268_06.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/268_06.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/268_89.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/268_89.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/272_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/272_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/276_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/276_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/284_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/284_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/284_05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/284_05.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/286_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/286_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/286_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/286_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/286_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/286_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/293_41.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/293_41.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/294_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/294_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/294_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/294_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/295_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/295_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/297_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/297_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/302_220.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/302_220.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/302_221.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/302_221.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/302_370.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/302_370.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/302_490.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/302_490.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/302_610.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/302_610.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/302_630.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/302_630.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/302_640.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/302_640.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/302_660.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/302_660.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/302_690.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/302_690.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/302_720.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/302_720.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_030.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_030.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_070.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_070.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_090.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_090.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_120.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_120.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_150.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_150.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_160.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_160.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_170.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_170.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_200.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_200.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_210.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_210.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_220.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_220.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_230.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_230.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_240.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_240.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_250.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_250.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_260.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_260.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_270.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_270.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_280.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_280.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_300.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_300.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_310.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_310.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_380.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_380.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_410.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_410.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_490.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_490.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_530.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_530.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_560.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_560.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_590.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_590.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_640.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_640.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_660.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_660.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_680.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_680.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_800.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_800.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/310_950.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/310_950.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_180.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_180.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_220.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_220.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_221.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_221.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_222.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_222.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_223.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_223.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_224.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_224.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_225.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_225.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_226.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_226.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_227.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_227.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_228.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_228.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_229.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_229.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_270.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_270.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_390.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_390.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_480.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_480.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_490.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_490.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_580.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_580.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_581.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_581.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_582.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_582.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_583.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_583.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_584.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_584.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_585.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_585.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_586.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_586.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_587.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_587.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_588.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_588.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_589.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_589.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/311_870.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/311_870.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/312_530.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/312_530.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/312_670.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/312_670.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/312_770.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/312_770.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/313_100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/313_100.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/313_110.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/313_110.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/313_120.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/313_120.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/313_130.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/313_130.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/313_140.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/313_140.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/330_110.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/330_110.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/334_020.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/334_020.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/334_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/334_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/334_030.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/334_030.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/334_050.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/334_050.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/334_090.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/334_090.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/334_140.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/334_140.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/370_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/370_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_04.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_04.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_05.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_07.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_07.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_10.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_11.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_11.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_12.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_12.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_13.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_13.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_14.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_14.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_15.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_15.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_16.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_16.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_19.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_19.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_20.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_20.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_22.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_22.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_24.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_24.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_27.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_27.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_30.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_30.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_31.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_31.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_34.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_34.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_38.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_38.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_40.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_40.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_43.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_43.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_44.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_44.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_45.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_45.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_46.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_46.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_49.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_49.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_51.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_51.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_53.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_53.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_54.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_54.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_55.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_55.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_56.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_56.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_57.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_57.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_58.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_58.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_59.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_59.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_60.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_60.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_62.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_62.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_64.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_64.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_66.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_66.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_70.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_70.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_71.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_71.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_72.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_72.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_73.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_73.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_74.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_74.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_75.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_75.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_76.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_76.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_77.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_77.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_78.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_78.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_79.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_79.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_80.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_80.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_81.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_81.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_82.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_82.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_84.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_84.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_86.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_86.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_87.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_87.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_88.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_88.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_89.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_89.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_90.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_90.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_92.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_92.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_93.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_93.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_94.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_94.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_95.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_95.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_96.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_96.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_97.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_97.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/404_98.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/404_98.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_030.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_030.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_035.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_035.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_036.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_036.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_037.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_037.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_038.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_038.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_039.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_039.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_044.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_044.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_51.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_51.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_52.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_52.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_53.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_53.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_54.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_54.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_55.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_55.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_56.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_56.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_66.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_66.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_67.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_67.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_70.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_70.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_750.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_750.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_751.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_751.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_752.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_752.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_753.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_753.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_754.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_754.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_755.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_755.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_756.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_756.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_799.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_799.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_818.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_818.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_819.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_819.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_840.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_840.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_845.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_845.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_846.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_846.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_847.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_847.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_848.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_848.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_849.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_849.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_850.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_850.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_851.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_851.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_852.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_852.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_853.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_853.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_854.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_854.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_855.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_855.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_856.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_856.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_857.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_857.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_858.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_858.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_859.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_859.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_860.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_860.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_861.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_861.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_862.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_862.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_863.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_863.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_864.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_864.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_865.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_865.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_866.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_866.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_867.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_867.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_868.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_868.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_869.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_869.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_870.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_870.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_871.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_871.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_872.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_872.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_873.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_873.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_874.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_874.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_876.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_876.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_879.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_879.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_908.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_908.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_909.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_909.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_910.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_910.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_911.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_911.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_927.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_927.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/405_929.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/405_929.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/410_04.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/410_04.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/410_06.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/410_06.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/413_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/413_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/413_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/413_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/414_06.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/414_06.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/414_09.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/414_09.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/418_66.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/418_66.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/419_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/419_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/419_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/419_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/419_04.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/419_04.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/420_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/420_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/420_04.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/420_04.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/424_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/424_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/424_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/424_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/426_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/426_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/426_04.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/426_04.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/427_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/427_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/440_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/440_10.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/440_20.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/440_20.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/440_51.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/440_51.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/440_54.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/440_54.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/450_05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/450_05.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/450_06.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/450_06.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/450_08.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/450_08.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/452_04.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/452_04.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/452_05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/452_05.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/454_00.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/454_00.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/454_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/454_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/454_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/454_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/454_04.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/454_04.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/454_05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/454_05.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/454_06.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/454_06.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/454_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/454_10.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/454_12.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/454_12.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/454_13.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/454_13.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/454_14.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/454_14.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/454_15.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/454_15.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/454_16.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/454_16.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/454_17.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/454_17.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/454_18.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/454_18.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/454_19.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/454_19.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/454_20.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/454_20.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/454_29.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/454_29.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/454_31.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/454_31.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/455_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/455_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/455_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/455_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/455_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/455_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/455_04.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/455_04.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/455_05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/455_05.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/455_07.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/455_07.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/456_06.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/456_06.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/456_08.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/456_08.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/456_11.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/456_11.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/460_00.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/460_00.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/460_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/460_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/460_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/460_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/460_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/460_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/460_07.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/460_07.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/460_08.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/460_08.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/460_09.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/460_09.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/460_11.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/460_11.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/460_12.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/460_12.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/460_13.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/460_13.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/466_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/466_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/466_05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/466_05.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/466_89.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/466_89.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/466_92.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/466_92.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/466_93.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/466_93.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/466_97.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/466_97.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/466_99.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/466_99.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/470_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/470_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/470_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/470_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/470_07.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/470_07.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/502_08.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/502_08.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/502_152.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/502_152.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/502_153.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/502_153.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/502_16.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/502_16.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/502_18.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/502_18.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/505_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/505_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/505_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/505_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/505_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/505_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/505_06.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/505_06.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/505_11.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/505_11.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/505_39.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/505_39.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/505_71.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/505_71.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/505_72.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/505_72.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/505_90.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/505_90.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/510_09.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/510_09.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/510_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/510_10.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/510_28.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/510_28.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/515_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/515_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/515_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/515_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/520_00.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/520_00.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/520_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/520_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/520_04.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/520_04.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/520_05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/520_05.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/525_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/525_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/525_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/525_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/525_05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/525_05.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/525_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/525_10.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/530_001.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/530_001.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/530_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/530_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/530_05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/530_05.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/530_099.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/530_099.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/530_24.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/530_24.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/602_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/602_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/602_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/602_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/602_04.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/602_04.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/621_27.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/621_27.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/621_40.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/621_40.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/639_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/639_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/639_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/639_10.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/640_11.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/640_11.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/641_33.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/641_33.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/645_05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/645_05.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/653_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/653_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/655_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/655_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/655_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/655_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/655_07.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/655_07.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/655_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/655_10.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/704_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/704_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/704_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/704_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/704_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/704_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/706_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/706_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/706_04.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/706_04.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/708_001.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/708_001.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/710_21.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/710_21.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/710_30.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/710_30.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/710_300.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/710_300.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/712_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/712_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/712_04.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/712_04.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/714_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/714_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/714_020.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/714_020.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/714_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/714_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/716_06.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/716_06.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/716_07.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/716_07.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/716_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/716_10.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/716_17.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/716_17.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/722_07.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/722_07.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/722_310.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/722_310.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/722_34.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/722_34.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/724_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/724_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/724_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/724_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/724_04.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/724_04.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/724_05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/724_05.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/724_06.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/724_06.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/724_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/724_10.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/724_11.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/724_11.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/724_23.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/724_23.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/724_80.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/724_80.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/730_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/730_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/730_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/730_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/730_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/730_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/730_07.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/730_07.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/730_09.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/730_09.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/730_23.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/730_23.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/732_101.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/732_101.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/732_103.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/732_103.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/732_111.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/732_111.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/732_123.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/732_123.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/732_130.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/732_130.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/734_04.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/734_04.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/740_00.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/740_00.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/744_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/744_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/748_07.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/748_07.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/apncfg/748_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/748_10.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/ikev2/DigiCertGlobalRootCA.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/ikev2/DigiCertGlobalRootCA.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/ikev2/DigiCertGlobalRootG2.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/ikev2/DigiCertGlobalRootG2.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/ikev2/DigiCertGlobalRootG3.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/ikev2/DigiCertGlobalRootG3.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/ikev2/Entrust.net_Certification_Authority_2048.cer:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/ikev2/Entrust.net_Certification_Authority_2048.cer \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/ikev2/EntrustRootCertificationAuthorityG2_root.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/ikev2/EntrustRootCertificationAuthorityG2_root.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/ikev2/GeoTrust_PCA_G3_Root.der:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/ikev2/GeoTrust_PCA_G3_Root.der \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/ikev2/GeoTrust_Primary_CA.der:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/ikev2/GeoTrust_Primary_CA.der \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/ikev2/GeoTrust_Primary_CA_G2_ECC.der:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/ikev2/GeoTrust_Primary_CA_G2_ECC.der \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/ikev2/GlobalSign_root_CA.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/ikev2/GlobalSign_root_CA.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/ikev2/GoDaddyRootCertificateAuthorityG2.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/ikev2/GoDaddyRootCertificateAuthorityG2.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/ikev2/IdenTrustCommercialRootCA1.cer:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/ikev2/IdenTrustCommercialRootCA1.cer \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/ikev2/LibertyGlobalEnterprise-Root-CA-G1.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/ikev2/LibertyGlobalEnterprise-Root-CA-G1.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/ikev2/Root-R3.cer:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/ikev2/Root-R3.cer \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/ikev2/Root_CA_1003.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/ikev2/Root_CA_1003.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/ikev2/USERTrustRSACertificationAuthority.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/ikev2/USERTrustRSACertificationAuthority.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/ikev2/VeriSignClass3G4.der:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/ikev2/VeriSignClass3G4.der \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/ikev2/VeriSignClass3G5.der:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/ikev2/VeriSignClass3G5.der \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/ikev2/VeriSignUniversalRootCertification.der:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/ikev2/VeriSignUniversalRootCertification.der \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/ikev2/thawte.der:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/ikev2/thawte.der \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/tls/AAACertificateServices.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/tls/AAACertificateServices.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/tls/CertumCA.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/tls/CertumCA.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/tls/CertumOrganizationValidationCASHA2.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/tls/CertumOrganizationValidationCASHA2.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/tls/CertumTrustedNetworkCA.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/tls/CertumTrustedNetworkCA.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/tls/CyberTrustJapanPublicCAG3.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/tls/CyberTrustJapanPublicCAG3.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/tls/DigiCertGlobalRootCA.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/tls/DigiCertGlobalRootCA.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/tls/DigiCertGlobalRootG2.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/tls/DigiCertGlobalRootG2.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/tls/DigiCertSHA2SecureServerCA.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/tls/DigiCertSHA2SecureServerCA.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/tls/DomenySslDvCertificationAuthority.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/tls/DomenySslDvCertificationAuthority.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/tls/EntrustCertificationAuthorityL1K.cer:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/tls/EntrustCertificationAuthorityL1K.cer \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/tls/EntrustOVTLSIssuingRSACA1.cer:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/tls/EntrustOVTLSIssuingRSACA1.cer \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/tls/EntrustRootCertificationAuthority.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/tls/EntrustRootCertificationAuthority.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/tls/EntrustRootCertificationAuthorityG2.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/tls/EntrustRootCertificationAuthorityG2.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/tls/EntrustRootCertificationAuthorityG2_root.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/tls/EntrustRootCertificationAuthorityG2_root.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/tls/GoDaddyRootCertificateAuthorityG2.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/tls/GoDaddyRootCertificateAuthorityG2.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/tls/GoDaddySecureCertificateAuthorityG2.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/tls/GoDaddySecureCertificateAuthorityG2.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/tls/KPN_BV_PKIoverheid_Organisatie_Server_CA-G3_2019.cer:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/tls/KPN_BV_PKIoverheid_Organisatie_Server_CA-G3_2019.cer \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/tls/SSLcomEVRootCertificationAuthorityRSAR2.cer:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/tls/SSLcomEVRootCertificationAuthorityRSAR2.cer \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/tls/SSLcomTLSRSARootCA2022.cer:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/tls/SSLcomTLSRSARootCA2022.cer \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/tls/StaatDerNederlandenEVRootCA.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/tls/StaatDerNederlandenEVRootCA.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/tls/StaatderNederlandenOrganisatieServicesCA-G3.cer:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/tls/StaatderNederlandenOrganisatieServicesCA-G3.cer \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/tls/StaatderNederlandenRootCA-G3.cer:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/tls/StaatderNederlandenRootCA-G3.cer \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/cacerts/tls/certSIGN_ROOT_CA.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/tls/certSIGN_ROOT_CA.crt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/02.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/02.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/04.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/04.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/06.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/06.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/08.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/08.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/12.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/13.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/14.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/14.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/16.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/16.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/18.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/18.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/19.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/19.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/20.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/20.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/21.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/21.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/22.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/22.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/26.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/26.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/28.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/28.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/30.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/30.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/31.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/31.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/32.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/32.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/34.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/34.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/38.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/38.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/40.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/40.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/42.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/42.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/44.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/44.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/46.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/46.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/47.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/47.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/48.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/48.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/50.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/50.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/55.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/55.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/57.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/57.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/59.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/59.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/60.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/60.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/62.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/62.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/66.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/66.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/68.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/68.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/70.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/70.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/72.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/72.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/74.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/74.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/76.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/76.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/78.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/78.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/80.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/80.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/82.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/82.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/83.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/83.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/84.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/84.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/86.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/86.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/88.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/88.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/90.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/90.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/93.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/93.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/94.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/94.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/95.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/95.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/2/97.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/2/97.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/02.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/02.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/08.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/08.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/10.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/11.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/11.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/12.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/13.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/30.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/30.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/34.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/34.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/38.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/38.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/40.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/40.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/42.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/42.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/44.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/44.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/46.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/46.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/48.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/48.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/50.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/50.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/52.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/52.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/54.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/54.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/56.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/56.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/58.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/58.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/60.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/60.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/62.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/62.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/63.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/63.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/64.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/64.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/65.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/65.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/66.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/66.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/70.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/70.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/72.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/72.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/74.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/74.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/3/76.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/3/76.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/00.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/00.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/01.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/01.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/02.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/02.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/04.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/04.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/05.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/05.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/10.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/12.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/13.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/14.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/14.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/15.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/15.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/16.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/16.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/18.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/18.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/19.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/19.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/20.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/20.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/21.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/21.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/22.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/22.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/24.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/24.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/25.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/25.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/26.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/26.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/27.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/27.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/28.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/28.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/29.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/29.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/34.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/34.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/36.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/36.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/37.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/37.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/38.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/38.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/40.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/40.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/50.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/50.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/52.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/52.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/54.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/54.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/55.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/55.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/56.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/56.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/57.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/57.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/60.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/60.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/66.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/66.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/70.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/70.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/4/72.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/4/72.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/5/02.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/5/02.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/5/05.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/5/05.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/5/10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/5/10.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/5/14.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/5/14.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/5/15.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/5/15.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/5/20.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/5/20.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/5/25.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/5/25.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/5/28.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/5/28.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/5/30.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/5/30.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/5/37.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/5/37.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/5/39.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/5/39.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/5/40.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/5/40.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/5/41.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/5/41.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/5/42.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/5/42.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/5/43.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/5/43.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/5/44.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/5/44.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/5/46.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/5/46.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/5/47.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/5/47.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/5/48.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/5/48.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/5/49.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/5/49.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/5/50.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/5/50.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/5/52.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/5/52.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/5/54.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/5/54.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/02.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/02.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/03.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/03.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/04.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/04.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/05.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/05.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/06.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/06.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/07.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/07.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/08.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/08.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/09.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/09.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/10.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/11.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/11.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/12.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/13.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/14.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/14.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/15.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/15.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/16.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/16.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/17.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/17.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/18.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/18.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/19.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/19.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/20.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/20.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/21.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/21.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/22.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/22.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/23.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/23.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/24.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/24.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/25.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/25.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/26.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/26.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/27.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/27.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/28.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/28.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/29.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/29.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/30.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/30.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/31.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/31.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/32.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/32.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/33.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/33.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/34.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/34.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/35.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/35.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/36.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/36.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/37.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/37.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/38.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/38.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/39.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/39.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/40.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/40.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/41.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/41.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/42.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/42.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/43.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/43.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/45.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/45.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/46.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/46.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/47.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/47.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/48.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/48.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/49.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/49.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/50.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/50.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/51.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/51.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/52.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/52.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/53.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/53.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/54.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/54.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/55.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/55.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/57.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/57.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/58.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/58.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/6/59.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/6/59.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/7/02.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/7/02.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/7/04.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/7/04.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/7/06.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/7/06.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/7/08.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/7/08.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/7/10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/7/10.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/7/12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/7/12.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/7/14.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/7/14.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/7/16.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/7/16.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/7/22.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/7/22.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/7/24.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/7/24.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/7/30.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/7/30.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/7/32.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/7/32.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/7/34.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/7/34.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/7/36.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/7/36.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/7/38.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/7/38.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/7/40.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/7/40.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/7/44.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/7/44.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/7/46.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/7/46.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/7/48.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/7/48.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/7/50.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/7/50.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/9/01.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/9/01.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/md/plmn/TS25/raw_ts25.txt:$(TARGET_COPY_OUT_VENDOR)/etc/md/plmn/TS25/raw_ts25.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/meow.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/meow.cfg \
+    vendor/motorola/cybert/proprietary/vendor/etc/motorola/12m/fac_test_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/fac_test_config.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/motorola/12m/focaltech-tm-ft3683g-cybert.ini:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/focaltech-tm-ft3683g-cybert.ini \
+    vendor/motorola/cybert/proprietary/vendor/etc/motorola/12m/key_code_map.txt:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/key_code_map.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/motorola/12m/tcmd_leds.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/tcmd_leds.cfg \
+    vendor/motorola/cybert/proprietary/vendor/etc/motorola/props/sku.n.prop:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/props/sku.n.prop \
+    vendor/motorola/cybert/proprietary/vendor/etc/motorola/props/sku.nc.prop:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/props/sku.nc.prop \
+    vendor/motorola/cybert/proprietary/vendor/etc/motorola/props/sku.nq.prop:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/props/sku.nq.prop \
+    vendor/motorola/cybert/proprietary/vendor/etc/motorola/props/sku.q.prop:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/props/sku.q.prop \
+    vendor/motorola/cybert/proprietary/vendor/etc/motorola/props/sku.s.prop:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/props/sku.s.prop \
+    vendor/motorola/cybert/proprietary/vendor/etc/motorola/props/sku.sn.prop:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/props/sku.sn.prop \
+    vendor/motorola/cybert/proprietary/vendor/etc/motorola/props/sku.t.prop:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/props/sku.t.prop \
+    vendor/motorola/cybert/proprietary/vendor/etc/motorola/props/sku.uw.prop:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/props/sku.uw.prop \
+    vendor/motorola/cybert/proprietary/vendor/etc/motorola/tcmd/cid_template.dat:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/tcmd/cid_template.dat \
+    vendor/motorola/cybert/proprietary/vendor/etc/motorola/tcmd/cid_template.locked:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/tcmd/cid_template.locked \
+    vendor/motorola/cybert/proprietary/vendor/etc/motorola/tcmd/cid_template.unlocked:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/tcmd/cid_template.unlocked \
+    vendor/motorola/cybert/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/motorola/cybert/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
-    vendor/motorola/cybert/proprietary/vendor/etc/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
+    vendor/motorola/cybert/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow_dsp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow_dsp.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/permissions/com.motorola.camera.extensions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera.extensions.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/permissions/com.motorola.camera5.adobe_scan.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera5.adobe_scan.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/permissions/com.motorola.camera5.cybert.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera5.cybert.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/permissions/com.motorola.camera5.lens.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera5.lens.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/permissions/com.motorola.camera5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera5.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/permissions/unavail.android.hardware.sensor.barometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/unavail.android.hardware.sensor.barometer.xml \
     vendor/motorola/cybert/proprietary/vendor/etc/pq_flag.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pq_flag.xml \
     vendor/motorola/cybert/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
-    vendor/motorola/cybert/proprietary/vendor/etc/sensors/als_comp_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/als_comp_config.xml \
-    vendor/motorola/cybert/proprietary/vendor/etc/sensors/als_comp_tf_csot.config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/als_comp_tf_csot.config \
-    vendor/motorola/cybert/proprietary/vendor/etc/sensors/als_comp_tf_tianma.config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/als_comp_tf_tianma.config \
-    vendor/motorola/cybert/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy \
+    vendor/motorola/cybert/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy \
+    vendor/motorola/cybert/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
+    vendor/motorola/cybert/proprietary/vendor/etc/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
+    vendor/motorola/cybert/proprietary/vendor/etc/seccomp_policy/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/01419da9.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/01419da9.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/04f60c28.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/04f60c28.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/0d69c7e1.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/0d69c7e1.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/10531352.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/10531352.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/1ae85e5e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/1ae85e5e.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/1b0f7e5c.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/1b0f7e5c.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/1df5a75f.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/1df5a75f.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/1e1eab7c.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/1e1eab7c.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/1e8e7201.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/1e8e7201.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/1ec40989.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/1ec40989.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/1f58a078.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/1f58a078.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/219d9499.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/219d9499.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/23f4c490.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/23f4c490.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/252252d2.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/252252d2.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/2add47b6.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/2add47b6.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/2d9dafe4.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/2d9dafe4.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/302904dd.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/302904dd.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/304d27c3.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/304d27c3.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/31188b5e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/31188b5e.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/33ee480d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/33ee480d.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/35105088.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/35105088.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/399e7759.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/399e7759.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/3ad48a91.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/3ad48a91.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/3c860d51.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/3c860d51.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/3c899c73.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/3c899c73.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/3c9a4d3b.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/3c9a4d3b.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/3e7271e8.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/3e7271e8.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/41a3f684.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/41a3f684.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/455f1b52.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/455f1b52.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/48a195d8.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/48a195d8.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/4be590e0.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/4be590e0.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/4c3982f2.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/4c3982f2.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/5046c355.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/5046c355.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/52b525c7.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/52b525c7.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/53a1b57a.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/53a1b57a.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/583d0756.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/583d0756.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/5a3f0ff8.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/5a3f0ff8.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/5acf816d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/5acf816d.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/5f47b495.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/5f47b495.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/5f9a69fa.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/5f9a69fa.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/5fdd185d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/5fdd185d.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/60afe812.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/60afe812.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/6187b673.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/6187b673.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/63a2c897.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/63a2c897.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/69105f4f.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/69105f4f.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/6b03dec0.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/6b03dec0.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/6f7454b3.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/6f7454b3.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/75680d2e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/75680d2e.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/76579174.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/76579174.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/7892ad52.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/7892ad52.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/7a7c655d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/7a7c655d.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/7a819ef2.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/7a819ef2.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/81b9768f.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/81b9768f.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/82223c44.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/82223c44.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/83e9984f.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/83e9984f.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/85cde254.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/85cde254.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/86212b19.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/86212b19.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/869fbf79.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/869fbf79.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/8794b4e3.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/8794b4e3.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/882de061.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/882de061.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/88950faa.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/88950faa.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/89c02a45.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/89c02a45.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/8d6437c3.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/8d6437c3.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/9282e51c.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9282e51c.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/9339512a.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9339512a.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/93851c9e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/93851c9e.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/9479c8c3.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9479c8c3.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/9576d26b.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9576d26b.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/9591a472.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9591a472.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/95aff9e3.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/95aff9e3.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/9685a493.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9685a493.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/985c1f52.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/985c1f52.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/99e1b953.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/99e1b953.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/9aef356c.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9aef356c.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/9d6523ce.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9d6523ce.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/a2c66da8.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/a2c66da8.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/a3896b44.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/a3896b44.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/a716d4ed.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/a716d4ed.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/a81e292b.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/a81e292b.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/a9d40e02.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/a9d40e02.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/ab5346f4.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/ab5346f4.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/ab59055e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/ab59055e.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/b0ed035a.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/b0ed035a.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/b0f3e76e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/b0f3e76e.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/b30d5fda.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/b30d5fda.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/b3fb433b.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/b3fb433b.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/b74d2bd5.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/b74d2bd5.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/b7db1890.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/b7db1890.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/b872f2b4.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/b872f2b4.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/b92fd57f.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/b92fd57f.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/b936d1c6.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/b936d1c6.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/bc3f2570.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/bc3f2570.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/bd43e1dd.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/bd43e1dd.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/bdacca6f.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/bdacca6f.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/bf64f35b.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/bf64f35b.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/c44cc0c0.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/c44cc0c0.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/c491639e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/c491639e.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/c559d742.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/c559d742.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/c7f1359b.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/c7f1359b.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/c90bc37d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/c90bc37d.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/cb1c3204.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/cb1c3204.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/ccc52f49.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/ccc52f49.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/cf701eeb.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/cf701eeb.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/d06393bb.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d06393bb.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/d16a5865.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d16a5865.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/d16a5865.1:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d16a5865.1 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/d18e9066.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d18e9066.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/d39b0a2c.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d39b0a2c.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/d41b5e2a.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d41b5e2a.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/d4c339cb.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d4c339cb.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/d59297b8.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d59297b8.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/d7746a63.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d7746a63.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/d96b65e2.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d96b65e2.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/da7377f6.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/da7377f6.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/dbc54cab.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/dbc54cab.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/dbff3a01.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/dbff3a01.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/dc99f41e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/dc99f41e.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/dfc0fe80.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/dfc0fe80.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/e13665f9.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/e13665f9.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/e442e424.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/e442e424.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/e48193cf.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/e48193cf.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/e7c037b4.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/e7c037b4.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/e8651083.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/e8651083.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/ed39abd0.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/ed39abd0.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/edcbddb5.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/edcbddb5.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/ee532fd5.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/ee532fd5.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/f013ecaf.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/f013ecaf.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/f058632f.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/f058632f.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/f0cd152c.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/f0cd152c.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/f459871d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/f459871d.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/f8fc53da.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/f8fc53da.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/fb5fa911.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/fb5fa911.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/fd08c599.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/fd08c599.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts/fde84897.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/fde84897.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/111e6273.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/111e6273.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/1a700a7f.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/1a700a7f.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/1e8e7201.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/1e8e7201.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/245cc582.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/245cc582.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/399e7759.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/399e7759.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/399e7759.1:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/399e7759.1 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/399e7759.2:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/399e7759.2 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/3ad48a91.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/3ad48a91.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/455f1b52.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/455f1b52.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/4bcd7fc4.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/4bcd7fc4.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/4bcd7fc4.1:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/4bcd7fc4.1 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/524d9b43.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/524d9b43.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/58addfdd.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/58addfdd.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/594f1775.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/594f1775.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/608d335b.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/608d335b.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/6d4bcacf.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/6d4bcacf.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/75680d2e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/75680d2e.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/7651b327.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/7651b327.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/79701ca5.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/79701ca5.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/7d453d8f.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/7d453d8f.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/876bdba8.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/876bdba8.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/876bdba8.1:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/876bdba8.1 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/a2c66da8.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/a2c66da8.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/b0f3e76e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/b0f3e76e.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/c44cc0c0.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/c44cc0c0.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/c542733d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/c542733d.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/c90bc37d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/c90bc37d.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/ed39abd0.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/ed39abd0.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/f336e3d1.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/f336e3d1.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/facacbc6.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/facacbc6.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/lab/0f0d3382.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/0f0d3382.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/lab/18dc3a8d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/18dc3a8d.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/lab/1bc5ca0c.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/1bc5ca0c.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/lab/1bc5ca0c.1:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/1bc5ca0c.1 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/lab/2cbfcc3a.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/2cbfcc3a.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/lab/35ef1c14.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/35ef1c14.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/lab/399e7759.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/399e7759.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/lab/42d25a61.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/42d25a61.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/lab/586933d9.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/586933d9.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/lab/66272d0d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/66272d0d.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/lab/6f1dbe5e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/6f1dbe5e.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/lab/a64489a3.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/a64489a3.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/lab/b5805141.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/b5805141.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/lab/b805b58a.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/b805b58a.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/lab/ed7b215e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/ed7b215e.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/security/cacerts_supl/lab/ef4b31e6.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/ef4b31e6.0 \
+    vendor/motorola/cybert/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/smartpa_param/tfa98xx_music.bin:$(TARGET_COPY_OUT_VENDOR)/etc/smartpa_param/tfa98xx_music.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/smartpa_param/tfa98xx_ringtone.bin:$(TARGET_COPY_OUT_VENDOR)/etc/smartpa_param/tfa98xx_ringtone.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/smartpa_param/tfa98xx_voice.bin:$(TARGET_COPY_OUT_VENDOR)/etc/smartpa_param/tfa98xx_voice.bin \
+    vendor/motorola/cybert/proprietary/vendor/etc/smsdbvisitor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/smsdbvisitor.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/tetras/portrait_repair_composite_hd_lite.model:$(TARGET_COPY_OUT_VENDOR)/etc/tetras/portrait_repair_composite_hd_lite.model \
+    vendor/motorola/cybert/proprietary/vendor/etc/thermal/disable_skin_control.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_skin_control.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/thermal/disable_thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_thermal.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/thermal/disable_thermal_temp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_thermal_temp.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/thermal/disable_throttling.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_throttling.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/thermal/fix_ttj_85.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/fix_ttj_85.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/thermal/fix_ttj_95.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/fix_ttj_95.conf \
     vendor/motorola/cybert/proprietary/vendor/etc/thermal/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/thermal/thermal_kpoc.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_kpoc.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/thermal/thermal_mtbf.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_mtbf.conf \
     vendor/motorola/cybert/proprietary/vendor/etc/thermal/thermal_policy_00.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_00.conf \
     vendor/motorola/cybert/proprietary/vendor/etc/thermal/thermal_policy_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_01.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/thermal/thermal_policy_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_02.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/thermal/thermal_policy_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_03.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/thermal/thermal_policy_04.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_04.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/thermal/thermal_policy_05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_05.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/thermal/thermal_policy_06.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_06.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/thermal/thermal_policy_08.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_08.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/thermal/thermal_policy_09.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_09.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/thermal/thermal_policy_11.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_11.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/thermal/thermal_policy_12.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_12.conf \
+    vendor/motorola/cybert/proprietary/vendor/etc/tm_vtd6126a_667_vdo_1220_2712_C3D_default.txt:$(TARGET_COPY_OUT_VENDOR)/etc/tm_vtd6126a_667_vdo_1220_2712_C3D_default.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/tm_vtd6126a_667_vdo_1220_2712_C3D_p3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/tm_vtd6126a_667_vdo_1220_2712_C3D_p3.txt \
+    vendor/motorola/cybert/proprietary/vendor/etc/tm_vtd6126a_667_vdo_1220_2712_C3D_srgb.txt:$(TARGET_COPY_OUT_VENDOR)/etc/tm_vtd6126a_667_vdo_1220_2712_C3D_srgb.txt \
     vendor/motorola/cybert/proprietary/vendor/etc/tm_vtd6126a_667_vdo_1220_2712_pq.xml:$(TARGET_COPY_OUT_VENDOR)/etc/tm_vtd6126a_667_vdo_1220_2712_pq.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/vhw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vhw.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
+    vendor/motorola/cybert/proprietary/vendor/etc/virtual-spn-conf-by-imsi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-imsi.xml \
     vendor/motorola/cybert/proprietary/vendor/firmware/BT_FW.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/BT_FW.cfg \
+    vendor/motorola/cybert/proprietary/vendor/firmware/NFG1000A_battery_parameter_ATLRE50NVT.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/NFG1000A_battery_parameter_ATLRE50NVT.bin \
     vendor/motorola/cybert/proprietary/vendor/firmware/NFG1000A_battery_parameter_ATLRE60NVT.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/NFG1000A_battery_parameter_ATLRE60NVT.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/NFG1000A_battery_parameter_LWNRE60SWD.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/NFG1000A_battery_parameter_LWNRE60SWD.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/aw8693x_rtp_Attentive.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8693x_rtp_Attentive.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/aw8693x_rtp_Balinese_Camelan.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8693x_rtp_Balinese_Camelan.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/aw8693x_rtp_Bird_Loop.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8693x_rtp_Bird_Loop.bin \
     vendor/motorola/cybert/proprietary/vendor/firmware/aw8693x_rtp_Hello.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8693x_rtp_Hello.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/aw8693x_rtp_Momentum.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8693x_rtp_Momentum.bin \
     vendor/motorola/cybert/proprietary/vendor/firmware/aw8693x_rtp_Moto.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8693x_rtp_Moto.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/aw8693x_rtp_Moto_Classic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8693x_rtp_Moto_Classic.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/aw8693x_rtp_Moto_Original.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8693x_rtp_Moto_Original.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/aw8693x_rtp_Moto_Retro.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8693x_rtp_Moto_Retro.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/aw8693x_rtp_Natural.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8693x_rtp_Natural.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/aw8693x_rtp_New_Hello_Moto.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8693x_rtp_New_Hello_Moto.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/aw8693x_rtp_Simple.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8693x_rtp_Simple.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/aw963xx_reg_0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw963xx_reg_0.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/connfem.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/connfem.cfg \
     vendor/motorola/cybert/proprietary/vendor/firmware/conninfra.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/conninfra.cfg \
+    vendor/motorola/cybert/proprietary/vendor/firmware/cps4038.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cps4038.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/cps4038_cn.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cps4038_cn.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/fm_cust.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/fm_cust.cfg \
     vendor/motorola/cybert/proprietary/vendor/firmware/focaltech_ts_fw_tm.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech_ts_fw_tm.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/goodix_cfg_group.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_cfg_group.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/goodix_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_firmware.bin \
     vendor/motorola/cybert/proprietary/vendor/firmware/haptic_ram.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/haptic_ram.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/lib3a.ccu:$(TARGET_COPY_OUT_VENDOR)/firmware/lib3a.ccu \
+    vendor/motorola/cybert/proprietary/vendor/firmware/lib3a.ccu_dummy:$(TARGET_COPY_OUT_VENDOR)/firmware/lib3a.ccu_dummy \
+    vendor/motorola/cybert/proprietary/vendor/firmware/mali_csffw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mali_csffw.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/mot_tele_dw9784.prog:$(TARGET_COPY_OUT_VENDOR)/firmware/mot_tele_dw9784.prog \
+    vendor/motorola/cybert/proprietary/vendor/firmware/mt6627_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6627_fm_v1_coeff.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/mt6627_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6627_fm_v1_patch.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/mt6630_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6630_fm_v1_coeff.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/mt6630_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6630_fm_v1_patch.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/mt6630_fm_v2_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6630_fm_v2_coeff.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/mt6630_fm_v2_coeff_tx.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6630_fm_v2_coeff_tx.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/mt6630_fm_v2_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6630_fm_v2_patch.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/mt6630_fm_v2_patch_tx.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6630_fm_v2_patch_tx.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/mt6631_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6631_fm_v1_coeff.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/mt6631_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6631_fm_v1_patch.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/mt6632_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6632_fm_v1_coeff.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/mt6632_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6632_fm_v1_patch.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/mt6635_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6635_fm_v1_coeff.bin \
     vendor/motorola/cybert/proprietary/vendor/firmware/mt6635_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6635_fm_v1_patch.bin \
     vendor/motorola/cybert/proprietary/vendor/firmware/remoteproc_scp:$(TARGET_COPY_OUT_VENDOR)/firmware/remoteproc_scp \
     vendor/motorola/cybert/proprietary/vendor/firmware/soc7_0_ram_bt_1_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc7_0_ram_bt_1_1_hdr.bin \
     vendor/motorola/cybert/proprietary/vendor/firmware/soc7_0_ram_bt_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc7_0_ram_bt_1a_1_hdr.bin \
     vendor/motorola/cybert/proprietary/vendor/firmware/soc7_0_ram_bt_1b_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc7_0_ram_bt_1b_1_hdr.bin \
     vendor/motorola/cybert/proprietary/vendor/firmware/soc7_0_ram_mcu_1_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc7_0_ram_mcu_1_1_hdr.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/soc7_0_ram_mcu_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc7_0_ram_mcu_1a_1_hdr.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/soc7_0_ram_mcu_1b_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc7_0_ram_mcu_1b_1_hdr.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/soc_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc_fm_v1_coeff.bin \
     vendor/motorola/cybert/proprietary/vendor/firmware/soc_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc_fm_v1_patch.bin \
     vendor/motorola/cybert/proprietary/vendor/firmware/st21nfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st21nfc_fw.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/st21nfc_fw7.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st21nfc_fw7.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/st54j_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st54j_fw.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/st54l_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st54l_fw.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/st54l_fw_felica.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st54l_fw_felica.bin \
     vendor/motorola/cybert/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
+    vendor/motorola/cybert/proprietary/vendor/firmware/tiktap_config.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/tiktap_config.txt \
+    vendor/motorola/cybert/proprietary/vendor/firmware/tiktap_params.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tiktap_params.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/tiktap_wave.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tiktap_wave.bin \
+    vendor/motorola/cybert/proprietary/vendor/firmware/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg \
+    vendor/motorola/cybert/proprietary/vendor/firmware/txpowerctrl_INDIA.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl_INDIA.cfg \
+    vendor/motorola/cybert/proprietary/vendor/firmware/txpowerctrl_JAPAN.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl_JAPAN.cfg \
+    vendor/motorola/cybert/proprietary/vendor/firmware/txpowerctrl_ROW.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl_ROW.cfg \
+    vendor/motorola/cybert/proprietary/vendor/firmware/valhall-1691526.wa:$(TARGET_COPY_OUT_VENDOR)/firmware/valhall-1691526.wa \
     vendor/motorola/cybert/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg \
-    vendor/motorola/cybert/proprietary/vendor/lib64/android.hardware.bluetooth.audio-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.bluetooth.audio-impl-mediatek.so \
+    vendor/motorola/cybert/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
+    vendor/motorola/cybert/proprietary/vendor/lib/libcustom_nvram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcustom_nvram.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/APUWareApusysAidlServer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/APUWareApusysAidlServer.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/APUWareUtilsAidlServer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/APUWareUtilsAidlServer.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/android.hardware.biometrics.fingerprint-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.fingerprint-V3-ndk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/com.motorola.hardware.biometric.fingerprint-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.motorola.hardware.biometric.fingerprint-V2-ndk.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/com.motorola.hardware.display.panel-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.motorola.hardware.display.panel-V1-ndk.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/com.motorola.hardware.display.panel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.motorola.hardware.display.panel@1.0.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/com.motorola.hardware.display.panel@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.motorola.hardware.display.panel@1.1.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/egl/libGLES_meow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_meow.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/egl/libMEOW_data.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_data.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/egl/libMEOW_gift.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_gift.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/egl/libMEOW_qt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_qt.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/egl/libMEOW_trace.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_trace.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/egl/mt6897/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/mt6897/libGLES_mali.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss-impl-mediatek.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/hw/android.hardware.soundtrigger3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.soundtrigger3-impl.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/hw/audio.primary.mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.mediatek.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/audio.r_submix.mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.r_submix.mediatek.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/hw/fingerprint.goodix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.default.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gps.default.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/hwcomposer.mtk_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.mtk_common.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/mt6897/android.hardware.camera.provider@2.6-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6897/android.hardware.camera.provider@2.6-impl-mediatek.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/mt6897/android.hardware.graphics.allocator-V2-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6897/android.hardware.graphics.allocator-V2-mediatek.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/mt6897/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6897/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/mt6897/mapper.mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6897/mapper.mediatek.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/mt6897/vendor.mediatek.hardware.camera.atms@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6897/vendor.mediatek.hardware.camera.atms@1.0-impl.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/mt6897/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6897/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/hw/mt6897/vendor.mediatek.hardware.camera.isphal@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6897/vendor.mediatek.hardware.camera.isphal@1.1-impl.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/hw/mt6897/vendor.mediatek.hardware.pq_aidl-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6897/vendor.mediatek.hardware.pq_aidl-impl.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/hw/sensors.dynamic_sensor_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.dynamic_sensor_hal.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/hw/sensors.light_compensate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.light_compensate.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/mt6897/vulkan.mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6897/vulkan.mali.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/mtkflp.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mtkflp.default.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/mtkgeofence.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mtkgeofence.default.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/hw/sensors.mediatek.V2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.mediatek.V2.0.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.audio-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.audio-impl.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/sound_trigger.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.default.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/thermal_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/thermal_hal.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.camera.atms_aidl@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.atms_aidl@1.0-impl.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.camera.bgservice_aidl@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.bgservice_aidl@1.0-impl.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.camera.isphal_aidl@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.isphal_aidl@1.0-impl.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.gnss-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.gnss-impl.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.gnss.batching-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.gnss.batching-impl.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.nvram-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.nvram-impl.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.videotelephony-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.videotelephony-impl.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/vibrator.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vibrator.default.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/lib3a.ae.pipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.ae.pipe.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/lib3a.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.ae.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/lib3a.ae.stat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.ae.stat.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/lib3a.af.assist.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.af.assist.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/lib3a.af.assist.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.af.assist.utils.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/lib3a.af.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.af.core.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/lib3a.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.af.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/lib3a.awb.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.awb.core.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/lib3a.custom.shading.flow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.custom.shading.flow.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/lib3a.flash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.flash.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libAIODcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAIODcore.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libAIOTcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAIOTcore.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libAITrackingAFMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAITrackingAFMgr.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libBSTHDRDETECT.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libBSTHDRDETECT.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libBSTMultiExpoGainHDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libBSTMultiExpoGainHDR.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libBasicModule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libBasicModule.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libDBAccessor_ISP.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDBAccessor_ISP.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDR.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libDefaultFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDefaultFpsActor.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libFrameRecord.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFrameRecord.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libJpgEncPipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libJpgEncPipe.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libMcClient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMcClient.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libMcRegistry.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMcRegistry.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libMtkSpeechEnh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMtkSpeechEnh.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libMtkSpeechEnh_swb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMtkSpeechEnh_swb.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libNoFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libNoFpsActor.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libRbsFlow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libRbsFlow.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libSQLiteModule_VER_ALL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSQLiteModule_VER_ALL.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libTEECommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTEECommon.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/lib_bsscore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bsscore.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libVkLayer_mtk_rt_sdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVkLayer_mtk_rt_sdk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/lib_iir.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_iir.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libaaa_aaautil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaaa_aaautil.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libaaa_afassist_V2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaaa_afassist_V2.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libaaa_afassistctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaaa_afassistctrl.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libaaa_gma.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaaa_gma.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libaacvibrator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaacvibrator.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libaal_cust.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_cust.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libaal_key.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_key.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libaal_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_sec.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libaalservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaalservice.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libadropbox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadropbox.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaedv.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libaicapturecore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaicapturecore.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libaiselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaiselector.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libapiwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapiwrapper.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libaibld.nn6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaibld.nn6.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libalsautils-v31.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalsautils-v31.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libapmonitor_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapmonitor_vendor.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libappgamepq.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libappgamepq.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libapu_mdw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapu_mdw.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libapu_mdw_batch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapu_mdw_batch.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libapusys.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapusys.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libarc.ion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarc.ion.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libarcsoft_pic_trace.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_pic_trace.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libarcsoft_portrait_distortion_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_portrait_distortion_correction.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libarmnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarmnn.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libarmnn_ndk.mtk.vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarmnn_ndk.mtk.vndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libasn1c_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1c_core.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libasn1c_mapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1c_mapi.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libasn1c_mdmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1c_mdmi.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libaualgo_azp_component.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaualgo_azp_component.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libaualgo_azp_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaualgo_azp_wrapper.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libaualgo_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaualgo_foundation.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_param_parser-vnd.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libaudiocompensationfilter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocompensationfilter_vendor.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libaudiocompensationfilterc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocompensationfilterc.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libaudiocomponentengine_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocomponentengine_vendor.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libaudiocomponentenginec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocomponentenginec.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libaudiocustparam_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocustparam_vendor.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libaudiodcrflt_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiodcrflt_vendor.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libaudiofmtconv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiofmtconv.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libaudioloudc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioloudc.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libaudioprimarydevicehalifclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioprimarydevicehalifclient.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libaudiosmartpamtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiosmartpamtk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libaudiotoolkit_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiotoolkit_vendor.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libaurisysdemo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaurisysdemo.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libbessound_hd_mtk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbessound_hd_mtk_vendor.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libblisrc32_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libblisrc32_vendor.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libbluetooth_audio_session_aidl_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_aidl_mtk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libbluetooth_audio_session_mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_mediatek.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libbluetooth_hw_test.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_hw_test.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libbluetooth_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_mtk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libbluetooth_mtk_pure.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_mtk_pure.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libbluetooth_relayer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_relayer.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libbluetoothem_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetoothem_mtk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-vendor.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libbwc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbwc.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcam.3a_isp.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.3a_isp.utils.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcam.chdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.chdr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcam.feature_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.feature_utils.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcam.hal3a.ctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.ctrl.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcam.hal3a.custom.ae.HDRStateEvaluator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.custom.ae.HDRStateEvaluator.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcam.hal3a.custom.ae.HistoryFrameAeMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.custom.ae.HistoryFrameAeMgr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcam.hal3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.log.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcam.hal3a.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.utils.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcam.hal3a.v3.dng.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.dng.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcam.hal3a.v3.nvram.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.nvram.v4l2.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcam.halisp.SwTopCtrlMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halisp.SwTopCtrlMgr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcam.halisp.TopCtrlMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halisp.TopCtrlMgr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcam.halisp.imp.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halisp.imp.v4l2.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcam.halisp.plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halisp.plugin.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcam.halisp.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halisp.utils.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcam.halisp.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halisp.v4l2.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcam.tuningcachemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.tuningcachemgr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcam.utils.sensorprovider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.utils.sensorprovider.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcam.vhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.vhdr.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcam.zoomoverridemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.zoomoverridemgr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcam_ipc_hal3a_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam_ipc_hal3a_client.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.BSSwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.BSSwrapper.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.Mfbllwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.Mfbllwrapper.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.WarpMapResizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.WarpMapResizer.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.aibc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.aibc.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.aibcwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.aibcwrapper.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.ainr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.ainr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.ais2.bss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.ais2.bss.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.ais2.mfnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.ais2.mfnr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.ais2.mstm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.ais2.mstm.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.ais2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.ais2.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.bss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.bss.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.dngop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.dngop.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.eis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.eis.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.fdft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.fdft.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.fsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.fsc.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.gyro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.gyro.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.hdr10p.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.hdr10p.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.lmv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.lmv.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.mfnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.mfnr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.n3d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.n3d.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.platform.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.platform2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.platform2.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.rotate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.rotate.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.sat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.sat.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.tsfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.tsfs.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.utility.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.utility.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.vaidepth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.vaidepth.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.vsdofUtil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.vsdofUtil.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.vsf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.vsf.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcamalgo.warp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.warp.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcameracustom.camera.3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.camera.3a.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcameracustom.eis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.eis.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcameracustom.imgsensor.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.imgsensor.core.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcameracustom.lens.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.lens.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libcameracustom_camera_db_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom_camera_db_ext.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libcapctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapctrl.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libcarrierconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcarrierconfig.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libccci_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libccci_util.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libcmdl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcmdl.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libcmdl_ndk.mtk.vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcmdl_ndk.mtk.vndk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcodec2_fsr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_fsr.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcodec2_mtk_c2store.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_mtk_c2store.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcodec2_mtk_vdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_mtk_vdec.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcodec2_mtk_venc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_mtk_venc.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libcodec2_vpp_AIMEMC_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vpp_AIMEMC_plugin.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libcodec2_vpp_AISR_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vpp_AISR_plugin.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcodec2_vpp_fa_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vpp_fa_plugin.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcodec2_vpp_mi_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vpp_mi_plugin.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcodec2_vpp_qt_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vpp_qt_plugin.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcodec2_vpp_rs_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vpp_rs_plugin.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcomposer_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcomposer_ext.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libconnfem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconnfem.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libdpframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpframework.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libeffecthal.base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeffecthal.base.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libfacerelight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfacerelight.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libfeature.face.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.face.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libfeature.fwmvp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.fwmvp.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libcustom_nvram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcustom_nvram.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libcvsd_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvsd_mtk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libdecrypt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdecrypt.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libdre.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdre.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libdynamiclog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdynamiclog.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libext_tflite_c.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libext_tflite_c.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libfeature.hdr10.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.hdr10.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libfeature.mcnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.mcnr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libfeature.stereo.platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.stereo.platform.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libfeature.stereo.provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.stereo.provider.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libfeature.vsdof.3a_info_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.vsdof.3a_info_provider.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libfeature.vsdof.fd_info_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.vsdof.fd_info_provider.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libfeature.vsdof.hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.vsdof.hal.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libfeature.vsdof.nvram_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.vsdof.nvram_provider.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libfeature.vsdof.ot_info_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.vsdof.ot_info_provider.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libfeature_eis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature_eis.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libfeature_fsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature_fsc.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libfeature_vrp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature_vrp.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libfeatureiodrv_mem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeatureiodrv_mem.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libfeaturepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeaturepolicy.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libfeaturepolicy_dbhandler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeaturepolicy_dbhandler.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libfft_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfft_vendor.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libfile_op.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfile_op.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libforkexecwrap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libforkexecwrap.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libformatter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libformatter.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libged.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libged.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libgoodixspeech_ve21.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgoodixspeech_ve21.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libgpu_aux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpu_aux.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libgpud.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpud.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libgralloc_extra.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgralloc_extra.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libgralloc_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgralloc_metadata.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libgralloctypes_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgralloctypes_mtk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libgwsdv2-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgwsdv2-ril.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libgwsdv3-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgwsdv3-ril.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libgz_gp_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgz_gp_client.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libgz_uree.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgz_uree.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libhdrvideo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdrvideo.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libheichal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libheichal.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libhevce_sb.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhevce_sb.ca7.android.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libhfmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhfmanager.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libhfmanagerwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhfmanagerwrapper.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libhwm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwm.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libicd_decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libicd_decoder.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libifcutils_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libifcutils_mtk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libimagebuffer_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimagebuffer_wrapper.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libion_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion_mtk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libion_ulit.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion_ulit.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libisetrusty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libisetrusty.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libipsec_ims_shr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipsec_ims_shr.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libiqi_bridge.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libiqi_bridge.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libjpeg-alpha-oal_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha-oal_vendor.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libjpeg-alpha_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha_vendor.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libkmsetkey.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkmsetkey.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libksensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libksensor.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libladder.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/liblpnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblpnr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmfllcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmfllcore.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/liblog_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblog_vendor.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libminiui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminiui.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmipc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmipc.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmml.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmnl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmnl.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmotohid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmotohid.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmmagent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmagent.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmmprofile.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmprofile.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmnetlink_v104.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmnetlink_v104.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmotoispaidlclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmotoispaidlclient.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmsbc_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmsbc_mtk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtk-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtk-ril.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtk_drvb.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam.atmseventmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.atmseventmgr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam.debugwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.debugwrapper.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam.eventcallback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.eventcallback.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam.featurepipe.capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.featurepipe.capture.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam.featurepipe.depthmap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.featurepipe.depthmap.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam.featurepipe.p2g.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.featurepipe.p2g.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam.featurepipe.streaming.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.featurepipe.streaming.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam.featurepipe.vsdof.wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.featurepipe.vsdof.wrapper.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam.ndd.limit.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.ndd.limit.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmtk-rilop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtk-rilop.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam.plugin.3rd_bst_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.plugin.3rd_bst_hdr.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam.plugin.dc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.plugin.dc.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam.plugin.pictrace.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.plugin.pictrace.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_3rdparty.arc.sateis.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_3rdparty.arc.sateis.core.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_3rdparty.arc.sateis.custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_3rdparty.arc.sateis.custom.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_3rdparty.arc.sateis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_3rdparty.arc.sateis.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_aicolor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_aicolor.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_aie.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_aie.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_android_zslprocessor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_android_zslprocessor.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_aov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_aov.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_aov_cust.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_aov_cust.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_aov_plat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_aov_plat.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_aov_sys.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_aov_sys.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_buffer_flush.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_buffer_flush.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_c2psperfctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_c2psperfctrl.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_ca.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_calibration_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_calibration_provider.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_camcontroller.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_camcontroller.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_camctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_camctrl.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_custom.calibration_convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_custom.calibration_convertor.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_custom.metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_custom.metadata.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_custom.policy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_custom.policy.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_custom.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_custom.utils.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_custom_feature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_custom_feature.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_custom_sampleselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_custom_sampleselector.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_custom_zsdhdrselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_custom_zsdhdrselector.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_custzone.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_custzone.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_debugutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_debugutils.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_detectnode.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_detectnode.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_devicemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_devicemgr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_dpe_sp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_dpe_sp.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_exif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_exif.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_faceResultHandler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_faceResultHandler.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_fdWarpConvert.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_fdWarpConvert.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_fdsan.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_fdsan.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_fdsan_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_fdsan_wrapper.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_feature_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_feature_utils.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_grallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_grallocutils.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_grallocutils_aidlv1helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_grallocutils_aidlv1helper.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hal_aidl_device.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_aidl_device.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hal_aidl_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_aidl_provider.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hal_aidl_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_aidl_utils.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hal_android_app_cbadaptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_android_app_cbadaptor.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hal_android_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_android_common.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hal_android_device.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_android_device.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hal_android_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_android_provider.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hal_android_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_android_utils.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hal_aov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_aov.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hal_core_app.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_core_app.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hal_core_app_cbadaptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_core_app_cbadaptor.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hal_core_device.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_core_device.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hal_core_devicesessionpolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_core_devicesessionpolicy.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hal_core_featurepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_core_featurepolicy.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hal_core_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_core_provider.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hal_core_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_core_utils.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hal_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_custom.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hal_custom_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_custom_provider.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hal_custom_state.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_custom_state.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hal_custom_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_custom_utils.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_halisp_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_halisp_custom.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hwnode.jpegnode.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hwnode.jpegnode.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hwnode.p2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hwnode.p2.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hwnode.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hwnode.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hwutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hwutils.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_hwutils_poweronoffcontroller.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hwutils_poweronoffcontroller.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_imgbuf_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_imgbuf_v2.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_ipc_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_ipc_core.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_ipc_wrapper_common_server.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_ipc_wrapper_common_server.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_ipc_wrapper_mtk_server.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_ipc_wrapper_mtk_server.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_jsonconvertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_jsonconvertor.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_jsondata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_jsondata.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_mapping_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_mapping_mgr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_metaconv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_metaconv.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_metadata.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_metastore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_metastore.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_p1node.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_p1node.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_packutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_packutils.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_perfctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_perfctrl.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_perfctrl_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_perfctrl_wrapper.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_pipeline.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipeline.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_pipeline_fbm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipeline_fbm.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_pipelinemodel_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinemodel_capture.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_pipelinemodel_session.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinemodel_session.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_pipelinemodel_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinemodel_utils.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_pipelinepolicy-security.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinepolicy-security.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_pipelinepolicy-smvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinepolicy-smvr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_pipelinepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinepolicy.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_pipelinepolicy_factory.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinepolicy_factory.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_preprocnode.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_preprocnode.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_prerelease.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_prerelease.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_proc.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_request_requlator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_request_requlator.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_sensorcontrol.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_sensorcontrol.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_simager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_simager.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_smvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_smvr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_stdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_stdutils.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_streamutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_streamutils.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_sysutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_sysutils.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_taskmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_taskmgr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_thirdparty.customer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_thirdparty.customer.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_thirdparty.customzone.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_thirdparty.customzone.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_thirdparty.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_thirdparty.mtk.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_thirdparty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_thirdparty.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_thirdparty.vidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_thirdparty.vidhance.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_tuning_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_tuning_utils.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_ulog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_ulog.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcam_zsl_customselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_zsl_customselector.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcm_ipc_dummy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcm_ipc_dummy.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkconfig.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkconfigutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkconfigutils.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcutils.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkhardware_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkhardware_legacy.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkisp_metadata_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkisp_metadata_v2.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkisp_metadata_v3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkisp_metadata_v3.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkltm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkltm.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmtklimiter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtklimiter_vendor.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkmipc-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkmipc-ril.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkmipc-rilop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkmipc-rilop.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmtknetcap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtknetcap.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtknetutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtknetutils.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkproperty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkproperty.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkrillog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkrillog.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkrilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkrilutils.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkshifter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkshifter_vendor.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkspparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkspparser.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkspparser_swb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkspparser_swb.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtksysutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtksysutils.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtktinyxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtktinyxml.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkutils.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_cic_ci_compiler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_cic_ci_compiler.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_cic_ci_compiler_25.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_cic_ci_compiler_25.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_clc_14_cl_compiler_25.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_clc_14_cl_compiler_25.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_clc_14_mvpu_debuginfo_25.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_clc_14_mvpu_debuginfo_25.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_clc_14_mvpu_elf_25.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_clc_14_mvpu_elf_25.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_clc_14_mvpu_isa_25.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_clc_14_mvpu_isa_25.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_clc_14_mvpu_utility_25.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_clc_14_mvpu_utility_25.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_clc_cl_compiler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_clc_cl_compiler.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_clc_mvpu_debuginfo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_clc_mvpu_debuginfo.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_clc_mvpu_elf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_clc_mvpu_elf.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_clc_mvpu_utility.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_clc_mvpu_utility.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_clc_vpu_isa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_clc_vpu_isa.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_config.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_config.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_engine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_engine.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_engine_25.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_engine_25.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_engine_25_pub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_engine_25_pub.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_engine_pub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_engine_pub.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_pattern.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_pattern.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_pattern_25.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_pattern_25.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_pattern_25_pub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_pattern_25_pub.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_pattern_pub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_pattern_pub.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_runtime.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_runtime_25.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_runtime_25.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_runtime_25_pub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_runtime_25_pub.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_runtime_builtin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_runtime_builtin.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_runtime_builtin_25.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_runtime_builtin_25.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_runtime_pub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_runtime_pub.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmvpu_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_wrapper.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libneuralnetworks_sl_driver_mtk_prebuilt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libneuralnetworks_sl_driver_mtk_prebuilt.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libneuron_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libneuron_runtime.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libneuron_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libneuron_wrapper.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpuop25_mtk_cv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpuop25_mtk_cv.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpuop25_mtk_nn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpuop25_mtk_nn.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpuop_mtk_cv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpuop_mtk_cv.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libmvpuop_mtk_nn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpuop_mtk_nn.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libneuroeara.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libneuroeara.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libneuron_graph_delegate.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libneuron_graph_delegate.mtk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libneuron_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libneuron_platform.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libneuropilot_hal_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libneuropilot_hal_utils.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnir_neon_driver_ndk.mtk.vndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libnpagent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnpagent.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libnpagent_server.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnpagent_server.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libnvram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnvram.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libnvram_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnvram_sec.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libnwk_opt_halwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnwk_opt_halwrap_vendor.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/liboem_specific.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboem_specific.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libpda_usdriver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpda_usdriver.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libpq_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpq_sec.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libpqconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpqconfig.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libpixelflinger.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpixelflinger.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libpowerhalwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowerhalwrap_vendor.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libpqframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpqframework.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libpqhdrmetaparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpqhdrmetaparser.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libpqparamparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpqparamparser.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libpqsharememory.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpqsharememory.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libpqtuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpqtuning.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libpqxmlflagparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpqxmlflagparser.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libpqxmlparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpqxmlparser.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libprotobuf-cpp-lite-21.7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-lite-21.7.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libratconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libratconfig.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/librcs_volte_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcs_volte_core.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libremosaic_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_wrapper.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libremosaiclib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaiclib.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/librgbwlightsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librgbwlightsensor.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/librilfusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilfusion.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/librt_extamp_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librt_extamp_intf.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libscltm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscltm.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libsilkybrightnesscore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsilkybrightnesscore.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libsimlock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsimlock.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libsimmelock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsimmelock.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libspeech_enh_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspeech_enh_lib.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libspeechparser_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspeechparser_vendor.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libstfactory-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstfactory-vendor.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libstorage_otp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstorage_otp.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libsysenv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysenv.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libtriplecam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_optical_zoom_control.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libtriplecam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_video_optical_zoom.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libtflite_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtflite_mtk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libtiktapvibrator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtiktapvibrator.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libtrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrm.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libudf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libudf.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libultrahdr_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libultrahdr_mtk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/liburee_meta_drmkeyinstall.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liburee_meta_drmkeyinstall.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libvcodec_oal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvcodec_oal.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libvcodecdrv_header_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvcodecdrv_header_stub.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libvia-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvia-ril.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libviamipc-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libviamipc-ril.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/mot_cybert_gc13a2_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mot_cybert_gc13a2_mipi_raw_IdxMgr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/mot_cybert_gc32e1_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mot_cybert_gc32e1_mipi_raw_IdxMgr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/mot_cybert_s5k3k1_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mot_cybert_s5k3k1_mipi_raw_IdxMgr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/mot_cybert_s5kjns_uw_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mot_cybert_s5kjns_uw_mipi_raw_IdxMgr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/motorola.hardware.fdr-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.fdr-V1-ndk.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/motorola.hardware.haptic-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.haptic-V2-ndk.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/motorola.hardware.health.storage.aidl-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.health.storage.aidl-V1-ndk.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/motorola.hardware.health.storage@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.health.storage@1.0.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/motorola.hardware.sensors-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.sensors-V2-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libvividhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvividhdr.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libvow_comp_test.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvow_comp_test.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libvpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpu.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libvpu5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpu5.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libwifi-hal-mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal-mtk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libwifitest.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifitest.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libwpfa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwpfa.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/motrilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motrilutils.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/arm.graphics-V4-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/arm.graphics-V4-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/arm.mali.platform-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/arm.mali.platform-V2-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib3a.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.ae.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib3a.ae.stat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.ae.stat.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib3a.af.assist.models1d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.af.assist.models1d.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib3a.af.assist.models2d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.af.assist.models2d.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib3a.af.assist.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.af.assist.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib3a.af.assist.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.af.assist.utils.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib3a.af.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.af.core.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib3a.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.af.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib3a.aishutter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.aishutter.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib3a.alsflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.alsflicker.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib3a.awb.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.awb.core.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib3a.awbsync.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.awbsync.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib3a.cculog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.cculog.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib3a.custom.ae.flow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.custom.ae.flow.so \
@@ -3739,35 +5206,60 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib3a.custom.af.flow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.custom.af.flow.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib3a.custom.awb.flow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.custom.awb.flow.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib3a.custom.stt.flow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.custom.stt.flow.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib3a.flash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.flash.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib3a.flicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.flicker.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.log.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib3a.sensors.color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.sensors.color.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib3a.sensors.flicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.sensors.flicker.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib3a.stat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.stat.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libDBAccessor_ISP.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libDBAccessor_ISP.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libDR.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libMtkMediaController.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libMtkMediaController.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libMtkMediaController_SAL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libMtkMediaController_SAL.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libSonyIMX519PdafWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libSonyIMX519PdafWrapper.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/lib_bsscore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib_bsscore.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libaaa_feature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaaa_feature.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libaaa_ltm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaaa_ltm.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libaaa_ltmx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaaa_ltmx.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libaaa_tnc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaaa_tnc.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libaaa_toneutil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaaa_toneutil.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libaal_cust_func.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaal_cust_func.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libaalservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaalservice.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libacdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libacdk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libaiawb_fs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaiawb_fs.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libaiawb_moon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaiawb_moon.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libaiawb_moon_model.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaiawb_moon_model.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libaiawb_p1ggm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaiawb_p1ggm.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libaiawb_sun.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaiawb_sun.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libaibc_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaibc_tuning.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libaibc_tuning_p2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaibc_tuning_p2.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libaibc_tuning_p3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaibc_tuning_p3.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libaibc_tuning_p4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaibc_tuning_p4.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libaicapturecore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaicapturecore.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libaidepth_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaidepth_tuning.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libaiseg_cache.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaiseg_cache.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libaiseg_model.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaiseg_model.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libaiseg_p1ggm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaiseg_p1ggm.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libaiseg_sun.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaiseg_sun.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libaiselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaiselector.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libalgo.aosp.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libalgo.aosp.log.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libapiwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libapiwrapper.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libapudcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libapudcutils.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libarm_mali_config_sysprops.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libarm_mali_config_sysprops.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.3a_isp.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.3a_isp.utils.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.afmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.afmgr.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.chdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.chdr.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.feature_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.feature_utils.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.fw_me_tcy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.fw_me_tcy.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.3aProvider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.3aProvider.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.afassitmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.afassitmgr.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.cctsvr.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.cctsvr.v4l2.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.ctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.ctrl.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.custom.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.guard.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.guard.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.ircutdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.ircutdrv.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.lensdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.lensdrv.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.log.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.lscMgrApi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.lscMgrApi.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.oisdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.oisdrv.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.ozoomdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.ozoomdrv.so \
@@ -3775,100 +5267,291 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.policy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.policy.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.tofdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.tofdrv.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.utils.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.ae.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.ae.v4l2.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.ai3a_v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.ai3a_v4l2.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.awb_v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.awb_v4l2.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.dng.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.dng.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.flash.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.flash.v4l2.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.flicker.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.flicker.v4l2.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.ir.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.ir.v4l2.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.lsctbl.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.lsctbl.v4l2.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.nvram.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.nvram.v4l2.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.sensor.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.sensor.v4l2.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.strobe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.strobe.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.stt_v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.stt_v4l2.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.tone.mgr.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.tone.mgr.v4l2.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.halisp.SwTopCtrlMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.halisp.SwTopCtrlMgr.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.halisp.TopCtrlMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.halisp.TopCtrlMgr.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.halisp.TuningDataProvider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.halisp.TuningDataProvider.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.halisp.TuningDataProviderFactory.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.halisp.TuningDataProviderFactory.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.halisp.imp.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.halisp.imp.v4l2.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.halisp.plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.halisp.plugin.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.halisp.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.halisp.utils.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.halisp.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.halisp.v4l2.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.halsensor.hwintegration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.halsensor.hwintegration.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.halsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.halsensor.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.isptuning.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.isptuning.v4l2.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.peripheralcontroller.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.peripheralcontroller.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.sensor_mode_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.sensor_mode_helper.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.sensor_mode_helper_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.sensor_mode_helper_custom.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.tuningcachemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.tuningcachemgr.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.utils.sensorprovider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.utils.sensorprovider.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam.vhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.vhdr.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam_ipc_hal3a_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam_ipc_hal3a_client.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcam_ipc_nvbuf_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam_ipc_nvbuf_client.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamalgo.BSSwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.BSSwrapper.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamalgo.InlineCompGyro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.InlineCompGyro.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamalgo.aics.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.aics.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamalgo.Mfbllwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.Mfbllwrapper.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamalgo.aibc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.aibc.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamalgo.aibcwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.aibcwrapper.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamalgo.ainr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.ainr.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamalgo.c3d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.c3d.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamalgo.cac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.cac.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamalgo.eis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.eis.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamalgo.fsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.fsc.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamalgo.fus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.fus.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamalgo.gyro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.gyro.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamalgo.lmv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.lmv.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamalgo.lsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.lsc.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamalgo.mcnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.mcnr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamalgo.vaics.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.vaics.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamalgo.n3d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.n3d.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamalgo.platform2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.platform2.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamalgo.tsfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.tsfs.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamalgo.vaidepth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.vaidepth.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamalgo.vsf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.vsf.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamera.custom.af_assist_buf_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamera.custom.af_assist_buf_mgr.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamera.custom.af_assist_buf_mgr_open.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamera.custom.af_assist_buf_mgr_open.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamera.custom.af_assist_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamera.custom.af_assist_mgr.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamera.custom.af_assist_pdp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamera.custom.af_assist_pdp.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamera.customae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamera.customae.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcamera.customflk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamera.customflk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcameracustom.camera.3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.camera.3a.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcameracustom.camera.isp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.camera.isp.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcameracustom.camera.sensors.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.camera.sensors.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcameracustom.camera_calibration.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.camera_calibration.core.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcameracustom.camera_exif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.camera_exif.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcameracustom.cfg_setting.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.cfg_setting.core.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcameracustom.eis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.eis.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcameracustom.flashlight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.flashlight.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcameracustom.imgsensor.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.imgsensor.core.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcameracustom.lens.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.lens.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcameracustom.plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.plugin.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcameracustom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libcameracustom_camera_db_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom_camera_db_ext.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libccd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libccd.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libdpframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libdpframework.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libeffecthal.base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libeffecthal.base.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libfacerelight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfacerelight.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libfeature.aiseg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature.aiseg.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libfeature.face.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature.face.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libfeature.fwmvp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature.fwmvp.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libfeature.mcnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature.mcnr.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libfeature.stereo.platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature.stereo.platform.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libfeature.stereo.provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature.stereo.provider.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libfeature.vsdof.3a_info_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature.vsdof.3a_info_provider.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libfeature.vsdof.fd_info_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature.vsdof.fd_info_provider.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libfeature.vsdof.hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature.vsdof.hal.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libfeature.vsdof.nvram_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature.vsdof.nvram_provider.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libfeature.vsdof.ot_info_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature.vsdof.ot_info_provider.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libfeature_eis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature_eis.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libfeature_fsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature_fsc.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libfeature_vrp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature_vrp.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libfeatureiodrv_mem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeatureiodrv_mem.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libfeaturepolicy_dbhandler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeaturepolicy_dbhandler.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libgpudataproducer.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libimgstream-custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgstream-custom.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libimgstream-drv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgstream-drv.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libimgstream-guard.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgstream-guard.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libimgsys_adl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_adl.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libimgsys_cmt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_cmt.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libimgsys_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_custom.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libimgsys_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_daemon.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libimgsys_dip.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_dip.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libimgsys_drvcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_drvcommon.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libimgsys_gce.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_gce.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libimgsys_main.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_main.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libimgsys_me.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_me.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libimgsys_pqdip.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_pqdip.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libimgsys_sensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_sensor.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libimgsys_system.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_system.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libimgsys_taskhandler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_taskhandler.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libimgsys_tdrhal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_tdrhal.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libimgsys_tile.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_tile.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libimgsys_traw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_traw.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libimgsys_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_utils.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libimgsys_v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_v4l2.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libimgsys_wpe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_wpe.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libispfeature_mtkcam.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libispfeature_mtkcam.v4l2.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libispinterpreter_mtkcam.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libispinterpreter_mtkcam.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmdla_standalone.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmdla_standalone.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/liblpnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/liblpnr.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmfllcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmfllcore.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmgr3a.adapt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmgr3a.adapt.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmml.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmmlpqImpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmmlpqImpl.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmnl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmnl.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtk_drvb.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam.atmseventmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam.atmseventmgr.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam.debugwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam.debugwrapper.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam.eventcallback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam.eventcallback.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam.featurepipe.capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam.featurepipe.capture.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam.featurepipe.depthmap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam.featurepipe.depthmap.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam.featurepipe.p2g.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam.featurepipe.p2g.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam.featurepipe.streaming.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam.featurepipe.streaming.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam.featurepipe.vsdof.wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam.featurepipe.vsdof.wrapper.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam.logicalcaminfoprovider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam.logicalcaminfoprovider.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam.logicalmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam.logicalmodule.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam.ndd.limit.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam.ndd.limit.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_aicolor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_aicolor.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_aie.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_aie.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_android_zslprocessor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_android_zslprocessor.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_aov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_aov.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_aov_cust.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_aov_cust.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_aov_plat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_aov_plat.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_aov_sys.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_aov_sys.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_buffer_flush.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_buffer_flush.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_c2psperfctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_c2psperfctrl.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_ca.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_calibration_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_calibration_provider.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_camcontroller.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_camcontroller.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_camcoordinator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_camcoordinator.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_camctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_camctrl.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_camdeliver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_camdeliver.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_camsys_sensor_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_camsys_sensor_utils.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_coredev.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_coredev.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_custom.calibration_convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_custom.calibration_convertor.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_custom.metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_custom.metadata.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_custom.policy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_custom.policy.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_custom_sampleselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_custom_sampleselector.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_custom_zsdhdrselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_custom_zsdhdrselector.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_custzone.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_custzone.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_debugutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_debugutils.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_detectnode.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_detectnode.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_devicemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_devicemgr.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_diputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_diputils.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_dma_map.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_dma_map.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_exif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_exif.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_externalisploader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_externalisploader.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_faceResultHandler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_faceResultHandler.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_feature_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_feature_utils.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_grallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_grallocutils.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal3a_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal3a_provider.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal_aidl_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_aidl_common.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal_aidl_device.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_aidl_device.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal_aidl_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_aidl_provider.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal_aidl_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_aidl_utils.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal_android_app_cbadaptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_android_app_cbadaptor.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal_android_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_android_common.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal_android_device.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_android_device.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal_android_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_android_provider.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal_android_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_android_utils.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal_aov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_aov.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal_core_app.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_core_app.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal_core_app_cbadaptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_core_app_cbadaptor.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal_core_device.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_core_device.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal_core_devicesessionpolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_core_devicesessionpolicy.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal_core_featurepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_core_featurepolicy.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal_core_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_core_provider.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal_core_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_core_utils.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_custom.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal_custom_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_custom_provider.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal_hidl_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_hidl_common.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal_hidl_device.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_hidl_device.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal_hidl_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_hidl_provider.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hal_hidl_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_hidl_utils.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_halisp_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_halisp_custom.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hwnode.jpegnode.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hwnode.jpegnode.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hwnode.p2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hwnode.p2.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hwnode.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hwnode.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hwutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hwutils.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hwutils_android.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hwutils_android.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_hwutils_poweronoffcontroller.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hwutils_poweronoffcontroller.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_imgbuf_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_imgbuf_v2.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_ipc_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_ipc_core.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_ipc_wrapper_common_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_ipc_wrapper_common_client.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_ipc_wrapper_common_server.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_ipc_wrapper_common_server.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_ipc_wrapper_mtk_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_ipc_wrapper_mtk_client.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_ipc_wrapper_mtk_server.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_ipc_wrapper_mtk_server.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_jsonconvertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_jsonconvertor.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_jsondata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_jsondata.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_mapping_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_mapping_mgr.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_metaconv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_metaconv.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_metadata.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_metastore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_metastore.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_modulefactory_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_modulefactory_custom.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_modulefactory_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_modulefactory_utils.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_modulehelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_modulehelper.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_p1node.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_p1node.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_packutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_packutils.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_perfctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_perfctrl.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_pip.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_pip.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_pipeline.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_pipeline.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_pipeline_fbm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_pipeline_fbm.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_pipelinemodel_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_pipelinemodel_capture.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_pipelinemodel_session.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_pipelinemodel_session.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_pipelinemodel_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_pipelinemodel_utils.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_pipelinepolicy-security.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_pipelinepolicy-security.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_pipelinepolicy-smvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_pipelinepolicy-smvr.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_pipelinepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_pipelinepolicy.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_pipelinepolicy_factory.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_pipelinepolicy_factory.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_pipemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_pipemgr.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_postprocprovider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_postprocprovider.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_preprocnode.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_preprocnode.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_prerelease.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_prerelease.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_proc.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_request_requlator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_request_requlator.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_resourcedecision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_resourcedecision.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_resourcedecision_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_resourcedecision_custom.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_salmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_salmgr.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_sensorcontrol.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_sensorcontrol.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_simager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_simager.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_smvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_smvr.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_stdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_stdutils.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_streamutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_streamutils.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_synchelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_synchelper.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_sysutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_sysutils.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_taskmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_taskmgr.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_thirdparty.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_thirdparty.core.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/mot_cybert_gc32e1_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/mot_cybert_gc32e1_mipi_raw_tuning.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/mot_cybert_imx896_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/mot_cybert_imx896_mipi_raw_IdxMgr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/mot_cybert_imx896_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/mot_cybert_imx896_mipi_raw_tuning.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/mot_cybert_s5kjns_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/mot_cybert_s5kjns_mipi_raw_IdxMgr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/mot_cybert_s5kjns_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/mot_cybert_s5kjns_mipi_raw_tuning.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/mot_cybert_s5kjns_uw_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/mot_cybert_s5kjns_uw_mipi_raw_tuning.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/mtk000_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mtk000_mipi_raw_IdxMgr.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/nfc_nci.st21nfc.st.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci.st21nfc.st.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/panel_als_comp_filter_arcfox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/panel_als_comp_filter_arcfox.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_thirdparty.customer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_thirdparty.customer.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_thirdparty.customzone.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_thirdparty.customzone.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_thirdparty.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_thirdparty.mtk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_thirdparty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_thirdparty.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_tuning_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_tuning_utils.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_ulog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_ulog.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcam_zsl_customselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_zsl_customselector.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libmtkcm_ipc_dummy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcm_ipc_dummy.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libneuralnetworks_sl_driver_mtk_prebuilt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libneuralnetworks_sl_driver_mtk_prebuilt.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libneuron_adapter_mgvi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libneuron_adapter_mgvi.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libneuron_runtime.7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libneuron_runtime.7.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libneuron_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libneuron_runtime.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libneuron_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libneuron_wrapper.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libnir_neon_driver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libnir_neon_driver.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libpda_usdriver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libpda_usdriver.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libpq_cust_base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libpq_cust_base.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libpq_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libpq_sec.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libpqconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libpqconfig.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libpqparamparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libpqparamparser.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/libvainr_model.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libvainr_model.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/mtk000_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/mtk000_mipi_raw_IdxMgr.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mt6897/mtk000_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/mtk000_mipi_raw_tuning.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/mtk_lbs_service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mtk_lbs_service-impl.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/nwk_opt_imp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nwk_opt_imp.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/sensors.moto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.moto.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/soundfx/libaudiopreprocessing_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudiopreprocessing_mtk.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.audio-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.audio-V1-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.aac.hardware.richtap.vibrator-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.aac.hardware.richtap.vibrator-V1-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.awinic.hardware.tiktap.vibrator-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.awinic.hardware.tiktap.vibrator-V1-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.apmonitor-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apmonitor-V1-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apmonitor@2.0.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.apusys-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apuware.apusys-V3-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.utils-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apuware.utils-V1-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.audio@6.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.audio@6.1.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.audio@7.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.audio@7.1.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.audio@8.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.audio@8.1.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.aovservice-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.aovservice-V2-ndk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.atms-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.atms-V1-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.atms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.atms@1.0.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.bgservice-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.bgservice-V1-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.bgservice@1.0.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.bgservice@1.1.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.ccap@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.ccap@1.0.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.frhandler@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.frhandler@1.0.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.isphal-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.isphal-V1-ndk.so \
@@ -3876,11 +5559,27 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.isphal@1.1.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.security@1.0.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.clientapi-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.clientapi-V1-ndk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.composer_ext-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.composer_ext-V1-ndk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.composer_ext@1.0.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.gnss-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.gnss-V1-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.gnss.batching-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.gnss.batching-V1-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.lbs-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.lbs-V1-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.lbs@1.0.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mdmonitor-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mdmonitor-V1-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mmagent-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mmagent-V1-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mmagent@1.0.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mmagent@1.1.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mmlpq-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mmlpq-V3-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mms@1.0.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mms@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mms@1.1.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mms@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mms@1.2.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mms@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mms@1.3.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mms@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mms@1.4.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mms@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mms@1.5.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkpower-V1-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower_applist-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkpower_applist-V1-ndk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.assist-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkradioex.assist-V1-ndk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.atci-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkradioex.atci-V1-ndk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.cap-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkradioex.cap-V1-ndk.so \
@@ -3900,35 +5599,503 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.voice-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkradioex.voice-V1-ndk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.netdagent-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.netdagent-V1-ndk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.netdagent@1.0.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.neuropilot.agent-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.neuropilot.agent-V1-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.neuropilot.agent@1.0.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.neuropilot.agent@1.1.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.neuropilot.agent@1.2.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.nvram-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.nvram-V1-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.nwk_opt_new-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.nwk_opt_new-V1-ndk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.power@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.power@1.1.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.power@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.power@2.0.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.pq_aidl-V4-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq_aidl-V4-ndk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.pq_aidl-V7-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq_aidl-V7-ndk.so \
-    vendor/motorola/cybert/proprietary/vendor/usr/keylayout/ReadyForAirRemote_Consumer_Control.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/ReadyForAirRemote_Consumer_Control.kl \
-    vendor/motorola/cybert/proprietary/vendor/usr/keylayout/ReadyForAirRemote_Keyboard.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/ReadyForAirRemote_Keyboard.kl \
-    vendor/motorola/cybert/proprietary/vendor/usr/keylayout/fts_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/fts_ts.kl \
-    vendor/motorola/cybert/proprietary/vendor/usr/keylayout/goodix_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/goodix_ts.kl
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.rcs-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.rcs-V1-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.rcs@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.rcs@2.0.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.trustonic.tee.tui@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.trustonic.tee.tui@1.0.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.trustonic.tee@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.trustonic.tee@1.0.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.trustonic.tee@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.trustonic.tee@1.1.so
 
 PRODUCT_PACKAGES += \
-    AiCore \
-    HotwordEnrollmentOKGoogleRISCV \
-    HotwordEnrollmentXGoogleRISCV \
+    MotoSignatureApp \
+    EuiccPartnerApp \
+    EuiccGoogle \
     MotCamera5 \
-    ActionCore \
-    ImsService \
-    MotoCare \
-    MotoSecureVault \
-    Personalize \
-    mediatek-ims-base \
-    android.hardware.bluetooth-service-mediatek.xml \
+    MotCameraDesktop \
+    MotorolaSettingsProvider \
+    MtkTelephonyAssist \
+    com.motorola.motosignature \
+    moto-core_services \
+    moto-settings \
+    com.motorola.camera.extensions \
+    mtk-moto-telephony-ext \
+    mtk-telephony-common \
+    android.hardware.gatekeeper-service.trustonic.xml \
+    android.hardware.neuralnetworks-shim-service-mtk.xml \
     android.hardware.security.keymint-service.trustonic.xml \
-    com.motorola.hardware.display.panel-service.xml \
-    com.motorola.hardware.display.touch.xml \
-    face-default_3.xml \
+    android.hardware.security.secureclock-service.trustonic.xml \
+    android.hardware.security.sharedsecret-service.trustonic.xml \
+    android.hardware.tetheroffload-V1-service.xml \
+    android.hardware.usb-aidl-service.mediatek.xml \
+    android.hardware.usb.gadget-aidl-service.mediatek.xml \
+    arm.mali.platform-mediatek.xml \
+    gnss-mtk-default.xml \
     gnss-mtk.xml \
     manifest_IMoto_AIDL_Fingerprint.xml \
+    manifest_allocator.xml \
+    manifest_apuware_apusys_aidl.xml \
+    manifest_apuware_utils_aidl.xml \
     manifest_cameraprovider.xml \
     manifest_hwcomposer.xml \
-    motorola.hardware.sensors.xml \
-    power-mediatek.xml \
+    manifest_isphal.xml \
+    manifest_media_c2_V1_2_default.xml \
+    manifest_mmlpq.xml \
+    mapper.mediatek.xml \
+    mtk_lbs_service.xml \
+    mtkgnss-batching.xml \
+    thermal-mediatek.xml \
     vibrator-mtk-default.xml
+
+PRODUCT_PACKAGES += \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_ae_ParameterDB_ae_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_af_ParameterDB_af_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_awb_ParameterDB_awb_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_awbsync_ParameterDB_awbsync_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_feature_ParameterDB_feature_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_flash_ParameterDB_flash_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_flashcali_ParameterDB_flashcali_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_ParameterDB_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_sw_top_control_data_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_top_control_data_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_pd_ParameterDB_pd_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_pipeline_ParameterDB_pipeline_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tone_ParameterDB_tone_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_default_sensor_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_default_sensor_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx214_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx214_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx334_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx334_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx334sub_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx334sub_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx481_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx481_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx499_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx499_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx586_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx586_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx709_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx709_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx709o_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx709o_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx766_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx766_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx766dual_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx766dual_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx766dualo_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx766dualo_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx766o_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx766o_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx866_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx866_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx989_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx989_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_cybert_gc13a2_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_cybert_gc13a2_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_cybert_gc32e1_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_cybert_gc32e1_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_cybert_imx896_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_cybert_imx896_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_cybert_s5k3k1_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_cybert_s5k3k1_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_cybert_s5kjns_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_cybert_s5kjns_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_cybert_s5kjns_uw_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_cybert_s5kjns_uw_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_fuji_imx896_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_fuji_imx896_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_fuji_s5kjns_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_fuji_s5kjns_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_fuji_s5kjns_uw_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_fuji_s5kjns_uw_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_ISP_info_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_ov48b_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_ov48b_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_s5k3m5sx_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_s5k3m5sx_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_s5k3m5sxo_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_s5k3m5sxo_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_s5k3p9sp_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_s5k3p9sp_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_aov_default_sensor_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_aov_default_sensor_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_aov_ISP_info_db \
+    vendor_bin_hw_android_hardware_graphics_allocator-V2-service-mediatek \
+    vendor_lib64_hw_arm_mali_platform-service_mediatek \
+    vendor_bin_hw_camerahalserver \
+    vendor_bin_expat \
+    vendor_bin_jpegtool \
+    vendor_lib64_egl_libGLES_mali_so \
+    vendor_lib64_hw_audio_primary_mt6897_so \
+    vendor_lib64_hw_audio_r_submix_mt6897_so \
+    vendor_lib64_hw_android_hardware_camera_provider@2_6-impl-mediatek_so \
+    vendor_lib64_hw_android_hardware_graphics_allocator-V2-mediatek_so \
+    vendor_lib64_hw_android_hardware_graphics_mapper@4_0-impl-mediatek_so \
+    vendor_lib64_hw_mapper_mediatek_so \
+    vendor_lib64_hw_vendor_mediatek_hardware_camera_atms@1_0-impl_so \
+    vendor_lib64_hw_vendor_mediatek_hardware_camera_bgservice@1_1-impl_so \
+    vendor_lib64_hw_vendor_mediatek_hardware_camera_isphal@1_1-impl_so \
+    vendor_lib64_hw_vendor_mediatek_hardware_pq_aidl-impl_so \
+    vendor_lib64_hw_vulkan_mali_so \
+    vendor_lib64_hw_sensors_mt6897_so \
+    vendor_lib64_arm_graphics-V4-ndk_so \
+    vendor_lib64_arm_mali_platform-V2-ndk_so \
+    vendor_lib64_lib3a_ae_so \
+    vendor_lib64_lib3a_ae_stat_so \
+    vendor_lib64_lib3a_af_assist_models1d_so \
+    vendor_lib64_lib3a_af_assist_models2d_so \
+    vendor_lib64_lib3a_af_assist_so \
+    vendor_lib64_lib3a_af_assist_utils_so \
+    vendor_lib64_lib3a_af_core_so \
+    vendor_lib64_lib3a_af_so \
+    vendor_lib64_lib3a_aishutter_so \
+    vendor_lib64_lib3a_alsflicker_so \
+    vendor_lib64_lib3a_awb_core_so \
+    vendor_lib64_lib3a_awbsync_so \
+    vendor_lib64_lib3a_cculog_so \
+    vendor_lib64_lib3a_custom_ae_flow_so \
+    vendor_lib64_lib3a_custom_ae_so \
+    vendor_lib64_lib3a_custom_af_flow_so \
+    vendor_lib64_lib3a_custom_awb_flow_so \
+    vendor_lib64_lib3a_custom_stt_flow_so \
+    vendor_lib64_lib3a_flash_so \
+    vendor_lib64_lib3a_flicker_so \
+    vendor_lib64_lib3a_log_so \
+    vendor_lib64_lib3a_sensors_color_so \
+    vendor_lib64_lib3a_sensors_flicker_so \
+    vendor_lib64_lib3a_stat_so \
+    vendor_lib64_libDBAccessor_ISP_so \
+    vendor_lib64_libDR_so \
+    vendor_lib64_libMtkMediaController_so \
+    vendor_lib64_libMtkMediaController_SAL_so \
+    vendor_lib64_libSonyIMX519PdafWrapper_so \
+    vendor_lib64_lib_bsscore_so \
+    vendor_lib64_libaaa_feature_so \
+    vendor_lib64_libaaa_ltm_so \
+    vendor_lib64_libaaa_ltmx_so \
+    vendor_lib64_libaaa_tnc_so \
+    vendor_lib64_libaaa_toneutil_so \
+    vendor_lib64_libaal_cust_func_so \
+    vendor_lib64_libaalservice_so \
+    vendor_lib64_libacdk_so \
+    vendor_lib64_libaiawb_fs_so \
+    vendor_lib64_libaiawb_moon_so \
+    vendor_lib64_libaiawb_moon_model_so \
+    vendor_lib64_libaiawb_p1ggm_so \
+    vendor_lib64_libaiawb_sun_so \
+    vendor_lib64_libaibc_tuning_so \
+    vendor_lib64_libaibc_tuning_p2_so \
+    vendor_lib64_libaibc_tuning_p3_so \
+    vendor_lib64_libaibc_tuning_p4_so \
+    vendor_lib64_libaicapturecore_so \
+    vendor_lib64_libaidepth_tuning_so \
+    vendor_lib64_libaiseg_cache_so \
+    vendor_lib64_libaiseg_model_so \
+    vendor_lib64_libaiseg_p1ggm_so \
+    vendor_lib64_libaiseg_sun_so \
+    vendor_lib64_libaiselector_so \
+    vendor_lib64_libalgo_aosp_log_so \
+    vendor_lib64_libapiwrapper_so \
+    vendor_lib64_libapudcutils_so \
+    vendor_lib64_libcam_3a_isp_utils_so \
+    vendor_lib64_libcam_afmgr_so \
+    vendor_lib64_libcam_chdr_so \
+    vendor_lib64_libcam_feature_utils_so \
+    vendor_lib64_libcam_fw_me_tcy_so \
+    vendor_lib64_libcam_hal3a_3aProvider_so \
+    vendor_lib64_libcam_hal3a_afassitmgr_so \
+    vendor_lib64_libcam_hal3a_cctsvr_v4l2_so \
+    vendor_lib64_libcam_hal3a_ctrl_so \
+    vendor_lib64_libcam_hal3a_custom_so \
+    vendor_lib64_libcam_hal3a_guard_so \
+    vendor_lib64_libcam_hal3a_ircutdrv_so \
+    vendor_lib64_libcam_hal3a_lensdrv_so \
+    vendor_lib64_libcam_hal3a_log_so \
+    vendor_lib64_libcam_hal3a_lscMgrApi_so \
+    vendor_lib64_libcam_hal3a_oisdrv_so \
+    vendor_lib64_libcam_hal3a_ozoomdrv_so \
+    vendor_lib64_libcam_hal3a_pdstatmgr_so \
+    vendor_lib64_libcam_hal3a_policy_so \
+    vendor_lib64_libcam_hal3a_so \
+    vendor_lib64_libcam_hal3a_tofdrv_so \
+    vendor_lib64_libcam_hal3a_utils_so \
+    vendor_lib64_libcam_hal3a_v3_ae_v4l2_so \
+    vendor_lib64_libcam_hal3a_v3_ai3a_v4l2_so \
+    vendor_lib64_libcam_hal3a_v3_awb_v4l2_so \
+    vendor_lib64_libcam_hal3a_v3_dng_so \
+    vendor_lib64_libcam_hal3a_v3_flash_v4l2_so \
+    vendor_lib64_libcam_hal3a_v3_flicker_v4l2_so \
+    vendor_lib64_libcam_hal3a_v3_ir_v4l2_so \
+    vendor_lib64_libcam_hal3a_v3_lsctbl_v4l2_so \
+    vendor_lib64_libcam_hal3a_v3_nvram_v4l2_so \
+    vendor_lib64_libcam_hal3a_v3_sensor_v4l2_so \
+    vendor_lib64_libcam_hal3a_v3_strobe_so \
+    vendor_lib64_libcam_hal3a_v3_stt_v4l2_so \
+    vendor_lib64_libcam_hal3a_v3_tone_mgr_v4l2_so \
+    vendor_lib64_libcam_halisp_SwTopCtrlMgr_so \
+    vendor_lib64_libcam_halisp_TopCtrlMgr_so \
+    vendor_lib64_libcam_halisp_TuningDataProvider_so \
+    vendor_lib64_libcam_halisp_TuningDataProviderFactory_so \
+    vendor_lib64_libcam_halisp_imp_v4l2_so \
+    vendor_lib64_libcam_halisp_plugin_so \
+    vendor_lib64_libcam_halisp_utils_so \
+    vendor_lib64_libcam_halisp_v4l2_so \
+    vendor_lib64_libcam_halsensor_hwintegration_so \
+    vendor_lib64_libcam_halsensor_so \
+    vendor_lib64_libcam_isptuning_v4l2_so \
+    vendor_lib64_libcam_peripheralcontroller_so \
+    vendor_lib64_libcam_sensor_mode_helper_so \
+    vendor_lib64_libcam_sensor_mode_helper_custom_so \
+    vendor_lib64_libcam_tuningcachemgr_so \
+    vendor_lib64_libcam_utils_sensorprovider_so \
+    vendor_lib64_libcam_vhdr_so \
+    vendor_lib64_libcam_ipc_hal3a_client_so \
+    vendor_lib64_libcam_ipc_nvbuf_client_so \
+    vendor_lib64_libcamalgo_BSSwrapper_so \
+    vendor_lib64_libcamalgo_InlineCompGyro_so \
+    vendor_lib64_libcamalgo_Mfbllwrapper_so \
+    vendor_lib64_libcamalgo_aibc_so \
+    vendor_lib64_libcamalgo_aibcwrapper_so \
+    vendor_lib64_libcamalgo_ainr_so \
+    vendor_lib64_libcamalgo_c3d_so \
+    vendor_lib64_libcamalgo_eis_so \
+    vendor_lib64_libcamalgo_fsc_so \
+    vendor_lib64_libcamalgo_fus_so \
+    vendor_lib64_libcamalgo_gyro_so \
+    vendor_lib64_libcamalgo_lmv_so \
+    vendor_lib64_libcamalgo_lsc_so \
+    vendor_lib64_libcamalgo_mcnr_so \
+    vendor_lib64_libcamalgo_n3d_so \
+    vendor_lib64_libcamalgo_platform2_so \
+    vendor_lib64_libcamalgo_tsfs_so \
+    vendor_lib64_libcamalgo_vaidepth_so \
+    vendor_lib64_libcamalgo_vsf_so \
+    vendor_lib64_libcamera_custom_af_assist_buf_mgr_so \
+    vendor_lib64_libcamera_custom_af_assist_buf_mgr_open_so \
+    vendor_lib64_libcamera_custom_af_assist_mgr_so \
+    vendor_lib64_libcamera_custom_af_assist_pdp_so \
+    vendor_lib64_libcamera_customae_so \
+    vendor_lib64_libcamera_customflk_so \
+    vendor_lib64_libcameracustom_camera_3a_so \
+    vendor_lib64_libcameracustom_camera_isp_so \
+    vendor_lib64_libcameracustom_camera_sensors_so \
+    vendor_lib64_libcameracustom_camera_calibration_core_so \
+    vendor_lib64_libcameracustom_camera_exif_so \
+    vendor_lib64_libcameracustom_cfg_setting_core_so \
+    vendor_lib64_libcameracustom_eis_so \
+    vendor_lib64_libcameracustom_flashlight_so \
+    vendor_lib64_libcameracustom_imgsensor_core_so \
+    vendor_lib64_libcameracustom_lens_so \
+    vendor_lib64_libcameracustom_plugin_so \
+    vendor_lib64_libcameracustom_so \
+    vendor_lib64_libcameracustom_camera_db_ext_so \
+    vendor_lib64_libccd_so \
+    vendor_lib64_libdpframework_so \
+    vendor_lib64_libeffecthal_base_so \
+    vendor_lib64_libfacerelight_so \
+    vendor_lib64_libfeature_aiseg_so \
+    vendor_lib64_libfeature_face_so \
+    vendor_lib64_libfeature_fwmvp_so \
+    vendor_lib64_libfeature_mcnr_so \
+    vendor_lib64_libfeature_stereo_platform_so \
+    vendor_lib64_libfeature_stereo_provider_so \
+    vendor_lib64_libfeature_vsdof_3a_info_provider_so \
+    vendor_lib64_libfeature_vsdof_fd_info_provider_so \
+    vendor_lib64_libfeature_vsdof_hal_so \
+    vendor_lib64_libfeature_vsdof_nvram_provider_so \
+    vendor_lib64_libfeature_vsdof_ot_info_provider_so \
+    vendor_lib64_libfeature_eis_so \
+    vendor_lib64_libfeature_fsc_so \
+    vendor_lib64_libfeature_vrp_so \
+    vendor_lib64_libfeatureiodrv_mem_so \
+    vendor_lib64_libfeaturepolicy_dbhandler_so \
+    vendor_lib64_libgpudataproducer_so \
+    vendor_lib64_libimgstream-custom_so \
+    vendor_lib64_libimgstream-drv_so \
+    vendor_lib64_libimgstream-guard_so \
+    vendor_lib64_libimgsys_adl_so \
+    vendor_lib64_libimgsys_cmt_so \
+    vendor_lib64_libimgsys_custom_so \
+    vendor_lib64_libimgsys_daemon_so \
+    vendor_lib64_libimgsys_dip_so \
+    vendor_lib64_libimgsys_drvcommon_so \
+    vendor_lib64_libimgsys_gce_so \
+    vendor_lib64_libimgsys_main_so \
+    vendor_lib64_libimgsys_me_so \
+    vendor_lib64_libimgsys_pqdip_so \
+    vendor_lib64_libimgsys_sensor_so \
+    vendor_lib64_libimgsys_system_so \
+    vendor_lib64_libimgsys_taskhandler_so \
+    vendor_lib64_libimgsys_tdrhal_so \
+    vendor_lib64_libimgsys_tile_so \
+    vendor_lib64_libimgsys_traw_so \
+    vendor_lib64_libimgsys_utils_so \
+    vendor_lib64_libimgsys_v4l2_so \
+    vendor_lib64_libimgsys_wpe_so \
+    vendor_lib64_libispfeature_mtkcam_v4l2_so \
+    vendor_lib64_libispinterpreter_mtkcam_so \
+    vendor_lib64_liblpnr_so \
+    vendor_lib64_libmfllcore_so \
+    vendor_lib64_libmgr3a_adapt_so \
+    vendor_lib64_libmml_so \
+    vendor_lib64_libmmlpqImpl_so \
+    vendor_lib64_libmnl_so \
+    vendor_lib64_libmtk_drvb_so \
+    vendor_lib64_libmtkcam_atmseventmgr_so \
+    vendor_lib64_libmtkcam_debugwrapper_so \
+    vendor_lib64_libmtkcam_eventcallback_so \
+    vendor_lib64_libmtkcam_featurepipe_capture_so \
+    vendor_lib64_libmtkcam_featurepipe_depthmap_so \
+    vendor_lib64_libmtkcam_featurepipe_p2g_so \
+    vendor_lib64_libmtkcam_featurepipe_streaming_so \
+    vendor_lib64_libmtkcam_featurepipe_vsdof_wrapper_so \
+    vendor_lib64_libmtkcam_logicalcaminfoprovider_so \
+    vendor_lib64_libmtkcam_logicalmodule_so \
+    vendor_lib64_libmtkcam_ndd_limit_so \
+    vendor_lib64_libmtkcam_aicolor_so \
+    vendor_lib64_libmtkcam_aie_so \
+    vendor_lib64_libmtkcam_android_zslprocessor_so \
+    vendor_lib64_libmtkcam_aov_so \
+    vendor_lib64_libmtkcam_aov_cust_so \
+    vendor_lib64_libmtkcam_aov_plat_so \
+    vendor_lib64_libmtkcam_aov_sys_so \
+    vendor_lib64_libmtkcam_buffer_flush_so \
+    vendor_lib64_libmtkcam_c2psperfctrl_so \
+    vendor_lib64_libmtkcam_ca_so \
+    vendor_lib64_libmtkcam_calibration_provider_so \
+    vendor_lib64_libmtkcam_camcontroller_so \
+    vendor_lib64_libmtkcam_camcoordinator_so \
+    vendor_lib64_libmtkcam_camctrl_so \
+    vendor_lib64_libmtkcam_camdeliver_so \
+    vendor_lib64_libmtkcam_camsys_sensor_utils_so \
+    vendor_lib64_libmtkcam_coredev_so \
+    vendor_lib64_libmtkcam_custom_calibration_convertor_so \
+    vendor_lib64_libmtkcam_custom_metadata_so \
+    vendor_lib64_libmtkcam_custom_policy_so \
+    vendor_lib64_libmtkcam_custom_sampleselector_so \
+    vendor_lib64_libmtkcam_custom_zsdhdrselector_so \
+    vendor_lib64_libmtkcam_custzone_so \
+    vendor_lib64_libmtkcam_debugutils_so \
+    vendor_lib64_libmtkcam_detectnode_so \
+    vendor_lib64_libmtkcam_devicemgr_so \
+    vendor_lib64_libmtkcam_diputils_so \
+    vendor_lib64_libmtkcam_dma_map_so \
+    vendor_lib64_libmtkcam_exif_so \
+    vendor_lib64_libmtkcam_externalisploader_so \
+    vendor_lib64_libmtkcam_faceResultHandler_so \
+    vendor_lib64_libmtkcam_feature_utils_so \
+    vendor_lib64_libmtkcam_grallocutils_so \
+    vendor_lib64_libmtkcam_hal3a_provider_so \
+    vendor_lib64_libmtkcam_hal_aidl_common_so \
+    vendor_lib64_libmtkcam_hal_aidl_device_so \
+    vendor_lib64_libmtkcam_hal_aidl_provider_so \
+    vendor_lib64_libmtkcam_hal_aidl_utils_so \
+    vendor_lib64_libmtkcam_hal_android_app_cbadaptor_so \
+    vendor_lib64_libmtkcam_hal_android_common_so \
+    vendor_lib64_libmtkcam_hal_android_device_so \
+    vendor_lib64_libmtkcam_hal_android_provider_so \
+    vendor_lib64_libmtkcam_hal_android_utils_so \
+    vendor_lib64_libmtkcam_hal_aov_so \
+    vendor_lib64_libmtkcam_hal_core_app_so \
+    vendor_lib64_libmtkcam_hal_core_app_cbadaptor_so \
+    vendor_lib64_libmtkcam_hal_core_device_so \
+    vendor_lib64_libmtkcam_hal_core_devicesessionpolicy_so \
+    vendor_lib64_libmtkcam_hal_core_featurepolicy_so \
+    vendor_lib64_libmtkcam_hal_core_provider_so \
+    vendor_lib64_libmtkcam_hal_core_utils_so \
+    vendor_lib64_libmtkcam_hal_custom_so \
+    vendor_lib64_libmtkcam_hal_custom_provider_so \
+    vendor_lib64_libmtkcam_hal_hidl_common_so \
+    vendor_lib64_libmtkcam_hal_hidl_device_so \
+    vendor_lib64_libmtkcam_hal_hidl_provider_so \
+    vendor_lib64_libmtkcam_hal_hidl_utils_so \
+    vendor_lib64_libmtkcam_halisp_custom_so \
+    vendor_lib64_libmtkcam_hwnode_jpegnode_so \
+    vendor_lib64_libmtkcam_hwnode_p2_so \
+    vendor_lib64_libmtkcam_hwnode_so \
+    vendor_lib64_libmtkcam_hwutils_so \
+    vendor_lib64_libmtkcam_hwutils_android_so \
+    vendor_lib64_libmtkcam_hwutils_poweronoffcontroller_so \
+    vendor_lib64_libmtkcam_imgbuf_v2_so \
+    vendor_lib64_libmtkcam_ipc_core_so \
+    vendor_lib64_libmtkcam_ipc_wrapper_common_client_so \
+    vendor_lib64_libmtkcam_ipc_wrapper_common_server_so \
+    vendor_lib64_libmtkcam_ipc_wrapper_mtk_client_so \
+    vendor_lib64_libmtkcam_ipc_wrapper_mtk_server_so \
+    vendor_lib64_libmtkcam_jsonconvertor_so \
+    vendor_lib64_libmtkcam_jsondata_so \
+    vendor_lib64_libmtkcam_mapping_mgr_so \
+    vendor_lib64_libmtkcam_metaconv_so \
+    vendor_lib64_libmtkcam_metadata_so \
+    vendor_lib64_libmtkcam_metastore_so \
+    vendor_lib64_libmtkcam_modulefactory_custom_so \
+    vendor_lib64_libmtkcam_modulefactory_utils_so \
+    vendor_lib64_libmtkcam_modulehelper_so \
+    vendor_lib64_libmtkcam_p1node_so \
+    vendor_lib64_libmtkcam_packutils_so \
+    vendor_lib64_libmtkcam_perfctrl_so \
+    vendor_lib64_libmtkcam_pip_so \
+    vendor_lib64_libmtkcam_pipeline_so \
+    vendor_lib64_libmtkcam_pipeline_fbm_so \
+    vendor_lib64_libmtkcam_pipelinemodel_capture_so \
+    vendor_lib64_libmtkcam_pipelinemodel_session_so \
+    vendor_lib64_libmtkcam_pipelinemodel_utils_so \
+    vendor_lib64_libmtkcam_pipelinepolicy-security_so \
+    vendor_lib64_libmtkcam_pipelinepolicy-smvr_so \
+    vendor_lib64_libmtkcam_pipelinepolicy_so \
+    vendor_lib64_libmtkcam_pipelinepolicy_factory_so \
+    vendor_lib64_libmtkcam_pipemgr_so \
+    vendor_lib64_libmtkcam_postprocprovider_so \
+    vendor_lib64_libmtkcam_preprocnode_so \
+    vendor_lib64_libmtkcam_prerelease_so \
+    vendor_lib64_libmtkcam_proc_so \
+    vendor_lib64_libmtkcam_request_requlator_so \
+    vendor_lib64_libmtkcam_resourcedecision_so \
+    vendor_lib64_libmtkcam_resourcedecision_custom_so \
+    vendor_lib64_libmtkcam_salmgr_so \
+    vendor_lib64_libmtkcam_sensorcontrol_so \
+    vendor_lib64_libmtkcam_simager_so \
+    vendor_lib64_libmtkcam_smvr_so \
+    vendor_lib64_libmtkcam_stdutils_so \
+    vendor_lib64_libmtkcam_streamutils_so \
+    vendor_lib64_libmtkcam_synchelper_so \
+    vendor_lib64_libmtkcam_sysutils_so \
+    vendor_lib64_libmtkcam_taskmgr_so \
+    vendor_lib64_libmtkcam_thirdparty_core_so \
+    vendor_lib64_libmtkcam_thirdparty_customer_so \
+    vendor_lib64_libmtkcam_thirdparty_customzone_so \
+    vendor_lib64_libmtkcam_thirdparty_mtk_so \
+    vendor_lib64_libmtkcam_thirdparty_so \
+    vendor_lib64_libmtkcam_tuning_utils_so \
+    vendor_lib64_libmtkcam_ulog_so \
+    vendor_lib64_libmtkcam_zsl_customselector_so \
+    vendor_lib64_libmtkcm_ipc_dummy_so \
+    vendor_lib64_libneuralnetworks_sl_driver_mtk_prebuilt_so \
+    vendor_lib64_libneuron_adapter_mgvi_so \
+    vendor_lib64_libneuron_runtime_7_so \
+    vendor_lib64_libneuron_runtime_so \
+    vendor_lib64_libneuron_wrapper_so \
+    vendor_lib64_libnir_neon_driver_so \
+    vendor_lib64_libpda_usdriver_so \
+    vendor_lib64_libpq_cust_base_so \
+    vendor_lib64_libpq_sec_so \
+    vendor_lib64_libpqconfig_so \
+    vendor_lib64_libpqparamparser_so \
+    vendor_lib64_libvainr_model_so \
+    vendor_lib64_mtk000_mipi_raw_IdxMgr_so \
+    vendor_lib64_mtk000_mipi_raw_tuning_so
+
+PRODUCT_BOOT_JARS += \
+    mtk-moto-telephony-ext \
+    mtk-telephony-common
