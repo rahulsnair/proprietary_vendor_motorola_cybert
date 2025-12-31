@@ -3327,6 +3327,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/vendor/bin/mtk_agpsd:$(TARGET_COPY_OUT_VENDOR)/bin/mtk_agpsd \
     vendor/motorola/cybert/proprietary/vendor/bin/nvram_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/nvram_daemon \
     vendor/motorola/cybert/proprietary/vendor/bin/thermal_core:$(TARGET_COPY_OUT_VENDOR)/bin/thermal_core \
+    vendor/motorola/cybert/proprietary/vendor/bin/touch_boost:$(TARGET_COPY_OUT_VENDOR)/bin/touch_boost \
     vendor/motorola/cybert/proprietary/vendor/bin/wmt_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/wmt_launcher \
     vendor/motorola/cybert/proprietary/vendor/bin/wmt_loader:$(TARGET_COPY_OUT_VENDOR)/bin/wmt_loader \
     vendor/motorola/cybert/proprietary/vendor/etc/audio_param/AudioParamOptions_mgvi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_mgvi.xml \
@@ -3385,11 +3386,14 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/vendor/lib64/com.motorola.hardware.display.panel-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.motorola.hardware.display.panel-V1-ndk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/com.motorola.hardware.display.panel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.motorola.hardware.display.panel@1.0.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/com.motorola.hardware.display.panel@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.motorola.hardware.display.panel@1.1.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/hw/android.hardware.soundtrigger3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.soundtrigger3-impl.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/hw/audio.primary.mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.mediatek.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/hw/fingerprint.goodix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.default.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/hw/mt6897/vendor.mediatek.hardware.camera.isphal@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6897/vendor.mediatek.hardware.camera.isphal@1.1-impl.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/hw/mt6897/vendor.mediatek.hardware.pq_aidl-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6897/vendor.mediatek.hardware.pq_aidl-impl.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/sensors.dynamic_sensor_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.dynamic_sensor_hal.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/sensors.light_compensate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.light_compensate.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/hw/sensors.mediatek.V2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.mediatek.V2.0.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.audio-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.audio-impl.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.camera.atms_aidl@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.atms_aidl@1.0-impl.so \
@@ -3683,7 +3687,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkisp_metadata_v3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkisp_metadata_v3.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkltm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkltm.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtknetutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtknetutils.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/libmtkperf_client_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkperf_client_vendor.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkproperty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkproperty.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkrillog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkrillog.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libmtkrilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkrilutils.so \
@@ -3878,9 +3881,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mmagent-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mmagent-V1-ndk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mmlpq-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mmlpq-V3-ndk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkpower-V1-ndk.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkpower@1.0.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkpower@1.1.so \
-    vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkpower@1.2.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.assist-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkradioex.assist-V1-ndk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.atci-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkradioex.atci-V1-ndk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.cap-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkradioex.cap-V1-ndk.so \
