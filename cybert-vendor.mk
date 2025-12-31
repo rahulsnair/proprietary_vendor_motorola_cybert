@@ -3472,6 +3472,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/vendor/bin/stp_dump3:$(TARGET_COPY_OUT_VENDOR)/bin/stp_dump3 \
     vendor/motorola/cybert/proprietary/vendor/bin/thermal_core:$(TARGET_COPY_OUT_VENDOR)/bin/thermal_core \
     vendor/motorola/cybert/proprietary/vendor/bin/thermal_intf:$(TARGET_COPY_OUT_VENDOR)/bin/thermal_intf \
+    vendor/motorola/cybert/proprietary/vendor/bin/touch_boost:$(TARGET_COPY_OUT_VENDOR)/bin/touch_boost \
     vendor/motorola/cybert/proprietary/vendor/bin/volte_clientapi_ua:$(TARGET_COPY_OUT_VENDOR)/bin/volte_clientapi_ua \
     vendor/motorola/cybert/proprietary/vendor/bin/volte_rcs_ua:$(TARGET_COPY_OUT_VENDOR)/bin/volte_rcs_ua \
     vendor/motorola/cybert/proprietary/vendor/bin/wifi_dump:$(TARGET_COPY_OUT_VENDOR)/bin/wifi_dump \
@@ -4904,6 +4905,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/vendor/lib64/hw/mt6897/vulkan.mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6897/vulkan.mali.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/hw/mtkflp.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mtkflp.default.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/hw/mtkgeofence.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mtkgeofence.default.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/sensors.dynamic_sensor_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.dynamic_sensor_hal.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/hw/sensors.light_compensate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.light_compensate.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/hw/sensors.mediatek.V2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.mediatek.V2.0.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/hw/sound_trigger.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.default.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/hw/thermal_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/thermal_hal.so \
