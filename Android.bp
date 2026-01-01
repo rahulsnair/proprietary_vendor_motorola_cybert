@@ -369,15 +369,6 @@ prebuilt_etc_xml {
     soc_specific: true,
 }
 
-prebuilt_etc_xml {
-    name: "vibrator-mtk-default.xml",
-    owner: "motorola",
-    src: "proprietary/vendor/etc/vintf/manifest/vibrator-mtk-default.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
 install_symlink {
     name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_ae_ParameterDB_ae_db",
     soc_specific: true,

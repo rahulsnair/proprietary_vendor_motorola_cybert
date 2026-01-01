@@ -5656,8 +5656,7 @@ PRODUCT_PACKAGES += \
     mapper.mediatek.xml \
     mtk_lbs_service.xml \
     mtkgnss-batching.xml \
-    thermal-mediatek.xml \
-    vibrator-mtk-default.xml
+    thermal-mediatek.xml
 
 PRODUCT_PACKAGES += \
     vendor_bin_crossbuild_DataSet_SQLiteModule_db_ae_ParameterDB_ae_db \
