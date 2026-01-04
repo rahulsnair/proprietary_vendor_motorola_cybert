@@ -7,6 +7,7 @@ AB_OTA_PARTITIONS += \
     audio_dsp \
     ccu \
     connsys_bt \
+    connsys_gnss \
     connsys_wifi \
     dpm \
     gpueb \
@@ -18,7 +19,6 @@ AB_OTA_PARTITIONS += \
     modem \
     mvpu_algo \
     pi_img \
-    preloader \
     scp \
     spmfw \
     sspm \
