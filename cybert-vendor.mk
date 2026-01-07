@@ -3419,6 +3419,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6897/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6897/ISP_param.db \
     vendor/motorola/cybert/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6897/ISP_info.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6897/ISP_info.db \
     vendor/motorola/cybert/proprietary/vendor/bin/hardware_revisions.sh:$(TARGET_COPY_OUT_VENDOR)/bin/hardware_revisions.sh \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.biometrics.face-service.face-isv:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.face-service.face-isv \
     vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint-service-rbs:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint-service-rbs \
     vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint-service.goodix:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint-service.goodix \
     vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.1-service-mediatek \
@@ -3426,6 +3427,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.gnss-service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss-service.mediatek \
     vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.graphics.composer@3.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer@3.2-service \
     vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.c2@1.2-mediatek-64b \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.memtrack-service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.memtrack-service.mediatek \
     vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks-shim-service-mtk \
     vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element@1.2-service-mediatek \
     vendor/motorola/cybert/proprietary/vendor/bin/hw/android.hardware.security.keymint@3.0-service.trustonic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint@3.0-service.trustonic \
@@ -3438,6 +3440,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/vendor/bin/hw/mt6897/camerahalserver:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mt6897/camerahalserver \
     vendor/motorola/cybert/proprietary/vendor/bin/hw/mtkfusionrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mtkfusionrild \
     vendor/motorola/cybert/proprietary/vendor/bin/hw/tetheroffloadservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/tetheroffloadservice \
+    vendor/motorola/cybert/proprietary/vendor/bin/hw/tsa_hdcp_service-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/tsa_hdcp_service-service \
     vendor/motorola/cybert/proprietary/vendor/bin/hw/vendor.mediatek.hardware.gnss-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.gnss-service \
     vendor/motorola/cybert/proprietary/vendor/bin/hw/vendor.mediatek.hardware.mmagent-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.mmagent-service \
     vendor/motorola/cybert/proprietary/vendor/bin/hw/vendor.mediatek.hardware.mmlpq@V1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.mmlpq@V1-service \
@@ -3732,6 +3735,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/vendor/etc/hal_uuid_map_ns.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_ns.xml \
     vendor/motorola/cybert/proprietary/vendor/etc/hal_uuid_map_nsf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_nsf.xml \
     vendor/motorola/cybert/proprietary/vendor/etc/hdrcfg.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/hdrcfg.cfg \
+    vendor/motorola/cybert/proprietary/vendor/etc/init/android.hardware.biometrics.face-service.face.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.face-service.face.rc \
     vendor/motorola/cybert/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint-service-goodix2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint-service-goodix2.rc \
     vendor/motorola/cybert/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint-service-rbs2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint-service-rbs2.rc \
     vendor/motorola/cybert/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc \
@@ -4878,6 +4882,12 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/vendor/lib64/APUWareApusysAidlServer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/APUWareApusysAidlServer.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/APUWareUtilsAidlServer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/APUWareUtilsAidlServer.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/android.hardware.biometrics.fingerprint-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.fingerprint-V3-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/android.hardware.gatekeeper-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.gatekeeper-V1-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/android.hardware.graphics.composer3-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.graphics.composer3-V2-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/android.hardware.security.keymint-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.security.keymint-V3-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/android.hardware.security.rkp-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.security.rkp-V3-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/android.hardware.security.secureclock-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.security.secureclock-V1-ndk.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/android.hardware.security.sharedsecret-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.security.sharedsecret-V1-ndk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/com.motorola.hardware.biometric.fingerprint-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.motorola.hardware.biometric.fingerprint-V2-ndk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/egl/libGLES_meow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_meow.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/egl/libMEOW_data.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_data.so \
@@ -4924,15 +4934,18 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/vendor/lib64/libBSTMultiExpoGainHDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libBSTMultiExpoGainHDR.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libBasicModule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libBasicModule.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libDefaultFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDefaultFpsActor.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libFaceUnlock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFaceUnlock.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libFrameRecord.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFrameRecord.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libJpgEncPipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libJpgEncPipe.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libMcClient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMcClient.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libMcRegistry.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMcRegistry.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libMtkSpeechEnh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMtkSpeechEnh.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libMtkSpeechEnh_swb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMtkSpeechEnh_swb.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libNoFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libNoFpsActor.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libSQLiteModule_VER_ALL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSQLiteModule_VER_ALL.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libTEECommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTEECommon.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libTeeClient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTeeClient.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libVkLayer_mtk_rt_sdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVkLayer_mtk_rt_sdk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/lib_iir.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_iir.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libaaa_aaautil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaaa_aaautil.so \
@@ -5014,6 +5027,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcodec2_vpp_rs_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vpp_rs_plugin.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcomposer_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcomposer_ext.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libconnfem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconnfem.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libcppbor_external.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcppbor_external.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libcppcose_rkp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcppcose_rkp.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcustom_nvram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcustom_nvram.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libcvsd_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvsd_mtk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libdecrypt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdecrypt.so \
@@ -5052,6 +5067,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/vendor/lib64/libiqi_bridge.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libiqi_bridge.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libjpeg-alpha-oal_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha-oal_vendor.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libjpeg-alpha_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha_vendor.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libkeymaster_messages.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_messages.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libkeymaster_portable.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_portable.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libkmsetkey.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkmsetkey.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libksensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libksensor.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libladder.so \
@@ -5153,6 +5170,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/vendor/lib64/libpqtuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpqtuning.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libpqxmlflagparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpqxmlflagparser.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libpqxmlparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpqxmlparser.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libpuresoftkeymasterdevice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpuresoftkeymasterdevice.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libratconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libratconfig.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/librcs_volte_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcs_volte_core.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libremosaic_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_wrapper.so \
@@ -5168,6 +5186,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/vendor/lib64/libspeechparser_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspeechparser_vendor.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libstfactory-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstfactory-vendor.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libstorage_otp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstorage_otp.so \
+    vendor/motorola/cybert/proprietary/vendor/lib64/libsuspend.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsuspend.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libsysenv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysenv.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libtflite_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtflite_mtk.so \
     vendor/motorola/cybert/proprietary/vendor/lib64/libtiktapvibrator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtiktapvibrator.so \
