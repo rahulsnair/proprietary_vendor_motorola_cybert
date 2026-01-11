@@ -11,6 +11,30 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+    name: "motorola.hardware.tcmdaidl-V2-ndk",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/motorola.hardware.tcmdaidl-V2-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
     name: "APUWareApusysAidlServer",
     owner: "motorola",
     strip: {
@@ -25210,6 +25234,133 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libged_sys",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libged_sys.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libsync",
+                "libnativewindow",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgralloc_extra_sys",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libgralloc_extra_sys.so",
+            ],
+            shared_libs: [
+                "libsf_cpupolicy",
+                "libged_sys",
+                "libhardware",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libion",
+                "libdmabufheap",
+                "libutilscallstack",
+                "android.hardware.graphics.common@1.2",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgui_debug",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libgui_debug.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libhardware",
+                "libui",
+                "libgui",
+                "libnativewindow",
+                "libgralloc_extra_sys",
+                "libui_ext",
+                "libprocessgroup",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libhidltcmd",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libhidltcmd.so",
+            ],
+            shared_libs: [
+                "libcrypto",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libsqlite",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libjni_helper.motocameradesktop",
     owner: "motorola",
     strip: {
@@ -25233,6 +25384,102 @@ cc_prebuilt_library_shared {
                 "motorola.hardware.camera.desktop@2.0",
                 "libbinder",
                 "libandroid_runtime",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtk_sf_llfp",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmtk_sf_llfp.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder",
+                "libcutils",
+                "libjsoncpp",
+                "liblog",
+                "libui",
+                "libutils",
+                "libprocessgroup",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsf_cpupolicy",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libsf_cpupolicy.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libprocessgroup",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libui_ext",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libui_ext.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libbinder",
+                "libhardware",
+                "libui",
+                "libpng",
+                "libgralloc_extra_sys",
+                "libnativewindow",
+                "libprocessgroup",
+                "android.hardware.graphics.common@1.2",
                 "libc++",
                 "libc",
                 "libm",
@@ -25296,6 +25543,186 @@ cc_prebuilt_library_shared {
                 "android.hardware.graphics.common@1.0",
                 "android.hardware.graphics.common@1.1",
                 "android.hardware.graphics.common@1.2",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "motorola.hardware.tcmd@1.0",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/motorola.hardware.tcmd@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mtkradioex@3.0",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so",
+            ],
+            shared_libs: [
+                "android.hardware.radio@1.0",
+                "android.hardware.radio@1.1",
+                "android.hardware.radio@1.2",
+                "android.hardware.radio@1.4",
+                "android.hardware.radio@1.5",
+                "android.hidl.safe_union@1.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.pq@2.0",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.mediatek.hardware.pq@2.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.pq@2.1",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.mediatek.hardware.pq@2.1.so",
+            ],
+            shared_libs: [
+                "vendor.mediatek.hardware.pq@2.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.pq@2.2",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.mediatek.hardware.pq@2.2.so",
+            ],
+            shared_libs: [
+                "vendor.mediatek.hardware.pq@2.0",
+                "vendor.mediatek.hardware.pq@2.1",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.pq@2.3",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.mediatek.hardware.pq@2.3.so",
+            ],
+            shared_libs: [
+                "vendor.mediatek.hardware.pq@2.0",
+                "vendor.mediatek.hardware.pq@2.1",
+                "vendor.mediatek.hardware.pq@2.2",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -25669,6 +26096,24 @@ prebuilt_etc_xml {
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "motorola.hardware.tcmd@1.0-service.xml",
+    owner: "motorola",
+    src: "proprietary/system_ext/etc/vintf/manifest/motorola.hardware.tcmd@1.0-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    system_ext_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "motorola.hardware.tcmdaidl-service.xml",
+    owner: "motorola",
+    src: "proprietary/system_ext/etc/vintf/manifest/motorola.hardware.tcmdaidl-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    system_ext_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -27704,11 +28149,157 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
+cc_prebuilt_binary {
+    name: "motorola.hardware.tcmd@1.0-service",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/hw/motorola.hardware.tcmd@1.0-service",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libbase",
+                "libutils",
+                "libhidlbase",
+                "libhidltransport",
+                "libhidltcmd",
+                "motorola.hardware.tcmd@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "motorola.hardware.tcmdaidl-service",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/hw/motorola.hardware.tcmdaidl-service",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libbase",
+                "libbinder_ndk",
+                "motorola.hardware.tcmdaidl-V2-ndk",
+                "libbinder",
+                "liblog",
+                "libcrypto",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    system_ext_specific: true,
+}
+
 sh_binary {
     name: "motsettings",
     owner: "motorola",
     src: "proprietary/system_ext/bin/motsettings",
     filename: "motsettings",
+    system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "mtk_plpath_utils",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/mtk_plpath_utils",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "thermald",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/thermald",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libc",
+                "libutils",
+                "libbinder",
+                "liblog",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "usp_service",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/usp_service",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
     system_ext_specific: true,
 }
 

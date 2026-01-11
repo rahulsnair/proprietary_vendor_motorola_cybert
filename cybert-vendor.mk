@@ -3296,9 +3296,30 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/system/etc/permissions/com.motorola.motosignature.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.motosignature.xml \
     vendor/motorola/cybert/proprietary/system/etc/permissions/moto-core_services.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-core_services.xml \
     vendor/motorola/cybert/proprietary/system/etc/permissions/moto-settings.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-settings.xml \
+    vendor/motorola/cybert/proprietary/system_ext/etc/custom.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/custom.conf \
+    vendor/motorola/cybert/proprietary/system_ext/etc/init/init.mmi.props.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.mmi.props.rc \
+    vendor/motorola/cybert/proprietary/system_ext/etc/init/init.thermald.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.thermald.rc \
+    vendor/motorola/cybert/proprietary/system_ext/etc/init/init.thirdPartyprops.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.thirdPartyprops.rc \
+    vendor/motorola/cybert/proprietary/system_ext/etc/init/mediaserver_dynamic.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/mediaserver_dynamic.rc \
+    vendor/motorola/cybert/proprietary/system_ext/etc/init/mtk-plpath-utils.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/mtk-plpath-utils.rc \
+    vendor/motorola/cybert/proprietary/system_ext/etc/init/usp_service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/usp_service.rc \
     vendor/motorola/cybert/proprietary/system_ext/etc/permissions/com.motorola.camera.desktop.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.motorola.camera.desktop.xml \
     vendor/motorola/cybert/proprietary/system_ext/etc/public.libraries-moto.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-moto.txt \
     vendor/motorola/cybert/proprietary/system_ext/etc/public.libraries-motocameradesktop.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-motocameradesktop.txt \
+    vendor/motorola/cybert/proprietary/system_ext/usp/usp-apks-path-OP07.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/usp/usp-apks-path-OP07.txt \
+    vendor/motorola/cybert/proprietary/system_ext/usp/usp-apks-path-OP08.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/usp/usp-apks-path-OP08.txt \
+    vendor/motorola/cybert/proprietary/system_ext/usp/usp-apks-path-OP12.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/usp/usp-apks-path-OP12.txt \
+    vendor/motorola/cybert/proprietary/system_ext/usp/usp-apks-path-OP20.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/usp/usp-apks-path-OP20.txt \
+    vendor/motorola/cybert/proprietary/system_ext/usp/usp-apks-path-OP236.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/usp/usp-apks-path-OP236.txt \
+    vendor/motorola/cybert/proprietary/system_ext/usp/usp-apks-path-all.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/usp/usp-apks-path-all.txt \
+    vendor/motorola/cybert/proprietary/system_ext/usp/usp-content-OP00.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/usp/usp-content-OP00.txt \
+    vendor/motorola/cybert/proprietary/system_ext/usp/usp-content-OP07.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/usp/usp-content-OP07.txt \
+    vendor/motorola/cybert/proprietary/system_ext/usp/usp-content-OP08.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/usp/usp-content-OP08.txt \
+    vendor/motorola/cybert/proprietary/system_ext/usp/usp-content-OP12.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/usp/usp-content-OP12.txt \
+    vendor/motorola/cybert/proprietary/system_ext/usp/usp-content-OP20.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/usp/usp-content-OP20.txt \
+    vendor/motorola/cybert/proprietary/system_ext/usp/usp-content-OP236.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/usp/usp-content-OP236.txt \
+    vendor/motorola/cybert/proprietary/system_ext/usp/usp-info.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/usp/usp-info.txt \
+    vendor/motorola/cybert/proprietary/system_ext/usp/usp-packages-all.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/usp/usp-packages-all.txt \
     vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.drbin \
     vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.tlbin \
     vendor/motorola/cybert/proprietary/vendor/app/mcRegistry/031c0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/031c0000000000000000000000000000.drbin \
@@ -4804,6 +4825,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cybert/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg
 
 PRODUCT_PACKAGES += \
+    motorola.hardware.tcmdaidl-V2-ndk \
     APUWareApusysAidlServer \
     APUWareUtilsAidlServer \
     com.motorola.hardware.biometric.fingerprint-V2-ndk \
@@ -5585,9 +5607,22 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.tee@1.1 \
     vendor.tsa.hdcp-V1-ndk \
     libenginepostproc.moto \
+    libged_sys \
+    libgralloc_extra_sys \
+    libgui_debug \
+    libhidltcmd \
     libjni_helper.motocameradesktop \
+    libmtk_sf_llfp \
+    libsf_cpupolicy \
+    libui_ext \
     motorola.hardware.camera.desktop@1.0 \
     motorola.hardware.camera.desktop@2.0 \
+    motorola.hardware.tcmd@1.0 \
+    vendor.mediatek.hardware.mtkradioex@3.0 \
+    vendor.mediatek.hardware.pq@2.0 \
+    vendor.mediatek.hardware.pq@2.1 \
+    vendor.mediatek.hardware.pq@2.2 \
+    vendor.mediatek.hardware.pq@2.3 \
     MotoSignatureApp \
     EuiccPartnerApp \
     EuiccGoogle \
@@ -5625,6 +5660,8 @@ PRODUCT_PACKAGES += \
     mtk_lbs_service.xml \
     mtkgnss-batching.xml \
     thermal-mediatek.xml \
+    motorola.hardware.tcmd@1.0-service.xml \
+    motorola.hardware.tcmdaidl-service.xml \
     audiocmdservice_atci \
     autobt \
     bip_ap \
@@ -5690,7 +5727,12 @@ PRODUCT_PACKAGES += \
     wlan_assistant \
     wmt_launcher \
     wmt_loader \
-    motsettings
+    motorola.hardware.tcmd@1.0-service \
+    motorola.hardware.tcmdaidl-service \
+    motsettings \
+    mtk_plpath_utils \
+    thermald \
+    usp_service
 
 PRODUCT_PACKAGES += \
     vendor_bin_crossbuild_DataSet_SQLiteModule_db_ae_ParameterDB_ae_db \
